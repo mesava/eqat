@@ -1,0 +1,1605 @@
+[
+  {
+    "id": "MLC-D1@review-draft-v0.3",
+    "test_code": "MLC-D1",
+    "parent_sop_version_id": "MLC-D1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, MLC position accuracy"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "section": "8.2.6 MLC2"
+      }
+    ],
+    "source_finding": "0,5 мм подтверждены. Таблица рекомендует разработать упрощённую ежедневную проверку; минимум количественной проверки — еженедельно. Это не готовый ежедневный алгоритм.",
+    "open_requirements": [
+      "Выбрать и валидировать ежедневный паттерн и чувствительность, режим SRS и независимый способ измерения."
+    ],
+    "original_frequency_unapproved": "В день применения SRS; MPPG 9.b рекомендует разработать упрощённую ежедневную проверку",
+    "original_criterion_unapproved": "0,5 мм",
+    "title": "Ежедневный паттерн SRS",
+    "input_template": "Согласованный паттерн; энергия; угол; масштаб EPID; координаты всех проверяемых лепестков; эталонный сдвиг.",
+    "steps": [
+      "Проверить версию QA-плана и геометрию детектора",
+      "получить изображение паттерна по утверждённому локальному маршруту",
+      "измерить позиции независимым алгоритмом",
+      "сохранить полный список ошибок и контроль чувствительности."
+    ],
+    "analysis": "e_i=x_measured,i−x_planned,i; E=max|e_i|. Для качественного варианта документировать обнаружение валидированного эталонного отклонения; не выводить численный PASS из визуальной оценки.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-W1@review-draft-v0.3",
+    "test_code": "MLC-W1",
+    "parent_sop_version_id": "MLC-W1@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          21,
+          22
+        ],
+        "section": "Table 8; 8.2.6 MLC2"
+      }
+    ],
+    "source_finding": "Еженедельная количественная проверка всех лепестков, 0,5 мм, разные углы/дуга; одни логи недостаточны. Исключение допуска требует письменного решения производителя и QMP.",
+    "open_requirements": [
+      "Конкретный угловой цикл и анализ Agility должны быть локально валидированы."
+    ],
+    "original_frequency_unapproved": "Еженедельно; менять угол гантри по циклу 0°/90°/180°/270° или использовать валидированный arc-тест",
+    "original_criterion_unapproved": "0,5 мм",
+    "title": "Количественный анализ положений",
+    "input_template": "Плановые/измеренные координаты; bank/leaf ID; масштаб в изоцентре; углы; baseline.",
+    "steps": [
+      "Сопоставить каждый лепесток и позицию с планом",
+      "проверить знак и масштаб",
+      "рассчитать ошибки по всем углам",
+      "вывести пропуски покрытия",
+      "сравнить максимум, среднее и SD с предыдущими сеансами."
+    ],
+    "analysis": "e_ijk=x_measured,ijk−x_planned,ijk; E=max|e_ijk|; bias=mean(e); SD=sample_sd(e). Непокрытый лепесток не считать прошедшим.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-M1@review-draft-v0.3",
+    "test_code": "MLC-M1",
+    "parent_sop_version_id": "MLC-M1@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          22,
+          23
+        ],
+        "section": "8.2.6 MLC3; note to 8.3"
+      }
+    ],
+    "source_finding": "Ежемесячная комплексная проверка VMAT/sliding-window: точечная доза относительно TPS, 2%; возможна одна энергия. Примечание допускает 1% от достигнутого при commissioning в соответствующем контексте. Gamma не заменяет точечную дозу.",
+    "open_requirements": [
+      "Выбрать план, фантом, малый детектор и точку; общей процедуре нужны отдельные результаты двух кодов."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "±2% от TPS для точечной дозы",
+    "title": "Точечная доза комплексного плана",
+    "input_template": "ID плана/phantom; энергия; точка и объём detector ROI; D_TPS; показания, MU, поправки, калибровка.",
+    "steps": [
+      "Выбрать клинически представительный QA-план и точку с низким градиентом",
+      "сопоставить геометрию измерения и TPS",
+      "получить исправленную дозу",
+      "сравнить точечную дозу",
+      "распределение анализировать отдельно."
+    ],
+    "analysis": "delta_D=100*(D_measured/D_TPS−1). D_TPS>0; поправки и усреднение по объёму детектора должны быть валидированы. Gamma не заменяет delta_D.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "VMAT-M4@review-draft-v0.3",
+    "test_code": "VMAT-M4",
+    "parent_sop_version_id": "VMAT-M4@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          22,
+          23
+        ],
+        "section": "8.2.6 MLC3; note to 8.3"
+      }
+    ],
+    "source_finding": "Ежемесячная комплексная проверка VMAT/sliding-window: точечная доза относительно TPS, 2%; возможна одна энергия. Примечание допускает 1% от достигнутого при commissioning в соответствующем контексте. Gamma не заменяет точечную дозу.",
+    "open_requirements": [
+      "Выбрать план, фантом, малый детектор и точку; общей процедуре нужны отдельные результаты двух кодов."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Точечная доза: ±2% от TPS",
+    "title": "Точечная доза комплексного плана",
+    "input_template": "ID плана/phantom; энергия; точка и объём detector ROI; D_TPS; показания, MU, поправки, калибровка.",
+    "steps": [
+      "Выбрать клинически представительный QA-план и точку с низким градиентом",
+      "сопоставить геометрию измерения и TPS",
+      "получить исправленную дозу",
+      "сравнить точечную дозу",
+      "распределение анализировать отдельно."
+    ],
+    "analysis": "delta_D=100*(D_measured/D_TPS−1). D_TPS>0; поправки и усреднение по объёму детектора должны быть валидированы. Gamma не заменяет delta_D.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-M2@review-draft-v0.3",
+    "test_code": "MLC-M2",
+    "parent_sop_version_id": "MLC-M2@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          32,
+          33
+        ],
+        "section": "2.F.2.3"
+      }
+    ],
+    "source_finding": "TG-198 описывает оценку скорости по положениям и времени и допуск ±0,5 см/с для теста максимальной скорости. Average Actual Error, Actual Tolerance и PRF требуют Elekta eCAT.",
+    "open_requirements": [
+      "Нужна применимая редакция VMAT eCAT §3.2.3 и определения полей журналов; TRF не подтверждает дозиметрию."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Все Average Actual Error внутри Actual Tolerance; PRF pauses = 0 до окончания поля; скорость ±0,5 см/с от заданной",
+    "title": "Скорость и динамические ошибки",
+    "input_template": "Время; позиции; единицы; заданная скорость; frame rate; признак паузы; vendor field definitions.",
+    "steps": [
+      "Проверить монотонность времени и полное покрытие",
+      "выделить участки постоянной скорости и переходные процессы",
+      "рассчитать скорости и ошибки",
+      "отдельно перечислить паузы",
+      "поля eCAT трактовать только после проверки документа."
+    ],
+    "analysis": "v_i=(x_i+1−x_i)/(t_i+1−t_i); dt>0. Сопоставлять модуль скорости с заданным на том же участке. Пропуски кадров и разгон не включать в plateau без обоснования.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-M3@review-draft-v0.3",
+    "test_code": "MLC-M3",
+    "parent_sop_version_id": "MLC-M3@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, radiation isocentricity"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          19,
+          20,
+          22
+        ],
+        "section": "M11; MLC4"
+      }
+    ],
+    "source_finding": "SRS 1 мм и SBRT 1,5 мм подтверждены; ежедневные проекции и ежемесячное 3D-смещение — разные метрики. Обычная RT: отдельный критерий диаметра 2 мм.",
+    "open_requirements": [
+      "Не смешивать радиус, диаметр, 2D-проекцию и 3D-смещение; валидировать реконструкцию."
+    ],
+    "original_frequency_unapproved": "Ежемесячно для полного диапазона SRS/SBRT; ограниченная проверка в день применения; ежегодно минимум для обычной RT",
+    "original_criterion_unapproved": "SRS: 1,0 мм; SBRT: 1,5 мм; обычная RT: диаметр ≤2 мм",
+    "title": "Геометрия радиационного изоцентра",
+    "input_template": "Изображения; калибровка; углы; координаты BB и поля; режим SRS/SBRT/обычная RT; алгоритм 3D.",
+    "steps": [
+      "Оценить центр мишени и поля на каждой проекции",
+      "записать 2D-векторы",
+      "для полного месячного набора выполнить валидированную 3D-реконструкцию",
+      "оценить покрытие углов и остатки fit",
+      "отдельно сохранить размер изоцентра."
+    ],
+    "analysis": "d2=sqrt(dx²+dy²); d3=sqrt(dx²+dy²+dz²) только после валидированной реконструкции. Максимум 2D расстояний не равен восстановленному d3; диаметр нельзя сравнивать с пределом радиуса.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-A1@review-draft-v0.3",
+    "test_code": "MLC-A1",
+    "parent_sop_version_id": "MLC-A1@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, relative output factors"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          21
+        ],
+        "section": "Table 8; MLC1"
+      }
+    ],
+    "source_finding": "Для SRS/SBRT >1 см: 2% от TPS; ≤1 см: 5%. MLC1 предусматривает ежегодную проверку малого поля. Нужны поправки малого поля, а не только отношение показаний.",
+    "open_requirements": [
+      "TRS-483/TG-155 и применимые поправки конкретного детектора ещё не проверены."
+    ],
+    "original_frequency_unapproved": "Ежегодно и после изменений beam model/MLC/дозиметрии",
+    "original_criterion_unapproved": ">1,0 см: ±2% от TPS; ≤1,0 см: ±5% от TPS; поле 2×2 см² — ±2%",
+    "title": "Факторы выхода малых полей",
+    "input_template": "Размеры полей; detector ID; corrected readings; MU; reference field; k_small/reference; TPS factors.",
+    "steps": [
+      "Проверить пригодность детектора и геометрию",
+      "применить подтверждённые поправки малого поля",
+      "вычислить OF",
+      "сопоставить TPS в той же геометрии",
+      "разделить группы апертур."
+    ],
+    "analysis": "OF=(M_small/MU_small)/(M_ref/MU_ref)*k_small/reference; delta=100*(OF/OF_TPS−1). Поправки не назначать равными 1 без обоснования.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-A2@review-draft-v0.3",
+    "test_code": "MLC-A2",
+    "parent_sop_version_id": "MLC-A2@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          33
+        ],
+        "section": "2.F.3.1"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, MLC transmission"
+      }
+    ],
+    "source_finding": "TG-198: отклонение ±0,5 процентного пункта от baseline (пример 1,5% → 1–2%). MPPG9.b: 5% относительно TPS. Это разные сравнения.",
+    "open_requirements": [
+      "Проверить модель TPS, геометрию, диапазон прибора и измерение inter-/intraleaf transmission для Agility."
+    ],
+    "original_frequency_unapproved": "Ежегодно; после замены лепестков/BLD или изменения модели TPS",
+    "original_criterion_unapproved": "TG-198: ±0,5 процентного пункта от baseline; MPPG 9.b: ±5% относительно TPS",
+    "title": "Трансмиссия и две базы сравнения",
+    "input_template": "Open/closed corrected readings; MU; энергия; положение камеры; T_baseline; T_TPS.",
+    "steps": [
+      "Проверить отсутствие стыка лепестков над камерой и отсутствие насыщения",
+      "нормировать показания на MU",
+      "рассчитать transmission",
+      "вывести разность процентных пунктов и относительную разность отдельно."
+    ],
+    "analysis": "T_percent=100*(M_closed/MU_closed)/(M_open/MU_open); delta_pp=T_percent−T_baseline_percent; delta_TPS_percent=100*(T_percent/T_TPS_percent−1). Нулевой T_TPS делает относительное сравнение неопределённым.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-A3@review-draft-v0.3",
+    "test_code": "MLC-A3",
+    "parent_sop_version_id": "MLC-A3@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          34
+        ],
+        "section": "2.F.3.2"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "section": "MLC2"
+      }
+    ],
+    "source_finding": "TG-198 подтверждает повторяемость 1 мм как максимальную разность повторных положений. Годовое объединение с полной проверкой абсолютной позиции и 0,5 мм — локальная конструкция.",
+    "open_requirements": [
+      "Зафиксировать точки хода, число повторов, покрытие всех лепестков и углы."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Позиция: локально 0,5 мм по MPPG 8.b; повторяемость: ≤1 мм по TG-198",
+    "title": "Абсолютные позиции и повторяемость",
+    "input_template": "Позиции по bank/leaf; запланированные координаты; серия повторов; углы; покрытие полного хода.",
+    "steps": [
+      "Сохранить отдельные серии абсолютной позиции и повторов",
+      "проверить неподвижность reference",
+      "для каждого лепестка вычислить ошибку, диапазон и SD",
+      "оценить каждый критерий отдельно."
+    ],
+    "analysis": "e_ij=x_ij−x_plan,i; range_i=max_j(x_ij)−min_j(x_ij). Повторяемость проверять по диапазону, а не по SD; низкий SD не доказывает абсолютную точность.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MLC-X1@review-draft-v0.3",
+    "test_code": "MLC-X1",
+    "parent_sop_version_id": "MLC-X1@excel-draft-v0.1",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "section": "MLC1–MLC3"
+      }
+    ],
+    "source_finding": "Общие проверки малых полей и точечной дозы не валидируют весь набор FullPackage и его локальные диагностические отношения.",
+    "open_requirements": [
+      "Нужны оригинальная инструкция FullPackage, планы, baseline и чувствительность каждого поля; универсальный gamma-порог не установлен."
+    ],
+    "original_frequency_unapproved": "Annually for 6FF, 10FF, 6FFF, 10FFF; after Monaco/MLC model changes; after major MLC/BLD service; troubleshooting",
+    "original_criterion_unapproved": "No single universal FullPackage gamma action limit. DMLC1/CVMAT low-gradient point dose: target ≤2% TPS; 02x02 follows MLC-A1; junction/gap/transmission spatial metrics use validated commissioning baseline/sensitivity and field-specific local limits.",
+    "title": "Диагностический набор FullPackage",
+    "input_template": "Версии 35 полей; энергия; референс 10x10; ROIs; baseline; исправленные дозы; векторы профилей.",
+    "steps": [
+      "Проверить reference dose",
+      "затем последовательно оценить малые поля, junction/gap/transmission, динамику и VMAT",
+      "сохранять отдельный результат каждого поля и метрики",
+      "исключить автоматическую настройку MLC/TPS."
+    ],
+    "analysis": "Нормировать только на валидный reference; отношения W/S/V определять для одинаковых ROI, MU и геометрии. Общий gamma-score не заменяет покомпонентные метрики.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "DOS-M2@review-draft-v0.3",
+    "test_code": "DOS-M2",
+    "parent_sop_version_id": "DOS-M2@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4 D2; 8.2.2 D2"
+      }
+    ],
+    "source_finding": "Ежемесячно: обзор ежедневных off-axis измерений либо отдельное измерение; 2% от device baseline. Это не ежегодное сравнение профиля с TPS.",
+    "open_requirements": [
+      "Определить нормировку, координаты, охват энергий и baseline; FFF не оценивать по произвольной плоскостности."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "±2% от device baseline",
+    "title": "Постоянство OAF",
+    "input_template": "Энергия; прибор; координаты точек; M_axis; M_offaxis; baseline OAF; геометрия.",
+    "steps": [
+      "Выбрать обзор полноценных ежедневных данных или отдельное измерение",
+      "подтвердить охват энергий и направлений",
+      "проверить совпадение геометрии",
+      "рассчитать отклонения каждой точки",
+      "отдельно сохранить тренд симметрии."
+    ],
+    "analysis": "OAF_i=M_i/M_axis; delta_i=100*(OAF_i/OAF_baseline,i−1). Нулевые/отсутствующие знаменатели → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "DOS-A9@review-draft-v0.3",
+    "test_code": "DOS-A9",
+    "parent_sop_version_id": "DOS-A9@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          17
+        ],
+        "section": "Table 4 D8; 8.2.2 D8"
+      }
+    ],
+    "source_finding": "Ежегодно проверяется клинический диапазон дозовых мощностей, 2% относительно мощности при калибровке.",
+    "open_requirements": [
+      "Зафиксировать калибровочную мощность, диапазон FF/FFF, MU и пригодность детектора."
+    ],
+    "original_frequency_unapproved": "Ежегодно и после работ с дозовой системой",
+    "original_criterion_unapproved": "±2% относительно reference dose rate",
+    "title": "Зависимость выхода от мощности",
+    "input_template": "Энергия; dose rate; MU; corrected M; reference dose rate при калибровке; геометрия.",
+    "steps": [
+      "Согласовать весь клинический диапазон FF/FFF",
+      "использовать неизменную геометрию",
+      "измерить reference до и после серии",
+      "рассчитать относительный выход каждой мощности",
+      "проверить дрейф."
+    ],
+    "analysis": "q_r=M_corrected,r/MU_r; delta_r=100*(q_r/q_ref−1). При дрейфе reference расследовать стабильность до интерпретации мощности.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "DOS-Q1@review-draft-v0.3",
+    "test_code": "DOS-Q1",
+    "parent_sop_version_id": "DOS-Q1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          15
+        ],
+        "section": "8.2.2 D1, secondary/tertiary systems"
+      }
+    ],
+    "source_finding": "Подтверждена привязка вторичных/ежедневных приборов к первичной калибровке. Конкретный график QuickCheck и порог межприборного отношения этим фрагментом не подтверждены.",
+    "open_requirements": [
+      "Проверить TRS-398 Rev.1 и IFU приборов; определить неопределённость и график локально."
+    ],
+    "original_frequency_unapproved": "QuickCheck output — ежемесячно; профиль — не реже квартала; primary/backup pair — ежегодно и после ремонта",
+    "original_criterion_unapproved": "Локальный action level по неопределённости и стабильности",
+    "title": "Перекрёстная проверка приборов",
+    "input_template": "Приборы и calibration IDs; matched beam conditions; corrected q_device/q_ref; baseline ratio; uncertainties.",
+    "steps": [
+      "Сопоставить приборы с валидированной первичной системой в воспроизводимой геометрии",
+      "получить повторные измерения",
+      "проверить дрейф и неопределённость",
+      "сохранить отдельные коэффициенты для энергий и приборов."
+    ],
+    "analysis": "R=q_device/q_ref; drift=100*(R/R_baseline−1). Для некоррелированных величин u_rel(R)=sqrt(u_rel(device)²+u_rel(ref)²); при общей калибровке учитывать ковариацию. Порог утверждается локально.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MEC-M5@review-draft-v0.3",
+    "test_code": "MEC-M5",
+    "parent_sop_version_id": "MEC-M5@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19
+        ],
+        "section": "Table 5 M7; 8.2.3 M7"
+      }
+    ],
+    "source_finding": "Физическая гратикула, если применяется: ежемесячно 2 мм. Для цифровой гратикулы нужен маршрут IGRT.",
+    "open_requirements": [
+      "Уточнить наличие физической гратикулы и плоскость измерения."
+    ],
+    "original_frequency_unapproved": "Ежемесячно при использовании",
+    "original_criterion_unapproved": "2 мм",
+    "title": "Физическая гратикула",
+    "input_template": "Тип гратикулы; эталонная геометрия; scale; reference positions; measured positions.",
+    "steps": [
+      "Подтвердить клиническое применение физической гратикулы",
+      "совместить её с независимым reference по локально утверждённой геометрии",
+      "измерить смещения контрольных меток",
+      "указать плоскость результата."
+    ],
+    "analysis": "e_i=x_graticule,i−x_reference,i; масштаб проекции документировать; E=max|e_i| в согласованной плоскости.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "ACC-M2@review-draft-v0.3",
+    "test_code": "ACC-M2",
+    "parent_sop_version_id": "ACC-M2@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          21
+        ],
+        "section": "Table 7 W2; 8.2.5 W2"
+      }
+    ],
+    "source_finding": "Внешний физический клин: ежемесячно, повторяемость 1 мм именно в плоскости лотка. Не относится автоматически к внутреннему клину.",
+    "open_requirements": [
+      "Подтвердить наличие и идентификаторы клиньев, лотков и разрешённый способ установки."
+    ],
+    "original_frequency_unapproved": "Ежемесячно при наличии внешних ручных клиньев",
+    "original_criterion_unapproved": "1 мм",
+    "title": "Положение внешнего клина",
+    "input_template": "Wedge/tray/slot IDs; reference marks; measured offsets at tray; latch condition.",
+    "steps": [
+      "По IFU установить каждый применяемый внешний клин",
+      "проверить фиксацию и метки клина/лотка/слота",
+      "измерить отклонения в плоскости лотка",
+      "повторную установку выполнять только по разрешённому маршруту."
+    ],
+    "analysis": "delta_i=x_i−x_reference,i в мм на лотке. Не переносить 1 мм в изоцентр без преобразования и отдельного основания.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "ACC-U1@review-draft-v0.3",
+    "test_code": "ACC-U1",
+    "parent_sop_version_id": "ACC-U1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "8.2.3 M12"
+      },
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          27
+        ],
+        "section": "2.D.2.4"
+      }
+    ],
+    "source_finding": "Источники описывают периодический контроль кодирования и блокировок аппликаторов. M12 — ежегодная проверка, а не готовая процедура перед каждым пациентом.",
+    "open_requirements": [
+      "Нужна IFU и местный pre-use checklist; не переносить активную проверку блокировок в клиническую установку."
+    ],
+    "original_frequency_unapproved": "Перед каждым клиническим использованием",
+    "original_criterion_unapproved": "Все проверки functional; размер/код должны совпадать с prescription",
+    "title": "Осмотр перед применением",
+    "input_template": "Applicator/insert IDs; планируемый размер; физическая целостность; фиксация; показанный код.",
+    "steps": [
+      "Подготовить checklist по IFU: сопоставление кодов, вставки, целостности и фиксации. Активное испытание блокировок сюда не включать",
+      "оно относится к отдельному QA-сеансу."
+    ],
+    "analysis": "Каждый обязательный пункт: наблюдение и соответствие ожидаемому. Пропуск пункта → неполная проверка, а не PASS.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "IMG-D3@review-draft-v0.3",
+    "test_code": "IMG-D3",
+    "parent_sop_version_id": "IMG-D3@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.17–4.4.19; section 5"
+      }
+    ],
+    "source_finding": "2 мм для laser-reference маршрута подтверждены. §4.4.17 предполагает ранее установленное совпадение лазеров в пределах 1 мм. Для SRS composite действует отдельный 1 мм.",
+    "open_requirements": [
+      "Подтвердить реальный imaging hardware, координаты, лазерный reference и исключение SRS composite из этого допуска."
+    ],
+    "original_frequency_unapproved": "В день процедуры, где лазеры являются окончательным treatment reference",
+    "original_criterion_unapproved": "≤2 мм",
+    "title": "Laser-reference imaging geometry",
+    "input_template": "Imaging system; laser verification; marker; protocol; pixel scale; image-center definition.",
+    "steps": [
+      "Подтвердить ранее проверенные лазеры",
+      "установить marker по утверждённой геометрии",
+      "получить предусмотренные проекции",
+      "сравнить marker с центром изображений",
+      "явно обозначить laser-reference маршрут."
+    ],
+    "analysis": "Сохранять dx,dy каждой проекции; метод объединения и масштаб в изоцентре валидировать. Не переносить 2 мм на SRS composite.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "IMG-A8@review-draft-v0.3",
+    "test_code": "IMG-A8",
+    "parent_sop_version_id": "IMG-A8@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6
+        ],
+        "section": "Table 1, Gating Interlock"
+      }
+    ],
+    "source_finding": "Ежегодная функциональная проверка gating interlock указана в таблице. §§4.4.15–4.4.21 не описывают способ испытания этой блокировки.",
+    "open_requirements": [
+      "Нужна IFU установленного gating interface; процедура провоцирования события не определена."
+    ],
+    "original_frequency_unapproved": "Ежегодно и после изменения gating interface",
+    "original_criterion_unapproved": "Functional",
+    "title": "Imaging gating interlock",
+    "input_template": "Матрица gating states, безопасный test mode, ожидаемое поведение и восстановление.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "IMG-E1@review-draft-v0.3",
+    "test_code": "IMG-E1",
+    "parent_sop_version_id": "IMG-E1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          8
+        ],
+        "section": "section 5"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, E2E hidden target"
+      }
+    ],
+    "source_finding": "MPPG2.b называет ежегодный E2E полезным, но не обязательным в этом документе. Для SRS MPPG9.b задаёт ежегодный hidden-target 1 мм.",
+    "open_requirements": [
+      "Разделить general IGRT и SRS; выбрать workflow, phantom и независимую конечную локализацию."
+    ],
+    "original_frequency_unapproved": "Ежегодно; после major workflow changes",
+    "original_criterion_unapproved": "General IGRT local validated limit; SRS hidden-target localization ≤1 мм",
+    "title": "E2E локализация",
+    "input_template": "Hidden target phantom; CT/reference; plan; registration; applied shifts; independent final localization.",
+    "steps": [
+      "Провести фантом через клинически представительный маршрут от симуляции до независимой конечной проверки",
+      "роли распределить как в workflow",
+      "сравнить скрытую мишень с конечной локализацией",
+      "дозиметрию оценивать отдельным endpoint."
+    ],
+    "analysis": "e=r_final−r_known; d=norm(e) при общей системе координат. Imaging registration residual сам по себе не является независимым E2E результатом.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "HEX-Q2@review-draft-v0.3",
+    "test_code": "HEX-Q2",
+    "parent_sop_version_id": "HEX-Q2@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [],
+    "source_finding": "В исходном реестре источник указан как Local risk-based. 0,5 мм/0,2° не подтверждены внешним документом.",
+    "open_requirements": [
+      "Обосновать локальную оценку риска, диапазон, порядок вращений, точность reference и допуски."
+    ],
+    "original_frequency_unapproved": "Ежеквартально или ежегодно",
+    "original_criterion_unapproved": "≤0,5 мм / ≤0,2°",
+    "title": "Перекрёстное влияние осей",
+    "input_template": "Командные и независимо измеренные 6DoF; coordinate convention; rotation order; load; baseline.",
+    "steps": [
+      "Утвердить безопасные точки и нагрузки",
+      "по одной оси выполнить разрешённые движения",
+      "независимо измерить все оси",
+      "выделить целевую ошибку и off-axis ответ",
+      "комбинированные движения оформить отдельно."
+    ],
+    "analysis": "Для translation: e_i=x_measured,i−x_command,i; C_ji=delta_x_j/delta_x_i при ненулевой команде. Вращения сравнивать через матрицы с заданным порядком; мм и градусы не складывать.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "HEX-A1@review-draft-v0.3",
+    "test_code": "HEX-A1",
+    "parent_sop_version_id": "HEX-A1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "8.2.3 M14"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, couch relative position"
+      }
+    ],
+    "source_finding": "M14 содержит ежегодную проверку под нагрузкой с 1 мм/0,5°. Исходные 0,3°/0,2° могут быть более строгим локальным выбором, но не подтверждены этими рекомендациями.",
+    "open_requirements": [
+      "Нужна iGUIDE/HexaPOD IFU и утверждение более строгих угловых пределов; предел нагрузки не назначать по догадке."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Translations ≤1,0 мм; rotations ≤0,3° routine, ≤0,2° SRS",
+    "title": "Диапазон 6DoF под нагрузкой",
+    "input_template": "IFU limits; load and distribution; poses; independent 6DoF reference; software versions.",
+    "steps": [
+      "До выполнения определить разрешённую область IFU и нагрузку",
+      "построить матрицу безопасных положений",
+      "измерить commanded/measured/residual для каждой позы",
+      "не достигать механических ограничителей ради теста."
+    ],
+    "analysis": "Покомпонентные translation/rotation errors и residual после коррекции; угловую convention фиксировать. Исходные 0,3°/0,2° остаются неутверждёнными.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SAF-M1@review-draft-v0.3",
+    "test_code": "SAF-M1",
+    "parent_sop_version_id": "SAF-M1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          21
+        ],
+        "section": "Table 6 S7; 8.2.4 S7"
+      }
+    ],
+    "source_finding": "Ежегодная проверка аварийных функций подтверждена. Ежемесячная ротация — локальный график, не требование S7.",
+    "open_requirements": [
+      "Состав кнопок, безопасная проверка и восстановление по IFU; согласование с сервисом."
+    ],
+    "original_frequency_unapproved": "Ежемесячно по ротации; все точки не реже одного раза в год",
+    "original_criterion_unapproved": "100% functional",
+    "title": "Полный функциональный охват Emergency OFF",
+    "input_template": "Инвентарь EPO/beam-off, тест без повреждения оборудования, питание и восстановление.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SAF-M5@review-draft-v0.3",
+    "test_code": "SAF-M5",
+    "parent_sop_version_id": "SAF-M5@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6
+        ],
+        "section": "Table 1, Safety/interlocks"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, imaging subsystem interlocks"
+      }
+    ],
+    "source_finding": "В матрице указан месячный тест. MPPG2.b/9.b предусматривают ежедневный/в день процедуры контроль imaging safety. Месячный расширенный тест допустим лишь как дополнение, если ежедневный охват доказан.",
+    "open_requirements": [
+      "Сопоставить IMG-D1 с каждой блокировкой; подтвердить Elekta IFU и отдельные уровни контроля. Нельзя считать месячный тест заменой ежедневного."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Functional",
+    "title": "Imaging beam and motion safety interlocks",
+    "input_template": "Перечень imaging interlocks, ежедневный охват и расширенный месячный маршрут.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SAF-D9@review-draft-v0.3",
+    "test_code": "SAF-D9",
+    "parent_sop_version_id": "SAF-D9@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "8.2.4 S6"
+      }
+    ],
+    "source_finding": "S6 требует локального выбора дополнительных проверок; конкретная матрица beam-enable состояний здесь не задана.",
+    "open_requirements": [
+      "Нужны IFU/Integrity version и перечень разрешённых тестовых состояний."
+    ],
+    "original_frequency_unapproved": "Ежедневно в составе клинического запуска",
+    "original_criterion_unapproved": "Beam inhibited in unsafe state",
+    "title": "Beam enable при корректной конфигурации",
+    "input_template": "Матрица beam-enable/inhibit states установленной версии Integrity.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SAF-M6@review-draft-v0.3",
+    "test_code": "SAF-M6",
+    "parent_sop_version_id": "SAF-M6@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "8.2.4 S6"
+      }
+    ],
+    "source_finding": "S6 не определяет конкретные soft limits, безопасные нагрузки или процедуру проверки HexaPOD.",
+    "open_requirements": [
+      "Нужна IFU; запрещено заменять проверку настройкой лимитов или намеренным столкновением."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Functional; движение прекращается безопасно",
+    "title": "Couch motion limits и механические soft limits",
+    "input_template": "Границы безопасного перемещения, нагрузки, test mode и проверка остановки без контакта.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SAF-A5@review-draft-v0.3",
+    "test_code": "SAF-A5",
+    "parent_sop_version_id": "SAF-A5@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "S6–S7"
+      }
+    ],
+    "source_finding": "Проверка маркировки и доступа предложена локально; состав списка и ежегодность требуют местного основания.",
+    "open_requirements": [
+      "Сопоставить перечень маркировок с IFU и применимыми локальными требованиями."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "100% complete",
+    "title": "Маркировка и доступ",
+    "input_template": "Утверждённый список labels; места; версии инструкций; доступность emergency controls.",
+    "steps": [
+      "Сверить все позиции локального перечня с IFU",
+      "записать читаемость, наличие и доступ",
+      "дефекты передать ответственному",
+      "не изменять заводские таблички самостоятельно."
+    ],
+    "analysis": "Coverage=checked/required; отдельно missing, illegible, obstructed. 100% покрытия не означает отсутствие дефектов.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SGRT-M6@review-draft-v0.3",
+    "test_code": "SGRT-M6",
+    "parent_sop_version_id": "SGRT-M6@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8,
+          9
+        ],
+        "section": "3.2.2–3.2.3"
+      }
+    ],
+    "source_finding": "Подтверждена важность топографии ROI и влияния размера ROI на регистрацию/частоту обновления. Месячный/квартальный график и единый допуск не заданы этим разделом.",
+    "open_requirements": [
+      "Утвердить ROI, допустимые ошибки и задержку для каждого клинического сценария; нужна Catalyst IFU."
+    ],
+    "original_frequency_unapproved": "Ежемесячно или ежеквартально по risk assessment",
+    "original_criterion_unapproved": "Не превышать clinical positioning tolerance",
+    "title": "Устойчивость ROI",
+    "input_template": "Phantom surface; ROI masks; known offsets; camera visibility; registration quality; latency/frame rate.",
+    "steps": [
+      "На одном фиксированном reference сравнить утверждённые варианты ROI",
+      "внести независимо известные безопасные смещения",
+      "записать translation/rotation, видимость и частоту обновления",
+      "сравнить с требованиями конкретного workflow."
+    ],
+    "analysis": "e_ROI=pose_reported−pose_reference с согласованной rotation convention; compare errors and latency separately. Не оценивать только registration score.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "SGRT-A7@review-draft-v0.3",
+    "test_code": "SGRT-A7",
+    "parent_sop_version_id": "SGRT-A7@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_FOR_QMP_REVIEW",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "3.1; Table 5"
+      }
+    ],
+    "source_finding": "Ежегодно: крепления всех камер должны быть надёжны; доступные настройки сравниваются с предыдущими.",
+    "open_requirements": [
+      "IFU определяет безопасный осмотр; изменения конфигурации требуют review/recommissioning без самостоятельной подтяжки."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Secure; unchanged or formally recommissioned",
+    "title": "Крепление и настройки камер",
+    "input_template": "Camera IDs; IFU inspection checklist; reference photos/settings; maintenance history.",
+    "steps": [
+      "Выполнить разрешённый IFU визуальный осмотр креплений",
+      "сравнить доступные настройки с утверждённым снимком",
+      "при изменении или дефекте остановить оценку и назначить сервис/recommissioning",
+      "не трогать крепёж."
+    ],
+    "analysis": "По каждой камере: secure/uncertain/defect; settings unchanged/changed/unavailable. Недоступная настройка не подтверждает её неизменность.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "VMAT-S2@review-draft-v0.3",
+    "test_code": "VMAT-S2",
+    "parent_sop_version_id": "VMAT-S2@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [],
+    "source_finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+    "open_requirements": [
+      "Нужен VMAT eCAT 1510266 03 и соответствие Integrity/TCS."
+    ],
+    "original_frequency_unapproved": "При приёмке; после крупных обновлений Integrity/TCS или замены BLD; не как ежемесячный тест",
+    "original_criterion_unapproved": "Все применимые eCAT-пункты PASS",
+    "title": "Полный Elekta VMAT eCAT и успешная доставка H&N_VMATCAT",
+    "input_template": "Состав полного VMAT eCAT и H&N_VMATCAT; критерии, порядок выполнения и возврат в эксплуатацию.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "MEC-S1@review-draft-v0.3",
+    "test_code": "MEC-S1",
+    "parent_sop_version_id": "MEC-S1@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [],
+    "source_finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+    "open_requirements": [
+      "Нужен Linac eCAT 1503568_12 §3.1 и применимость к машине."
+    ],
+    "original_frequency_unapproved": "При приёмке, после крупного сервиса головы/гантри/BLD и при расследовании",
+    "original_criterion_unapproved": "Elekta CAT: crosshair ≤1 мм диаметром на 100 см SSD; gantry mechanical locus ≤2 мм диаметром",
+    "title": "Механический isocenter и crosswire locus по Elekta CAT",
+    "input_template": "Заводская CAT-геометрия, механический reference, разрешённые инструменты и процедуры сервиса.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  },
+  {
+    "id": "ABC-A2@review-draft-v0.3",
+    "test_code": "ABC-A2",
+    "parent_sop_version_id": "ABC-A2@excel-draft-v0.1",
+    "change_type": "new_procedure_draft",
+    "status": "BLOCKED_VENDOR_SOURCE",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [],
+    "source_finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+    "open_requirements": [
+      "Нужны IFU установленного ABC, диапазон, поверенный симулятор объёма/потока и environmental limits."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Все routine limits PASS",
+    "title": "Полный range/flow calibration и environmental check",
+    "input_template": "IFU calibration/check sequence, диапазоны потока/объёма и environmental compensation.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ]
+  }
+]

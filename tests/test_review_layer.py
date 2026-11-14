@@ -1,0 +1,70 @@
+"""Review drafts must remain traceable and cannot silently become active SOPs."""
+import json
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def read(name):
+    return json.loads((ROOT / 'data' / name).read_text(encoding='utf-8'))
+
+
+class ReviewLayerTests(unittest.TestCase):
+    def setUp(self):
+        self.tests = read('test_definitions.json')
+        self.originals = read('sop_versions.json')
+        self.drafts = read('review_v0_3/sop_drafts.json')
+        self.evidence = read('review_v0_3/evidence.json')
+        self.sources = {s['id']: s for s in read('review_v0_3/sources.json')}
+
+    def test_review_covers_catalog_without_promoting_claims(self):
+        self.assertEqual(len(self.evidence), len(self.tests))
+        self.assertEqual({r['test_code'] for r in self.evidence}, {t['code'] for t in self.tests})
+        for row in self.evidence:
+            self.assertFalse(row['clinical_approval'])
+            self.assertEqual(row['overall_grade'], 'UNRESOLVED')
+            if row['review_status'] == 'NOT_REVIEWED':
+                self.assertEqual(row['claim_checks'], [])
+            for check in row['claim_checks']:
+                self.assertIn(check['grade'], {'VERIFIED', 'CONTRADICTION', 'UNRESOLVED', 'LOCALLY_DERIVED'})
+                if check['grade'] in {'VERIFIED', 'CONTRADICTION'}:
+                    self.assertTrue(check['references'])
+
+    def test_drafts_cover_original_gaps_and_preserve_active_versions(self):
+        gaps = {s['test_code'] for s in self.originals if s['status'] in {'authoring_required', 'analysis_section_missing'}}
+        self.assertEqual(gaps, {s['test_code'] for s in self.drafts})
+        self.assertEqual(len(self.drafts), len(gaps))
+        original_by_code = {s['test_code']: s for s in self.originals}
+        active_ids = {t['sop_version_id'] for t in self.tests}
+        for draft in self.drafts:
+            self.assertEqual(draft['parent_sop_version_id'], original_by_code[draft['test_code']]['id'])
+            self.assertNotIn(draft['id'], active_ids)
+            self.assertFalse(draft['clinical_approval'])
+            self.assertEqual(draft['execution_readiness'], 'not_ready')
+            self.assertTrue(draft['open_requirements'])
+            if draft['status'] == 'BLOCKED_VENDOR_SOURCE':
+                self.assertEqual(draft['steps'], [])
+
+    def test_references_are_resolvable_and_pages_exist(self):
+        references = [r for d in self.drafts for r in d['references']]
+        references += [r for e in self.evidence for c in e['claim_checks'] for r in c['references']]
+        for ref in references:
+            source = self.sources[ref['source_id']]
+            self.assertTrue(ref['section'])
+            self.assertTrue(ref['pdf_pages'])
+            for page in ref['pdf_pages']:
+                self.assertIsInstance(page, int)
+                self.assertGreaterEqual(page, 1)
+                self.assertLessEqual(page, source['pages'])
+            self.assertRegex(source['sha256'], r'^[0-9a-f]{64}$')
+
+    def test_review_does_not_leak_private_drive_links(self):
+        for path in (ROOT / 'data/review_v0_3').glob('*.json'):
+            content = path.read_text(encoding='utf-8')
+            self.assertNotIn('drive.google.com', content)
+            self.assertNotIn('docs.google.com', content)
+
+
+if __name__ == '__main__':
+    unittest.main()

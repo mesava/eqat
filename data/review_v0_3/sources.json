@@ -1,0 +1,47 @@
+[
+  {
+    "id": "MPPG8B",
+    "title": "AAPM MPPG 8.b: Linear accelerator performance tests",
+    "edition": "2023;24:e14160",
+    "url": "https://doi.org/10.1002/acm2.14160",
+    "filename": "AAPM Medical Physics Practice Guideline 8.b Linearaccelerator performance tests.pdf",
+    "pages": 32,
+    "sha256": "a298c7632f87ea66c8ce8b03216177433f7be628acc4605bc99411031938ff1d"
+  },
+  {
+    "id": "MPPG9B",
+    "title": "AAPM-RSS MPPG 9.b: SRS-SBRT",
+    "edition": "2025;26:e14624",
+    "url": "https://doi.org/10.1002/acm2.14624",
+    "filename": "AAPM‐RSS Medical Physics Practice Guideline 9 b  SRS‐SBRT.pdf",
+    "pages": 19,
+    "sha256": "4d49056aff7d5be3ead2f2e5c3b3a647d708b3088acfd86ef1a635fa8a76eb03"
+  },
+  {
+    "id": "MPPG2B",
+    "title": "AAPM MPPG 2.b: X-ray-based IGRT systems",
+    "edition": "2021;22(9):73–81",
+    "url": "https://doi.org/10.1002/acm2.13346",
+    "filename": "AAPM MPPG 2 b Commissioning and quality assurance of X-ray-based IGRT systems.pdf",
+    "pages": 9,
+    "sha256": "2b274eb959729c5ccf340d65cffe49ff49a3d5364e3b8820744583ad8fa68a98"
+  },
+  {
+    "id": "TG198",
+    "title": "TG-198: Implementation guide for TG-142",
+    "edition": "2021;48:e830–e885",
+    "url": "https://doi.org/10.1002/mp.14992",
+    "filename": "TG 198 An implementation guide for TG 142 quality assurance of medical accelerators.pdf",
+    "pages": 56,
+    "sha256": "80f2fa21e4198eb872f8f62340da52c86ad72831596d9fd26e3632bcc0fe4cc3"
+  },
+  {
+    "id": "TG302",
+    "title": "TG-302: Surface-guided radiotherapy",
+    "edition": "2022;49:e82–e112",
+    "url": "https://doi.org/10.1002/mp.15532",
+    "filename": "AAPM TG 302 Surface-guided radiotherapy.pdf",
+    "pages": 31,
+    "sha256": "3a95119cfbf1c8e4460b421d744a81110230133c7a81a95c3de828b0d6ce7d77"
+  }
+]

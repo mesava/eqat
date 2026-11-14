@@ -1,0 +1,4063 @@
+[
+  {
+    "test_code": "MLC-D1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 9.b; MPPG 8.b MLC2",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, MLC position accuracy"
+          },
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              21,
+              22
+            ],
+            "section": "8.2.6 MLC2"
+          }
+        ],
+        "finding": "0,5 мм подтверждены. Таблица рекомендует разработать упрощённую ежедневную проверку; минимум количественной проверки — еженедельно. Это не готовый ежедневный алгоритм.",
+        "unresolved": "Выбрать и валидировать ежедневный паттерн и чувствительность, режим SRS и независимый способ измерения."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-W1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC2; MPPG 9.b; TG-198 2.F",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              14,
+              21,
+              22
+            ],
+            "section": "Table 8; 8.2.6 MLC2"
+          }
+        ],
+        "finding": "Еженедельная количественная проверка всех лепестков, 0,5 мм, разные углы/дуга; одни логи недостаточны. Исключение допуска требует письменного решения производителя и QMP.",
+        "unresolved": "Конкретный угловой цикл и анализ Agility должны быть локально валидированы."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-M1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC3",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              22,
+              23
+            ],
+            "section": "8.2.6 MLC3; note to 8.3"
+          }
+        ],
+        "finding": "Ежемесячная комплексная проверка VMAT/sliding-window: точечная доза относительно TPS, 2%; возможна одна энергия. Примечание допускает 1% от достигнутого при commissioning в соответствующем контексте. Gamma не заменяет точечную дозу.",
+        "unresolved": "Выбрать план, фантом, малый детектор и точку; общей процедуре нужны отдельные результаты двух кодов."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-M2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 2.F.2.3; Elekta VMAT eCAT 3.2.3",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "TG198",
+            "pdf_pages": [
+              32,
+              33
+            ],
+            "section": "2.F.2.3"
+          }
+        ],
+        "finding": "TG-198 описывает оценку скорости по положениям и времени и допуск ±0,5 см/с для теста максимальной скорости. Average Actual Error, Actual Tolerance и PRF требуют Elekta eCAT.",
+        "unresolved": "Нужна применимая редакция VMAT eCAT §3.2.3 и определения полей журналов; TRF не подтверждает дозиметрию."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-M3",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC4; MPPG 9.b",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, radiation isocentricity"
+          },
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              19,
+              20,
+              22
+            ],
+            "section": "M11; MLC4"
+          }
+        ],
+        "finding": "SRS 1 мм и SBRT 1,5 мм подтверждены; ежедневные проекции и ежемесячное 3D-смещение — разные метрики. Обычная RT: отдельный критерий диаметра 2 мм.",
+        "unresolved": "Не смешивать радиус, диаметр, 2D-проекцию и 3D-смещение; валидировать реконструкцию."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-A1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC1; MPPG 9.b; IAEA TRS-483",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, relative output factors"
+          },
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              14,
+              21
+            ],
+            "section": "Table 8; MLC1"
+          }
+        ],
+        "finding": "Для SRS/SBRT >1 см: 2% от TPS; ≤1 см: 5%. MLC1 предусматривает ежегодную проверку малого поля. Нужны поправки малого поля, а не только отношение показаний.",
+        "unresolved": "TRS-483/TG-155 и применимые поправки конкретного детектора ещё не проверены."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-A2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 2.F.3.1; MPPG 9.b",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "TG198",
+            "pdf_pages": [
+              33
+            ],
+            "section": "2.F.3.1"
+          },
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, MLC transmission"
+          }
+        ],
+        "finding": "TG-198: отклонение ±0,5 процентного пункта от baseline (пример 1,5% → 1–2%). MPPG9.b: 5% относительно TPS. Это разные сравнения.",
+        "unresolved": "Проверить модель TPS, геометрию, диапазон прибора и измерение inter-/intraleaf transmission для Agility."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-A3",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC2; TG-198 2.F.3.2",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "TG198",
+            "pdf_pages": [
+              34
+            ],
+            "section": "2.F.3.2"
+          },
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              21,
+              22
+            ],
+            "section": "MLC2"
+          }
+        ],
+        "finding": "TG-198 подтверждает повторяемость 1 мм как максимальную разность повторных положений. Годовое объединение с полной проверкой абсолютной позиции и 0,5 мм — локальная конструкция.",
+        "unresolved": "Зафиксировать точки хода, число повторов, покрытие всех лепестков и углы."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MLC-X1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 5.b — https://doi.org/10.1002/acm2.13641 ; MPPG 8.b — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Monaco MLC Parameter Adjustment — https://www.elekta.co.jp/services/software-download/monaco/181/MLC_Parameter_Adjustment_20231016.pdf",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              21,
+              22
+            ],
+            "section": "MLC1–MLC3"
+          }
+        ],
+        "finding": "Общие проверки малых полей и точечной дозы не валидируют весь набор FullPackage и его локальные диагностические отношения.",
+        "unresolved": "Нужны оригинальная инструкция FullPackage, планы, baseline и чувствительность каждого поля; универсальный gamma-порог не установлен."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D5; MPPG 9.b Table 3",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta VMAT eCAT 3.3.4 и 3.3.6; MPPG 8.b D5",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta VMAT eCAT 3.3.2 и 3.3.6; MPPG 8.b D5",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-M4",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b MLC3",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              22,
+              23
+            ],
+            "section": "8.2.6 MLC3; note to 8.3"
+          }
+        ],
+        "finding": "Ежемесячная комплексная проверка VMAT/sliding-window: точечная доза относительно TPS, 2%; возможна одна энергия. Примечание допускает 1% от достигнутого при commissioning в соответствующем контексте. Gamma не заменяет точечную дозу.",
+        "unresolved": "Выбрать план, фантом, малый детектор и точку; общей процедуре нужны отдельные результаты двух кодов."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D8; MPPG 9.b Table 3; TG-198 2.D.1.9",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D12; MPPG 9.b Table 3; TG-198 2.D.1.12",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta VMAT eCAT 3.2.1–3.2.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "VMAT-S2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta VMAT eCAT, Document ID 1510266 03",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [],
+        "finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+        "unresolved": "Нужен VMAT eCAT 1510266 03 и соответствие Integrity/TCS."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-M2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              13,
+              15
+            ],
+            "section": "Table 4 D2; 8.2.2 D2"
+          }
+        ],
+        "finding": "Ежемесячно: обзор ежедневных off-axis измерений либо отдельное измерение; 2% от device baseline. Это не ежегодное сравнение профиля с TPS.",
+        "unresolved": "Определить нормировку, координаты, охват энергий и baseline; FFF не оценивать по произвольной плоскостности."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D4 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D3 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; IAEA TRS-398 Rev.1 — https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; IAEA TRS-398 Rev.1 — https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §§3.3, 3.6, 3.7",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §§3.9–3.10",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D4 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §3.3",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D3 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §§3.4–3.5",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A7",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D6 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A8",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D7 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A9",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D8 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              13,
+              17
+            ],
+            "section": "Table 4 D8; 8.2.2 D8"
+          }
+        ],
+        "finding": "Ежегодно проверяется клинический диапазон дозовых мощностей, 2% относительно мощности при калибровке.",
+        "unresolved": "Зафиксировать калибровочную мощность, диапазон FF/FFF, MU и пригодность детектора."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A10",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D9 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A11",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b D10 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-A12",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992 ; исторически TG-142/MPPG 8.a; локальный risk-based test",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "DOS-Q1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; IAEA TRS-398 Rev.1 — https://www-pub.iaea.org/MTCD/Publications/PDF/p15048-DOC-010-398-Rev1_web.pdf",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              15
+            ],
+            "section": "8.2.2 D1, secondary/tertiary systems"
+          }
+        ],
+        "finding": "Подтверждена привязка вторичных/ежедневных приборов к первичной калибровке. Конкретный график QuickCheck и порог межприборного отношения этим фрагментом не подтверждены.",
+        "unresolved": "Проверить TRS-398 Rev.1 и IFU приборов; определить неопределённость и график локально."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; MPPG 9.b — https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-D3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M3 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M3 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M6 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M5",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M7 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              13,
+              19
+            ],
+            "section": "Table 5 M7; 8.2.3 M7"
+          }
+        ],
+        "finding": "Физическая гратикула, если применяется: ежемесячно 2 мм. Для цифровой гратикулы нужен маршрут IGRT.",
+        "unresolved": "Уточнить наличие физической гратикулы и плоскость измерения."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M8 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §3.1.1",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M7",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M9 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Precise Table CAT 1516411 06 §2.3",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-M8",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M10 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M4 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §3.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M3/M5 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §3.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M5 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/ ; Elekta Linac eCAT 1503568_12 §3.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M11/MLC4 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-SRS1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 9.b — https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-L1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Precise Treatment Table CAT 1516411 06 §2.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-L2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Precise Treatment Table CAT 1516411 06 §2.3; MPPG 8.b M9/M10 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "MEC-S1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta Linac eCAT 1503568_12 §3.1",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [],
+        "finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+        "unresolved": "Нужен Linac eCAT 1503568_12 §3.1 и применимость к машине."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b W1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/; Elekta Integrity DICOM — https://www.elekta.com/products/oncology-informatics/dicom-conformance-statements/documents/DICOM%20Conformance%20Statement%20for%20Integrity%E2%84%A2.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b W1 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-M2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b W2 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              14,
+              21
+            ],
+            "section": "Table 7 W2; 8.2.5 W2"
+          }
+        ],
+        "finding": "Внешний физический клин: ежемесячно, повторяемость 1 мм именно в плоскости лотка. Не относится автоматически к внутреннему клину.",
+        "unresolved": "Подтвердить наличие и идентификаторы клиньев, лотков и разрешённый способ установки."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b W3 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b W4 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-U1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992; MPPG 8.b M12 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              20
+            ],
+            "section": "8.2.3 M12"
+          },
+          {
+            "source_id": "TG198",
+            "pdf_pages": [
+              27
+            ],
+            "section": "2.D.2.4"
+          }
+        ],
+        "finding": "Источники описывают периодический контроль кодирования и блокировок аппликаторов. M12 — ежегодная проверка, а не готовая процедура перед каждым пациентом.",
+        "unresolved": "Нужна IFU и местный pre-use checklist; не переносить активную проверку блокировок в клиническую установку."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M12 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/; TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992; Elekta Linac eCAT 1503568_12 (локальный документ)",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "MPPG 8.b M13 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992; локальный risk-based test",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-A6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "TG-198 — https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14992; MPPG 8.b M13 — https://pmc.ncbi.nlm.nih.gov/articles/PMC10647991/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ACC-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta Linac eCAT 1503568_12 Appendix B (локальный документ; IEC 60601-2-1 limits)",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; AAPM-RSS MPPG 9.b; Elekta XVI R5.0 eCAT, Doc. 1503162_05 §2.2",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-D3",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG2B",
+            "pdf_pages": [
+              6,
+              7,
+              8
+            ],
+            "section": "Table 1; 4.4.17–4.4.19; section 5"
+          }
+        ],
+        "finding": "2 мм для laser-reference маршрута подтверждены. §4.4.17 предполагает ранее установленное совпадение лазеров в пределах 1 мм. Для SRS composite действует отдельный 1 мм.",
+        "unresolved": "Подтвердить реальный imaging hardware, координаты, лазерный reference и исключение SRS composite из этого допуска."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; Elekta XVI R5.0 eCAT, Doc. 1503162_05 §2.3",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-198, §2.G и Table VII; AAPM-RSS MPPG 9.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-198, §2.G и Table VII",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-198, §2.G и Table VII; Elekta iViewGT eCAT, Doc. 4513 370 1945 08 §3.1",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-M5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-198, §2.G и Table VII; Elekta XVI R5.0 eCAT, Doc. 1503162_05 §§2.4–2.5",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-H1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; Elekta XVI R5.0 eCAT, Doc. 1503162_05 §§2.1.5–2.1.7",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; Elekta iViewGT eCAT, Doc. 4513 370 1945 08",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; Elekta XVI R5.0 eCAT, Doc. 1503162_05 §§2.4–2.5",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; Elekta XVI R5.0 eCAT, Doc. 1503162_05; Elekta Addendum to XVI CAT: 3D uniformity and noise; AAPM TG-198, §2.G и Table VII",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A7",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-A8",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "MPPG2B",
+            "pdf_pages": [
+              6
+            ],
+            "section": "Table 1, Gating Interlock"
+          }
+        ],
+        "finding": "Ежегодная функциональная проверка gating interlock указана в таблице. §§4.4.15–4.4.21 не описывают способ испытания этой блокировки.",
+        "unresolved": "Нужна IFU установленного gating interface; процедура провоцирования события не определена."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-E1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b, Table 1 и §§4.4.15–4.4.21; AAPM-RSS MPPG 9.b",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "MPPG2B",
+            "pdf_pages": [
+              8
+            ],
+            "section": "section 5"
+          },
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, E2E hidden target"
+          }
+        ],
+        "finding": "MPPG2.b называет ежегодный E2E полезным, но не обязательным в этом документе. Для SRS MPPG9.b задаёт ежегодный hidden-target 1 мм.",
+        "unresolved": "Разделить general IGRT и SRS; выбрать workflow, phantom и независимую конечную локализацию."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta XVI R5.0 eCAT, Doc. 1503162_05",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "IMG-S2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta iViewGT eCAT, Doc. 4513 370 1945 08",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-D3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-D4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558; AAPM-RSS MPPG 9.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558; AAPM-RSS MPPG 9.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b; AAPM-RSS MPPG 9.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Local risk-based; aligned with MPPG 9.b principles",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-Q1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM-RSS MPPG 9.b; Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-Q2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Local risk-based",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [],
+        "finding": "В исходном реестре источник указан как Local risk-based. 0,5 мм/0,2° не подтверждены внешним документом.",
+        "unresolved": "Обосновать локальную оценку риска, диапазон, порядок вращений, точность reference и допуски."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-A1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b; AAPM-RSS MPPG 9.b; Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              20
+            ],
+            "section": "8.2.3 M14"
+          },
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, couch relative position"
+          }
+        ],
+        "finding": "M14 содержит ежегодную проверку под нагрузкой с 1 мм/0,5°. Исходные 0,3°/0,2° могут быть более строгим локальным выбором, но не подтверждены этими рекомендациями.",
+        "unresolved": "Нужна iGUIDE/HexaPOD IFU и утверждение более строгих угловых пределов; предел нагрузки не назначать по догадке."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 2.b; AAPM-RSS MPPG 9.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 CAT, Doc. 1052554; Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta field safety notice: Potential for collision between HexaPOD couch top and head",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "HEX-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta HexaPOD evo RT System; iGUIDE 2.2 CAT, Doc. 1052554; Elekta HexaPOD evo RT System; iGUIDE 2.2 IFU, Doc. 1052558",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D7",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D8",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta XVI eCAT; Elekta iViewGT eCAT",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-D9",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              20,
+              21
+            ],
+            "section": "8.2.4 S6"
+          }
+        ],
+        "finding": "S6 требует локального выбора дополнительных проверок; конкретная матрица beam-enable состояний здесь не задана.",
+        "unresolved": "Нужны IFU/Integrity version и перечень разрешённых тестовых состояний."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M1",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              14,
+              21
+            ],
+            "section": "Table 6 S7; 8.2.4 S7"
+          }
+        ],
+        "finding": "Ежегодная проверка аварийных функций подтверждена. Ежемесячная ротация — локальный график, не требование S7.",
+        "unresolved": "Состав кнопок, безопасная проверка и восстановление по IFU; согласование с сервисом."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta XVI eCAT; Elekta iViewGT eCAT; Elekta HexaPOD/iGUIDE IFU",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M5",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta XVI eCAT; Elekta iViewGT eCAT; AAPM MPPG 8.b",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "MPPG2B",
+            "pdf_pages": [
+              6
+            ],
+            "section": "Table 1, Safety/interlocks"
+          },
+          {
+            "source_id": "MPPG9B",
+            "pdf_pages": [
+              12
+            ],
+            "section": "Table 1, imaging subsystem interlocks"
+          }
+        ],
+        "finding": "В матрице указан месячный тест. MPPG2.b/9.b предусматривают ежедневный/в день процедуры контроль imaging safety. Месячный расширенный тест допустим лишь как дополнение, если ежедневный охват доказан.",
+        "unresolved": "Сопоставить IMG-D1 с каждой блокировкой; подтвердить Elekta IFU и отдельные уровни контроля. Нельзя считать месячный тест заменой ежедневного."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-M6",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta HexaPOD/iGUIDE IFU",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              20,
+              21
+            ],
+            "section": "8.2.4 S6"
+          }
+        ],
+        "finding": "S6 не определяет конкретные soft limits, безопасные нагрузки или процедуру проверки HexaPOD.",
+        "unresolved": "Нужна IFU; запрещено заменять проверку настройкой лимитов или намеренным столкновением."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta XVI eCAT; Elekta iViewGT eCAT; Elekta HexaPOD/iGUIDE IFU",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM-RSS MPPG 9.b; AAPM TG-198; Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta XVI eCAT; Elekta HexaPOD/iGUIDE IFU",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-A5",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM MPPG 8.b; AAPM TG-198",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "MPPG8B",
+            "pdf_pages": [
+              20,
+              21
+            ],
+            "section": "S6–S7"
+          }
+        ],
+        "finding": "Проверка маркировки и доступа предложена локально; состав списка и ежегодность требуют местного основания.",
+        "unresolved": "Сопоставить перечень маркировок с IFU и применимыми локальными требованиями."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SAF-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Elekta Versa HD Linac eCAT / Integrity safety functions; Elekta XVI eCAT; Elekta iViewGT eCAT; Elekta HexaPOD/iGUIDE IFU; AAPM MPPG 8.b",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-D3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM-RSS MPPG 9.b; https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-D4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM-RSS MPPG 9.b; https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM TG-198; https://doi.org/10.1002/mp.14992; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M6",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [
+      {
+        "grade": "LOCALLY_DERIVED",
+        "references": [
+          {
+            "source_id": "TG302",
+            "pdf_pages": [
+              8,
+              9
+            ],
+            "section": "3.2.2–3.2.3"
+          }
+        ],
+        "finding": "Подтверждена важность топографии ROI и влияния размера ROI на регистрацию/частоту обновления. Месячный/квартальный график и единый допуск не заданы этим разделом.",
+        "unresolved": "Утвердить ROI, допустимые ошибки и задержку для каждого клинического сценария; нужна Catalyst IFU."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM-RSS MPPG 9.b; https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM-RSS MPPG 9.b; https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM TG-198; https://doi.org/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A6",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; AAPM-RSS MPPG 9.b; https://pmc.ncbi.nlm.nih.gov/articles/PMC11969102/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A7",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [
+      {
+        "grade": "VERIFIED",
+        "references": [
+          {
+            "source_id": "TG302",
+            "pdf_pages": [
+              7,
+              8
+            ],
+            "section": "3.1; Table 5"
+          }
+        ],
+        "finding": "Ежегодно: крепления всех камер должны быть надёжны; доступные настройки сравниваются с предыдущими.",
+        "unresolved": "IFU определяет безопасный осмотр; изменения конфигурации требуют review/recommissioning без самостоятельной подтяжки."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; AAPM TG-147; https://doi.org/10.1118/1.3681967; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-M7",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "SGRT-A8",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-302; https://doi.org/10.1002/mp.15532; C-RAD Catalyst/Sentinel installed-system IFU and calibration procedures; https://c-rad.com/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-D1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-D2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-D3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-D4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-D5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; AAPM TG-198; https://doi.org/10.1002/mp.14992; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-M1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Aktina SpiroCheck Duo; https://www.aktina.com/product/spirocheck-duo/spirocheck-duo/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-M2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; ABC volume/flow-rate QA evidence; https://www.thegreenjournal.com/article/S0167-8140(19)30399-8/fulltext",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-M3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-M4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-M5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; AAPM TG-198; https://doi.org/10.1002/mp.14992; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-Q1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Aktina SpiroCheck Duo; https://www.aktina.com/product/spirocheck-duo/spirocheck-duo/; ABC volume/flow-rate QA evidence; https://www.thegreenjournal.com/article/S0167-8140(19)30399-8/fulltext",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-A1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; AAPM TG-198; https://doi.org/10.1002/mp.14992; AAPM TG-302; https://doi.org/10.1002/mp.15532",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-A2",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; Aktina SpiroCheck Duo; https://www.aktina.com/product/spirocheck-duo/spirocheck-duo/",
+    "claim_checks": [
+      {
+        "grade": "UNRESOLVED",
+        "references": [],
+        "finding": "Заявленный заводской документ отсутствует среди локально предоставленных PDF; предыдущее spot-check не заменяет чтение инструкции.",
+        "unresolved": "Нужны IFU установленного ABC, диапазон, поверенный симулятор объёма/потока и environmental limits."
+      }
+    ],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-A3",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; ABC volume/flow-rate QA evidence; https://www.thegreenjournal.com/article/S0167-8140(19)30399-8/fulltext",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-A4",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-A5",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; AAPM TG-198; https://doi.org/10.1002/mp.14992; Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-C1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-C2",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; Elekta Active Breathing Coordinator; https://www.elekta.com/focus/active-breathing-coordinator-streamlines-treatment-for-several-indications-at-indian-clinic/",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  },
+  {
+    "test_code": "ABC-S1",
+    "review_status": "NOT_REVIEWED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "original_source_claim": "Installed Elekta/Aktina Active Breathing Coordinator IFU; manual request: https://www.aktina.com/request-an-abc-user-manual-page/; AAPM TG-76 / Report 91; https://www.aapm.org/pubs/reports/rpt_91.pdf; AAPM TG-198; https://doi.org/10.1002/mp.14992",
+    "claim_checks": [],
+    "remaining_aspects": [
+      "purpose",
+      "measurand",
+      "frequency",
+      "action_criteria",
+      "warning_criteria",
+      "phantom_geometry",
+      "setup_steps",
+      "computation",
+      "triggers",
+      "fff_srs",
+      "service_vs_periodic"
+    ],
+    "note": "Оценка относится только к явно описанному утверждению; полная построчная проверка всех аспектов не завершена."
+  }
+]
