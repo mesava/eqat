@@ -1,0 +1,3249 @@
+{
+  "schema_version": "0.2.0",
+  "status": "DRAFT_NOT_FOR_CLINICAL_USE",
+  "generated": "2026-11-10",
+  "patient_data_included": false,
+  "machine_programs": [
+    {
+      "machine_id": "versa_hd_a",
+      "display_name": "Versa HD A — HexaPOD / Catalyst",
+      "summary": {
+        "eligible_draft": 122,
+        "pending_feature_confirmation": 39
+      },
+      "items": [
+        {
+          "test_code": "MLC-D1",
+          "sop_version_id": "MLC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "В день применения SRS; MPPG 9.b рекомендует разработать упрощённую ежедневную проверку",
+          "acceptance_criterion_unapproved": "0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-W1",
+          "sop_version_id": "MLC-W1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Еженедельно; менять угол гантри по циклу 0°/90°/180°/270° или использовать валидированный arc-тест",
+          "acceptance_criterion_unapproved": "0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M1",
+          "sop_version_id": "MLC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от TPS для точечной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M2",
+          "sop_version_id": "MLC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Все Average Actual Error внутри Actual Tolerance; PRF pauses = 0 до окончания поля; скорость ±0,5 см/с от заданной",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M3",
+          "sop_version_id": "MLC-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно для полного диапазона SRS/SBRT; ограниченная проверка в день применения; ежегодно минимум для обычной RT",
+          "acceptance_criterion_unapproved": "SRS: 1,0 мм; SBRT: 1,5 мм; обычная RT: диаметр ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A1",
+          "sop_version_id": "MLC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений beam model/MLC/дозиметрии",
+          "acceptance_criterion_unapproved": ">1,0 см: ±2% от TPS; ≤1,0 см: ±5% от TPS; поле 2×2 см² — ±2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A2",
+          "sop_version_id": "MLC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; после замены лепестков/BLD или изменения модели TPS",
+          "acceptance_criterion_unapproved": "TG-198: ±0,5 процентного пункта от baseline; MPPG 9.b: ±5% относительно TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A3",
+          "sop_version_id": "MLC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Позиция: локально 0,5 мм по MPPG 8.b; повторяемость: ≤1 мм по TG-198",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-X1",
+          "sop_version_id": "MLC-X1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Annually for 6FF, 10FF, 6FFF, 10FFF; after Monaco/MLC model changes; after major MLC/BLD service; troubleshooting",
+          "acceptance_criterion_unapproved": "No single universal FullPackage gamma action limit. DMLC1/CVMAT low-gradient point dose: target ≤2% TPS; 02x02 follows MLC-A1; junction/gap/transmission spatial metrics use validated commissioning baseline/sensitivity and field-specific local limits.",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M1",
+          "sop_version_id": "VMAT-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно; все динамически используемые энергии можно чередовать по месяцам",
+          "acceptance_criterion_unapproved": "Каждая область: ±2% от открытого референсного поля или валидированного device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M2",
+          "sop_version_id": "VMAT-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Все релевантные position и dose checks — PASS по валидированным критериям Elekta; локальные трендовые границы не должны быть превышены",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M3",
+          "sop_version_id": "VMAT-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно, если динамические диафрагмы используются клинически",
+          "acceptance_criterion_unapproved": "Все релевантные position и dose checks — PASS; численные метрики остаются внутри локальных контрольных границ baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M4",
+          "sop_version_id": "VMAT-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Точечная доза: ±2% от TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-A1",
+          "sop_version_id": "VMAT-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; также после работ с дозовой системой",
+          "acceptance_criterion_unapproved": "±2% от выхода при дозовой мощности, используемой для TG-51/TRS-398 или локальной референсной калибровки",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-A2",
+          "sop_version_id": "VMAT-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Обычная арка: ±2% MU и ±2°; SRS: ±1 MU и ±1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-S1",
+          "sop_version_id": "VMAT-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "После ремонта/настройки; при отказе VMAT-M1 или VMAT-M3; целесообразно сохранить ежегодный baseline",
+          "acceptance_criterion_unapproved": "Ошибка меньше Actual Tolerance; PRF pauses = 0 до штатного завершения поля",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-S2",
+          "sop_version_id": "VMAT-S2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке; после крупных обновлений Integrity/TCS или замены BLD; не как ежемесячный тест",
+          "acceptance_criterion_unapproved": "Все применимые eCAT-пункты PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-D1",
+          "sop_version_id": "DOS-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно, до клинического использования соответствующих пучков",
+          "acceptance_criterion_unapproved": "±3% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-D2",
+          "sop_version_id": "DOS-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно вместе с DOS-D1",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M1",
+          "sop_version_id": "DOS-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M2",
+          "sop_version_id": "DOS-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M3",
+          "sop_version_id": "DOS-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±1% для PDD/TPR-equivalent метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M4",
+          "sop_version_id": "DOS-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "ΔR50 ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A1",
+          "sop_version_id": "DOS-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений абсолютной дозиметрии",
+          "acceptance_criterion_unapproved": "±1% от номинальной референсной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A2",
+          "sop_version_id": "DOS-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений электронного пучка",
+          "acceptance_criterion_unapproved": "±1% от номинальной референсной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A3",
+          "sop_version_id": "DOS-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A4",
+          "sop_version_id": "DOS-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF; геометрические границы — по commissioning baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A5",
+          "sop_version_id": "DOS-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% для выбранной PDD/TPR метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A6",
+          "sop_version_id": "DOS-A6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "ΔR50 ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A7",
+          "sop_version_id": "DOS-A7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от номинального значения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A8",
+          "sop_version_id": "DOS-A8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от номинального значения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A9",
+          "sop_version_id": "DOS-A9@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после работ с дозовой системой",
+          "acceptance_criterion_unapproved": "±2% относительно reference dose rate",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A10",
+          "sop_version_id": "DOS-A10@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% от head-up gantry output",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A11",
+          "sop_version_id": "DOS-A11@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% от OAF при IEC gantry 0°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A12",
+          "sop_version_id": "DOS-A12@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно: минимум один аппликатор на энергию; размеры ротировать",
+          "acceptance_criterion_unapproved": "±2% от TPS/commissioning",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-Q1",
+          "sop_version_id": "DOS-Q1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "QuickCheck output — ежемесячно; профиль — не реже квартала; primary/backup pair — ежегодно и после ремонта",
+          "acceptance_criterion_unapproved": "Локальный action level по неопределённости и стабильности",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D1",
+          "sop_version_id": "MEC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно, в день клинического использования",
+          "acceptance_criterion_unapproved": "2 мм; для SRS с окончательной лазерной локализацией — 1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D2",
+          "sop_version_id": "MEC-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день использования ODI",
+          "acceptance_criterion_unapproved": "2 мм на изоцентре",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D3",
+          "sop_version_id": "MEC-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день использования фотонных пучков",
+          "acceptance_criterion_unapproved": "2 мм на каждую диафрагму",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M1",
+          "sop_version_id": "MEC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M2",
+          "sop_version_id": "MEC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно, если ODI используется клинически или для QA",
+          "acceptance_criterion_unapproved": "2 мм по клиническому диапазону",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M3",
+          "sop_version_id": "MEC-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "2 мм на каждую диафрагму или <2% отклонения соответствующей OAF/OF-метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M4",
+          "sop_version_id": "MEC-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M5",
+          "sop_version_id": "MEC-M5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно при использовании",
+          "acceptance_criterion_unapproved": "2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M6",
+          "sop_version_id": "MEC-M6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Crosshair всегда в пределах 1 мм от оси; эквивалентно траектория ≤2 мм диаметром",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M7",
+          "sop_version_id": "MEC-M7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "2 мм и 1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M8",
+          "sop_version_id": "MEC-M8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "1 мм для трансляции; 0,5° для вращения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A1",
+          "sop_version_id": "MEC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "В пределах спецификаций Elekta; локальный hard limit 2 мм на каждый Y-край",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A2",
+          "sop_version_id": "MEC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после калибровки field size",
+          "acceptance_criterion_unapproved": "2 мм на каждый клинический край; при vendor acceptance: ±1 мм ≤20×20 см² и ±1% для больших полей",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A3",
+          "sop_version_id": "MEC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; обязательно после работ с лампой, зеркалом, crosshair или головкой",
+          "acceptance_criterion_unapproved": "2 мм на каждый край",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A4",
+          "sop_version_id": "MEC-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно для общей RT; SRS/SBRT — см. MEC-SRS1",
+          "acceptance_criterion_unapproved": "2 мм диаметр",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-SRS1",
+          "sop_version_id": "MEC-SRS1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ограниченный набор — в день применения; полный клинический диапазон — ежемесячно",
+          "acceptance_criterion_unapproved": "1,0 мм SRS; 1,5 мм SBRT",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-L1",
+          "sop_version_id": "MEC-L1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после сервиса стола",
+          "acceptance_criterion_unapproved": "<2 мм между центрами",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-L2",
+          "sop_version_id": "MEC-L2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после сервиса",
+          "acceptance_criterion_unapproved": "2 мм и 1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-S1",
+          "sop_version_id": "MEC-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке, после крупного сервиса головы/гантри/BLD и при расследовании",
+          "acceptance_criterion_unapproved": "Elekta CAT: crosshair ≤1 мм диаметром на 100 см SSD; gantry mechanical locus ≤2 мм диаметром",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-D1",
+          "sop_version_id": "ACC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день клинического применения клина",
+          "acceptance_criterion_unapproved": "Внутренний physical wedge — functional; при количественном измерении ±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-M1",
+          "sop_version_id": "ACC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-M2",
+          "sop_version_id": "ACC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно при наличии внешних ручных клиньев",
+          "acceptance_criterion_unapproved": "1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A1",
+          "sop_version_id": "ACC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF в анализируемых точках",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A2",
+          "sop_version_id": "ACC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS dose",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-U1",
+          "sop_version_id": "ACC-U1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Все проверки functional; размер/код должны совпадать с prescription",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A3",
+          "sop_version_id": "ACC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Collimator settings — те же, что в TPS/commissioning; все interlocks functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A4",
+          "sop_version_id": "ACC-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Functional; settings/identification должны соответствовать TPS/R&V/acceptance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A5",
+          "sop_version_id": "ACC-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно по ротационному циклу; после ремонта — затронутые комбинации",
+          "acceptance_criterion_unapproved": "±2% от TPS/commissioning",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A6",
+          "sop_version_id": "ACC-A6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно при клиническом использовании аксессуара с TPS transmission factor",
+          "acceptance_criterion_unapproved": "Предлагаемый hard limit: ±1% от baseline и ±2% по рассчитанной дозе TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-S1",
+          "sop_version_id": "ACC-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке и после увеличения Autotracking settings относительно default Elekta; не routine annual при неизменных settings",
+          "acceptance_criterion_unapproved": "6/8/10 MeV ≤1,00%; 12 MeV ≤1,06%; 15 MeV ≤1,16%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D1",
+          "sop_version_id": "IMG-D1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежедневно до первого клинического применения",
+          "acceptance_criterion_unapproved": "Все применимые функции и interlocks — functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D2",
+          "sop_version_id": "IMG-D2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Daily preferred; для стандартного фракционирования допускается еженедельно; обязательно в день SRS/SBRT",
+          "acceptance_criterion_unapproved": "Общая RT и SBRT: ≤2 мм; SRS: ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D3",
+          "sop_version_id": "IMG-D3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "В день процедуры, где лазеры являются окончательным treatment reference",
+          "acceptance_criterion_unapproved": "≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M1",
+          "sop_version_id": "IMG-M1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно; также после изменений геометрии",
+          "acceptance_criterion_unapproved": "Routine general action ≤2 мм; SRS ≤1 мм; post-service eCAT должен выполнить ≤1 мм и kV–MV ≤0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M2",
+          "sop_version_id": "IMG-M2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно; SRS/SBRT — покрывается полным monthly WL",
+          "acceptance_criterion_unapproved": "Общая RT: ≤2 мм; SRS: ≤1 мм; SBRT: ≤1,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M3",
+          "sop_version_id": "IMG-M3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно для одного locked representative protocol; дополнительные протоколы — по циклу/риску",
+          "acceptance_criterion_unapproved": "Geometry ≤2 мм general/≤1 мм SRS; spatial/contrast/uniformity/noise not worse than baseline; HU ±40 HU from baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M4",
+          "sop_version_id": "IMG-M4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно или по локально обоснованной периодичности",
+          "acceptance_criterion_unapproved": "At least baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M5",
+          "sop_version_id": "IMG-M5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно или по локально обоснованной периодичности",
+          "acceptance_criterion_unapproved": "At least baseline; scaling ≤2 мм general/≤1 мм SRS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-H1",
+          "sop_version_id": "IMG-H1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Не реже одного раза в 6 месяцев; после геометрических изменений",
+          "acceptance_criterion_unapproved": "≤2 мм; для SRS-related imaging рекомендуется ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A1",
+          "sop_version_id": "IMG-A1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "At least baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A2",
+          "sop_version_id": "IMG-A2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "At least baseline; MPPG scaling ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A3",
+          "sop_version_id": "IMG-A3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после major service/reconstruction changes",
+          "acceptance_criterion_unapproved": "Uniformity ≤1,5%; noise ≤2,5%; low contrast ≤3,0%; spatial ≥10 lp/cm; HU ±40 from baseline; transverse 117±1 мм; sagittal 110±1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A4",
+          "sop_version_id": "IMG-A4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после изменения imaging MU/beam/preset",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A5",
+          "sop_version_id": "IMG-A5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Baseline ±3 mGy",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A6",
+          "sop_version_id": "IMG-A6@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно, если fluoroscopy используется",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy/min",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A7",
+          "sop_version_id": "IMG-A7@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy для каждого 3D mode",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A8",
+          "sop_version_id": "IMG-A8@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно и после изменения gating interface",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-E1",
+          "sop_version_id": "IMG-E1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после major workflow changes",
+          "acceptance_criterion_unapproved": "General IGRT local validated limit; SRS hidden-target localization ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-S1",
+          "sop_version_id": "IMG-S1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "При приёмке и после соответствующего major service/upgrade",
+          "acceptance_criterion_unapproved": "Все применимые eCAT tests PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-S2",
+          "sop_version_id": "IMG-S2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "При приёмке и после detector/electronics/gain/software major service",
+          "acceptance_criterion_unapproved": "Все применимые eCAT tests PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D1",
+          "sop_version_id": "HEX-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно при первом запуске iGUIDE",
+          "acceptance_criterion_unapproved": "Все четыре проверки PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D2",
+          "sop_version_id": "HEX-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D3",
+          "sop_version_id": "HEX-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1",
+          "acceptance_criterion_unapproved": "Полное совпадение; встроенная проверка PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D4",
+          "sop_version_id": "HEX-D4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1 и непрерывно во время positioning",
+          "acceptance_criterion_unapproved": ">4,5 мм: daily consistency invalidated, fraction interrupted",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M1",
+          "sop_version_id": "HEX-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤1,0 мм по каждой оси; для SRS интегральный residual ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M2",
+          "sop_version_id": "HEX-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Локальный action ≤0,3°; SRS ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M3",
+          "sop_version_id": "HEX-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤1,0 мм и ≤0,3°; SRS ≤1,0 мм и ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M4",
+          "sop_version_id": "HEX-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно или ежеквартально по risk assessment",
+          "acceptance_criterion_unapproved": "Max spread ≤1,0 мм / ≤0,3°; final zero ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-Q1",
+          "sop_version_id": "HEX-Q1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежеквартально или ежегодно; обязательно после service",
+          "acceptance_criterion_unapproved": "Residual ≤1,0 мм / ≤0,3°; не превышать safe working load",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-Q2",
+          "sop_version_id": "HEX-Q2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежеквартально или ежегодно",
+          "acceptance_criterion_unapproved": "≤0,5 мм / ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A1",
+          "sop_version_id": "HEX-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Translations ≤1,0 мм; rotations ≤0,3° routine, ≤0,2° SRS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A2",
+          "sop_version_id": "HEX-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; для SRS/SBRT в составе E2E",
+          "acceptance_criterion_unapproved": "General ≤2 мм; SRS ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A3",
+          "sop_version_id": "HEX-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после configuration/software changes",
+          "acceptance_criterion_unapproved": "100% correct mapping",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A4",
+          "sop_version_id": "HEX-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после changes in couch top, immobilization or protocols",
+          "acceptance_criterion_unapproved": "No collision; touchguards/interlocks functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-S1",
+          "sop_version_id": "HEX-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция hexapod есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке и после major service",
+          "acceptance_criterion_unapproved": "Все применимые проверки PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D1",
+          "sop_version_id": "SAF-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Functional: beam OFF; новое облучение невозможно при открытой двери",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D2",
+          "sop_version_id": "SAF-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional; пациент виден и слышен",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D3",
+          "sop_version_id": "SAF-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional and unambiguous",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D4",
+          "sop_version_id": "SAF-D4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневная визуальная доступность; функционально по ротации ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D5",
+          "sop_version_id": "SAF-D5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневная доступность; функционально ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D6",
+          "sop_version_id": "SAF-D6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D7",
+          "sop_version_id": "SAF-D7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно функционально при первом ручном перемещении",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D8",
+          "sop_version_id": "SAF-D8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно — репрезентативная функциональная проверка",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D9",
+          "sop_version_id": "SAF-D9@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе клинического запуска",
+          "acceptance_criterion_unapproved": "Beam inhibited in unsafe state",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M1",
+          "sop_version_id": "SAF-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно по ротации; все точки не реже одного раза в год",
+          "acceptance_criterion_unapproved": "100% functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M2",
+          "sop_version_id": "SAF-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно по ротации; полный комплект ежегодно",
+          "acceptance_criterion_unapproved": "100% functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M3",
+          "sop_version_id": "SAF-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно и после service",
+          "acceptance_criterion_unapproved": "100% correct",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M4",
+          "sop_version_id": "SAF-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Recovery соответствует документированному workflow",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M5",
+          "sop_version_id": "SAF-M5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M6",
+          "sop_version_id": "SAF-M6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Functional; движение прекращается безопасно",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A1",
+          "sop_version_id": "SAF-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Все обязательные interlocks PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A2",
+          "sop_version_id": "SAF-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после electrical/UPS service",
+          "acceptance_criterion_unapproved": "No unintended beam/motion; controlled restart",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A3",
+          "sop_version_id": "SAF-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после network/interface changes",
+          "acceptance_criterion_unapproved": "No uncontrolled beam or motion",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A4",
+          "sop_version_id": "SAF-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после geometry/workflow changes",
+          "acceptance_criterion_unapproved": "No collision; restrictions documented",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A5",
+          "sop_version_id": "SAF-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "100% complete",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-S1",
+          "sop_version_id": "SAF-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "После service/upgrade/configuration change",
+          "acceptance_criterion_unapproved": "Documented clinical release only after PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D1",
+          "sop_version_id": "SGRT-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "PASS; все клинически необходимые камеры доступны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D2",
+          "sop_version_id": "SGRT-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно согласно установленной процедуре C-RAD",
+          "acceptance_criterion_unapproved": "Vendor PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D3",
+          "sop_version_id": "SGRT-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "≤2,0 мм; для SRS/SBRT ≤1,0 мм и ≤0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D4",
+          "sop_version_id": "SGRT-D4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе SGRT-D3 либо по локальному сокращённому графику",
+          "acceptance_criterion_unapproved": "≤2,0 мм; SRS/SBRT ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M1",
+          "sop_version_id": "SGRT-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "General ≤2,0 мм; SRS/SBRT ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M2",
+          "sop_version_id": "SGRT-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤2,0 мм или более строгая manufacturer specification",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M3",
+          "sop_version_id": "SGRT-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно; перед клиническим использованием после длительного простоя",
+          "acceptance_criterion_unapproved": "Functional: beam прекращается при out-of-tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M4",
+          "sop_version_id": "SGRT-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤2,0 мм или более строгий клинический gating margin",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M5",
+          "sop_version_id": "SGRT-M5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно и после configuration changes",
+          "acceptance_criterion_unapproved": "100% правильные знаки; residual ≤2,0 мм, SRS ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M6",
+          "sop_version_id": "SGRT-M6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно или ежеквартально по risk assessment",
+          "acceptance_criterion_unapproved": "Не превышать clinical positioning tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A1",
+          "sop_version_id": "SGRT-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Drift <2,0 мм за 1 ч; reproducibility <1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A2",
+          "sop_version_id": "SGRT-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "≤2,0 мм; SRS/SBRT ≤1,0 мм и ≤0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A3",
+          "sop_version_id": "SGRT-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; для SRS/SBRT обязательно",
+          "acceptance_criterion_unapproved": "Локальный предел, включающий couch walkout; для SRS суммарно ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A4",
+          "sop_version_id": "SGRT-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после interface/software changes",
+          "acceptance_criterion_unapproved": "100% correct",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A5",
+          "sop_version_id": "SGRT-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Dose difference <2%; 100% required beam holds",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A6",
+          "sop_version_id": "SGRT-A6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "General <2,0 мм; SRS/SBRT <1,0 мм; dose ≤1%, gating dose <2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A7",
+          "sop_version_id": "SGRT-A7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Secure; unchanged or formally recommissioned",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-S1",
+          "sop_version_id": "SGRT-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "После service, calibration, upgrade или перемещения",
+          "acceptance_criterion_unapproved": "Documented clinical release",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M7",
+          "sop_version_id": "SGRT-M7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно и после service",
+          "acceptance_criterion_unapproved": "Не превышать commissioning/local clinical limit; trace без пропусков",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A8",
+          "sop_version_id": "SGRT-A8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция catalyst есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "Все фазы корректны; нет clinically significant binning artefact; amplitude within local commissioned limit",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D1",
+          "sop_version_id": "ABC-D1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Все обязательные компоненты исправны и правильно собраны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D2",
+          "sop_version_id": "ABC-D2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Корректный zero и правдоподобный двунаправленный trace",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D3",
+          "sop_version_id": "ABC-D3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Valve закрывается и открывается в ожидаемой последовательности",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D4",
+          "sop_version_id": "ABC-D4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Оба способа release функциональны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D5",
+          "sop_version_id": "ABC-D5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно либо перед первой ABC-фракцией дня",
+          "acceptance_criterion_unapproved": "100% правильная interlock logic",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M1",
+          "sop_version_id": "ABC-M1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Ошибка ≤3%; SD/mean ≤1%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M2",
+          "sop_version_id": "ABC-M2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Средняя ошибка ≤3%; каждый цикл в пределах ±3% target",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M3",
+          "sop_version_id": "ABC-M3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Drift ≤2% test volume; valve остаётся закрытым до release/timeout",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M4",
+          "sop_version_id": "ABC-M4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Ошибка ≤1,0 s; automatic release всегда выполняется",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M5",
+          "sop_version_id": "ABC-M5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Каждый release вызывает beam hold; unintended restart отсутствует",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-Q1",
+          "sop_version_id": "ABC-Q1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Каждые 2–3 месяца и после gas sterilization/reassembly",
+          "acceptance_criterion_unapproved": "Все точки в пределах ±2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A1",
+          "sop_version_id": "ABC-A1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "ΔDose ≤2%; нет пропущенной или повторной части поля",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A2",
+          "sop_version_id": "ABC-A2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Все routine limits PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A3",
+          "sop_version_id": "ABC-A3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после service, если используются разные ABC устройства/sensors",
+          "acceptance_criterion_unapproved": "Разница ≤2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A4",
+          "sop_version_id": "ABC-A4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после software/database changes",
+          "acceptance_criterion_unapproved": "Все параметры загружаются без изменения и относятся к правильному пациенту",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A5",
+          "sop_version_id": "ABC-A5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "Volume agreement ≤2%; localization within commissioned clinical limit; dose difference ≤2%; all interlocks PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-C1",
+          "sop_version_id": "ABC-C1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "При simulation; повторно на первой фракции и при клинических сомнениях",
+          "acceptance_criterion_unapproved": "Обычно ≥10 s; anatomical motion/reproducibility within 5 mm либо более строгого site-specific limit",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-C2",
+          "sop_version_id": "ABC-C2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Каждая ABC-фракция",
+          "acceptance_criterion_unapproved": "Within commissioned patient/site-specific window; anatomy within imaging tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-S1",
+          "sop_version_id": "ABC-S1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "После service, replacement, calibration, software update or relocation",
+          "acceptance_criterion_unapproved": "Documented clinical release after PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        }
+      ]
+    },
+    {
+      "machine_id": "versa_hd_b",
+      "display_name": "Versa HD B — без HexaPOD / Catalyst",
+      "summary": {
+        "eligible_draft": 87,
+        "pending_feature_confirmation": 39,
+        "not_applicable": 35
+      },
+      "items": [
+        {
+          "test_code": "MLC-D1",
+          "sop_version_id": "MLC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "В день применения SRS; MPPG 9.b рекомендует разработать упрощённую ежедневную проверку",
+          "acceptance_criterion_unapproved": "0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-W1",
+          "sop_version_id": "MLC-W1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Еженедельно; менять угол гантри по циклу 0°/90°/180°/270° или использовать валидированный arc-тест",
+          "acceptance_criterion_unapproved": "0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M1",
+          "sop_version_id": "MLC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от TPS для точечной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M2",
+          "sop_version_id": "MLC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Все Average Actual Error внутри Actual Tolerance; PRF pauses = 0 до окончания поля; скорость ±0,5 см/с от заданной",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-M3",
+          "sop_version_id": "MLC-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно для полного диапазона SRS/SBRT; ограниченная проверка в день применения; ежегодно минимум для обычной RT",
+          "acceptance_criterion_unapproved": "SRS: 1,0 мм; SBRT: 1,5 мм; обычная RT: диаметр ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A1",
+          "sop_version_id": "MLC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений beam model/MLC/дозиметрии",
+          "acceptance_criterion_unapproved": ">1,0 см: ±2% от TPS; ≤1,0 см: ±5% от TPS; поле 2×2 см² — ±2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A2",
+          "sop_version_id": "MLC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; после замены лепестков/BLD или изменения модели TPS",
+          "acceptance_criterion_unapproved": "TG-198: ±0,5 процентного пункта от baseline; MPPG 9.b: ±5% относительно TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-A3",
+          "sop_version_id": "MLC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Позиция: локально 0,5 мм по MPPG 8.b; повторяемость: ≤1 мм по TG-198",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MLC-X1",
+          "sop_version_id": "MLC-X1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция agility_mlc есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Annually for 6FF, 10FF, 6FFF, 10FFF; after Monaco/MLC model changes; after major MLC/BLD service; troubleshooting",
+          "acceptance_criterion_unapproved": "No single universal FullPackage gamma action limit. DMLC1/CVMAT low-gradient point dose: target ≤2% TPS; 02x02 follows MLC-A1; junction/gap/transmission spatial metrics use validated commissioning baseline/sensitivity and field-specific local limits.",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M1",
+          "sop_version_id": "VMAT-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно; все динамически используемые энергии можно чередовать по месяцам",
+          "acceptance_criterion_unapproved": "Каждая область: ±2% от открытого референсного поля или валидированного device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M2",
+          "sop_version_id": "VMAT-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Все релевантные position и dose checks — PASS по валидированным критериям Elekta; локальные трендовые границы не должны быть превышены",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M3",
+          "sop_version_id": "VMAT-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно, если динамические диафрагмы используются клинически",
+          "acceptance_criterion_unapproved": "Все релевантные position и dose checks — PASS; численные метрики остаются внутри локальных контрольных границ baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-M4",
+          "sop_version_id": "VMAT-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Точечная доза: ±2% от TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-A1",
+          "sop_version_id": "VMAT-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; также после работ с дозовой системой",
+          "acceptance_criterion_unapproved": "±2% от выхода при дозовой мощности, используемой для TG-51/TRS-398 или локальной референсной калибровки",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-A2",
+          "sop_version_id": "VMAT-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Обычная арка: ±2% MU и ±2°; SRS: ±1 MU и ±1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-S1",
+          "sop_version_id": "VMAT-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "После ремонта/настройки; при отказе VMAT-M1 или VMAT-M3; целесообразно сохранить ежегодный baseline",
+          "acceptance_criterion_unapproved": "Ошибка меньше Actual Tolerance; PRF pauses = 0 до штатного завершения поля",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "VMAT-S2",
+          "sop_version_id": "VMAT-S2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция vmat есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке; после крупных обновлений Integrity/TCS или замены BLD; не как ежемесячный тест",
+          "acceptance_criterion_unapproved": "Все применимые eCAT-пункты PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-D1",
+          "sop_version_id": "DOS-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно, до клинического использования соответствующих пучков",
+          "acceptance_criterion_unapproved": "±3% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-D2",
+          "sop_version_id": "DOS-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно вместе с DOS-D1",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M1",
+          "sop_version_id": "DOS-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M2",
+          "sop_version_id": "DOS-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M3",
+          "sop_version_id": "DOS-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±1% для PDD/TPR-equivalent метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-M4",
+          "sop_version_id": "DOS-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "ΔR50 ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A1",
+          "sop_version_id": "DOS-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений абсолютной дозиметрии",
+          "acceptance_criterion_unapproved": "±1% от номинальной референсной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A2",
+          "sop_version_id": "DOS-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после изменений электронного пучка",
+          "acceptance_criterion_unapproved": "±1% от номинальной референсной дозы",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A3",
+          "sop_version_id": "DOS-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A4",
+          "sop_version_id": "DOS-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF; геометрические границы — по commissioning baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A5",
+          "sop_version_id": "DOS-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% для выбранной PDD/TPR метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A6",
+          "sop_version_id": "DOS-A6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "ΔR50 ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A7",
+          "sop_version_id": "DOS-A7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от номинального значения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A8",
+          "sop_version_id": "DOS-A8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от номинального значения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A9",
+          "sop_version_id": "DOS-A9@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после работ с дозовой системой",
+          "acceptance_criterion_unapproved": "±2% относительно reference dose rate",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A10",
+          "sop_version_id": "DOS-A10@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% от head-up gantry output",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A11",
+          "sop_version_id": "DOS-A11@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±1% от OAF при IEC gantry 0°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-A12",
+          "sop_version_id": "DOS-A12@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно: минимум один аппликатор на энергию; размеры ротировать",
+          "acceptance_criterion_unapproved": "±2% от TPS/commissioning",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "DOS-Q1",
+          "sop_version_id": "DOS-Q1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "QuickCheck output — ежемесячно; профиль — не реже квартала; primary/backup pair — ежегодно и после ремонта",
+          "acceptance_criterion_unapproved": "Локальный action level по неопределённости и стабильности",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D1",
+          "sop_version_id": "MEC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно, в день клинического использования",
+          "acceptance_criterion_unapproved": "2 мм; для SRS с окончательной лазерной локализацией — 1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D2",
+          "sop_version_id": "MEC-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день использования ODI",
+          "acceptance_criterion_unapproved": "2 мм на изоцентре",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-D3",
+          "sop_version_id": "MEC-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день использования фотонных пучков",
+          "acceptance_criterion_unapproved": "2 мм на каждую диафрагму",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M1",
+          "sop_version_id": "MEC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M2",
+          "sop_version_id": "MEC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно, если ODI используется клинически или для QA",
+          "acceptance_criterion_unapproved": "2 мм по клиническому диапазону",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M3",
+          "sop_version_id": "MEC-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "2 мм на каждую диафрагму или <2% отклонения соответствующей OAF/OF-метрики",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M4",
+          "sop_version_id": "MEC-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M5",
+          "sop_version_id": "MEC-M5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно при использовании",
+          "acceptance_criterion_unapproved": "2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M6",
+          "sop_version_id": "MEC-M6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Crosshair всегда в пределах 1 мм от оси; эквивалентно траектория ≤2 мм диаметром",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M7",
+          "sop_version_id": "MEC-M7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "2 мм и 1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-M8",
+          "sop_version_id": "MEC-M8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "1 мм для трансляции; 0,5° для вращения",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A1",
+          "sop_version_id": "MEC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "В пределах спецификаций Elekta; локальный hard limit 2 мм на каждый Y-край",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A2",
+          "sop_version_id": "MEC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после калибровки field size",
+          "acceptance_criterion_unapproved": "2 мм на каждый клинический край; при vendor acceptance: ±1 мм ≤20×20 см² и ±1% для больших полей",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A3",
+          "sop_version_id": "MEC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно; обязательно после работ с лампой, зеркалом, crosshair или головкой",
+          "acceptance_criterion_unapproved": "2 мм на каждый край",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-A4",
+          "sop_version_id": "MEC-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно для общей RT; SRS/SBRT — см. MEC-SRS1",
+          "acceptance_criterion_unapproved": "2 мм диаметр",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-SRS1",
+          "sop_version_id": "MEC-SRS1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ограниченный набор — в день применения; полный клинический диапазон — ежемесячно",
+          "acceptance_criterion_unapproved": "1,0 мм SRS; 1,5 мм SBRT",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-L1",
+          "sop_version_id": "MEC-L1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после сервиса стола",
+          "acceptance_criterion_unapproved": "<2 мм между центрами",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-L2",
+          "sop_version_id": "MEC-L2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после сервиса",
+          "acceptance_criterion_unapproved": "2 мм и 1°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "MEC-S1",
+          "sop_version_id": "MEC-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке, после крупного сервиса головы/гантри/BLD и при расследовании",
+          "acceptance_criterion_unapproved": "Elekta CAT: crosshair ≤1 мм диаметром на 100 см SSD; gantry mechanical locus ≤2 мм диаметром",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-D1",
+          "sop_version_id": "ACC-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в день клинического применения клина",
+          "acceptance_criterion_unapproved": "Внутренний physical wedge — functional; при количественном измерении ±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-M1",
+          "sop_version_id": "ACC-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "±2% от device baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-M2",
+          "sop_version_id": "ACC-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно при наличии внешних ручных клиньев",
+          "acceptance_criterion_unapproved": "1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A1",
+          "sop_version_id": "ACC-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS OAF в анализируемых точках",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A2",
+          "sop_version_id": "ACC-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "±2% от TPS dose",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-U1",
+          "sop_version_id": "ACC-U1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Все проверки functional; размер/код должны совпадать с prescription",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A3",
+          "sop_version_id": "ACC-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Collimator settings — те же, что в TPS/commissioning; все interlocks functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A4",
+          "sop_version_id": "ACC-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Functional; settings/identification должны соответствовать TPS/R&V/acceptance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A5",
+          "sop_version_id": "ACC-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно по ротационному циклу; после ремонта — затронутые комбинации",
+          "acceptance_criterion_unapproved": "±2% от TPS/commissioning",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-A6",
+          "sop_version_id": "ACC-A6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно при клиническом использовании аксессуара с TPS transmission factor",
+          "acceptance_criterion_unapproved": "Предлагаемый hard limit: ±1% от baseline и ±2% по рассчитанной дозе TPS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ACC-S1",
+          "sop_version_id": "ACC-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "При приёмке и после увеличения Autotracking settings относительно default Elekta; не routine annual при неизменных settings",
+          "acceptance_criterion_unapproved": "6/8/10 MeV ≤1,00%; 12 MeV ≤1,06%; 15 MeV ≤1,16%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D1",
+          "sop_version_id": "IMG-D1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежедневно до первого клинического применения",
+          "acceptance_criterion_unapproved": "Все применимые функции и interlocks — functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D2",
+          "sop_version_id": "IMG-D2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Daily preferred; для стандартного фракционирования допускается еженедельно; обязательно в день SRS/SBRT",
+          "acceptance_criterion_unapproved": "Общая RT и SBRT: ≤2 мм; SRS: ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-D3",
+          "sop_version_id": "IMG-D3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "В день процедуры, где лазеры являются окончательным treatment reference",
+          "acceptance_criterion_unapproved": "≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M1",
+          "sop_version_id": "IMG-M1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно; также после изменений геометрии",
+          "acceptance_criterion_unapproved": "Routine general action ≤2 мм; SRS ≤1 мм; post-service eCAT должен выполнить ≤1 мм и kV–MV ≤0,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M2",
+          "sop_version_id": "IMG-M2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно; SRS/SBRT — покрывается полным monthly WL",
+          "acceptance_criterion_unapproved": "Общая RT: ≤2 мм; SRS: ≤1 мм; SBRT: ≤1,5 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M3",
+          "sop_version_id": "IMG-M3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно для одного locked representative protocol; дополнительные протоколы — по циклу/риску",
+          "acceptance_criterion_unapproved": "Geometry ≤2 мм general/≤1 мм SRS; spatial/contrast/uniformity/noise not worse than baseline; HU ±40 HU from baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M4",
+          "sop_version_id": "IMG-M4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно или по локально обоснованной периодичности",
+          "acceptance_criterion_unapproved": "At least baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-M5",
+          "sop_version_id": "IMG-M5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежемесячно или по локально обоснованной периодичности",
+          "acceptance_criterion_unapproved": "At least baseline; scaling ≤2 мм general/≤1 мм SRS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-H1",
+          "sop_version_id": "IMG-H1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Не реже одного раза в 6 месяцев; после геометрических изменений",
+          "acceptance_criterion_unapproved": "≤2 мм; для SRS-related imaging рекомендуется ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A1",
+          "sop_version_id": "IMG-A1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "At least baseline",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A2",
+          "sop_version_id": "IMG-A2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "At least baseline; MPPG scaling ≤2 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A3",
+          "sop_version_id": "IMG-A3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после major service/reconstruction changes",
+          "acceptance_criterion_unapproved": "Uniformity ≤1,5%; noise ≤2,5%; low contrast ≤3,0%; spatial ≥10 lp/cm; HU ±40 from baseline; transverse 117±1 мм; sagittal 110±1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A4",
+          "sop_version_id": "IMG-A4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после изменения imaging MU/beam/preset",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A5",
+          "sop_version_id": "IMG-A5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Baseline ±3 mGy",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A6",
+          "sop_version_id": "IMG-A6@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно, если fluoroscopy используется",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy/min",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A7",
+          "sop_version_id": "IMG-A7@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Baseline ±1 cGy для каждого 3D mode",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-A8",
+          "sop_version_id": "IMG-A8@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно и после изменения gating interface",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-E1",
+          "sop_version_id": "IMG-E1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "Ежегодно; после major workflow changes",
+          "acceptance_criterion_unapproved": "General IGRT local validated limit; SRS hidden-target localization ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-S1",
+          "sop_version_id": "IMG-S1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "При приёмке и после соответствующего major service/upgrade",
+          "acceptance_criterion_unapproved": "Все применимые eCAT tests PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "IMG-S2",
+          "sop_version_id": "IMG-S2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: imaging_any",
+          "frequency_text_unverified": "При приёмке и после detector/electronics/gain/software major service",
+          "acceptance_criterion_unapproved": "Все применимые eCAT tests PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D1",
+          "sop_version_id": "HEX-D1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежедневно при первом запуске iGUIDE",
+          "acceptance_criterion_unapproved": "Все четыре проверки PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D2",
+          "sop_version_id": "HEX-D2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D3",
+          "sop_version_id": "HEX-D3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1",
+          "acceptance_criterion_unapproved": "Полное совпадение; встроенная проверка PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-D4",
+          "sop_version_id": "HEX-D4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежедневно в составе HEX-D1 и непрерывно во время positioning",
+          "acceptance_criterion_unapproved": ">4,5 мм: daily consistency invalidated, fraction interrupted",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M1",
+          "sop_version_id": "HEX-M1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤1,0 мм по каждой оси; для SRS интегральный residual ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M2",
+          "sop_version_id": "HEX-M2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Локальный action ≤0,3°; SRS ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M3",
+          "sop_version_id": "HEX-M3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤1,0 мм и ≤0,3°; SRS ≤1,0 мм и ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-M4",
+          "sop_version_id": "HEX-M4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежемесячно или ежеквартально по risk assessment",
+          "acceptance_criterion_unapproved": "Max spread ≤1,0 мм / ≤0,3°; final zero ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-Q1",
+          "sop_version_id": "HEX-Q1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежеквартально или ежегодно; обязательно после service",
+          "acceptance_criterion_unapproved": "Residual ≤1,0 мм / ≤0,3°; не превышать safe working load",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-Q2",
+          "sop_version_id": "HEX-Q2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежеквартально или ежегодно",
+          "acceptance_criterion_unapproved": "≤0,5 мм / ≤0,2°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A1",
+          "sop_version_id": "HEX-A1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Translations ≤1,0 мм; rotations ≤0,3° routine, ≤0,2° SRS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A2",
+          "sop_version_id": "HEX-A2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежегодно; для SRS/SBRT в составе E2E",
+          "acceptance_criterion_unapproved": "General ≤2 мм; SRS ≤1 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A3",
+          "sop_version_id": "HEX-A3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежегодно и после configuration/software changes",
+          "acceptance_criterion_unapproved": "100% correct mapping",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-A4",
+          "sop_version_id": "HEX-A4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "Ежегодно и после changes in couch top, immobilization or protocols",
+          "acceptance_criterion_unapproved": "No collision; touchguards/interlocks functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "HEX-S1",
+          "sop_version_id": "HEX-S1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: hexapod",
+          "frequency_text_unverified": "При приёмке и после major service",
+          "acceptance_criterion_unapproved": "Все применимые проверки PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D1",
+          "sop_version_id": "SAF-D1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Functional: beam OFF; новое облучение невозможно при открытой двери",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D2",
+          "sop_version_id": "SAF-D2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional; пациент виден и слышен",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D3",
+          "sop_version_id": "SAF-D3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional and unambiguous",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D4",
+          "sop_version_id": "SAF-D4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневная визуальная доступность; функционально по ротации ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D5",
+          "sop_version_id": "SAF-D5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневная доступность; функционально ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D6",
+          "sop_version_id": "SAF-D6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D7",
+          "sop_version_id": "SAF-D7@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно функционально при первом ручном перемещении",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D8",
+          "sop_version_id": "SAF-D8@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно — репрезентативная функциональная проверка",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-D9",
+          "sop_version_id": "SAF-D9@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежедневно в составе клинического запуска",
+          "acceptance_criterion_unapproved": "Beam inhibited in unsafe state",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M1",
+          "sop_version_id": "SAF-M1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно по ротации; все точки не реже одного раза в год",
+          "acceptance_criterion_unapproved": "100% functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M2",
+          "sop_version_id": "SAF-M2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно по ротации; полный комплект ежегодно",
+          "acceptance_criterion_unapproved": "100% functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M3",
+          "sop_version_id": "SAF-M3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно и после service",
+          "acceptance_criterion_unapproved": "100% correct",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M4",
+          "sop_version_id": "SAF-M4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Recovery соответствует документированному workflow",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M5",
+          "sop_version_id": "SAF-M5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Functional",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-M6",
+          "sop_version_id": "SAF-M6@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Functional; движение прекращается безопасно",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A1",
+          "sop_version_id": "SAF-A1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Все обязательные interlocks PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A2",
+          "sop_version_id": "SAF-A2@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после electrical/UPS service",
+          "acceptance_criterion_unapproved": "No unintended beam/motion; controlled restart",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A3",
+          "sop_version_id": "SAF-A3@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после network/interface changes",
+          "acceptance_criterion_unapproved": "No uncontrolled beam or motion",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A4",
+          "sop_version_id": "SAF-A4@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно и после geometry/workflow changes",
+          "acceptance_criterion_unapproved": "No collision; restrictions documented",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-A5",
+          "sop_version_id": "SAF-A5@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "100% complete",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SAF-S1",
+          "sop_version_id": "SAF-S1@excel-draft-v0.1",
+          "applicability_status": "eligible_draft",
+          "reason": "Функция linac есть; SOP/критерии не утверждены",
+          "frequency_text_unverified": "После service/upgrade/configuration change",
+          "acceptance_criterion_unapproved": "Documented clinical release only after PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D1",
+          "sop_version_id": "SGRT-D1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "PASS; все клинически необходимые камеры доступны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D2",
+          "sop_version_id": "SGRT-D2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежедневно согласно установленной процедуре C-RAD",
+          "acceptance_criterion_unapproved": "Vendor PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D3",
+          "sop_version_id": "SGRT-D3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежедневно",
+          "acceptance_criterion_unapproved": "≤2,0 мм; для SRS/SBRT ≤1,0 мм и ≤0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-D4",
+          "sop_version_id": "SGRT-D4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежедневно в составе SGRT-D3 либо по локальному сокращённому графику",
+          "acceptance_criterion_unapproved": "≤2,0 мм; SRS/SBRT ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M1",
+          "sop_version_id": "SGRT-M1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "General ≤2,0 мм; SRS/SBRT ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M2",
+          "sop_version_id": "SGRT-M2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤2,0 мм или более строгая manufacturer specification",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M3",
+          "sop_version_id": "SGRT-M3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно; перед клиническим использованием после длительного простоя",
+          "acceptance_criterion_unapproved": "Functional: beam прекращается при out-of-tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M4",
+          "sop_version_id": "SGRT-M4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "≤2,0 мм или более строгий клинический gating margin",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M5",
+          "sop_version_id": "SGRT-M5@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно и после configuration changes",
+          "acceptance_criterion_unapproved": "100% правильные знаки; residual ≤2,0 мм, SRS ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M6",
+          "sop_version_id": "SGRT-M6@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно или ежеквартально по risk assessment",
+          "acceptance_criterion_unapproved": "Не превышать clinical positioning tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A1",
+          "sop_version_id": "SGRT-A1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Drift <2,0 мм за 1 ч; reproducibility <1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A2",
+          "sop_version_id": "SGRT-A2@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "≤2,0 мм; SRS/SBRT ≤1,0 мм и ≤0,5°",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A3",
+          "sop_version_id": "SGRT-A3@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно; для SRS/SBRT обязательно",
+          "acceptance_criterion_unapproved": "Локальный предел, включающий couch walkout; для SRS суммарно ≤1,0 мм",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A4",
+          "sop_version_id": "SGRT-A4@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно и после interface/software changes",
+          "acceptance_criterion_unapproved": "100% correct",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A5",
+          "sop_version_id": "SGRT-A5@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Dose difference <2%; 100% required beam holds",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A6",
+          "sop_version_id": "SGRT-A6@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "General <2,0 мм; SRS/SBRT <1,0 мм; dose ≤1%, gating dose <2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A7",
+          "sop_version_id": "SGRT-A7@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Secure; unchanged or formally recommissioned",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-S1",
+          "sop_version_id": "SGRT-S1@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "После service, calibration, upgrade или перемещения",
+          "acceptance_criterion_unapproved": "Documented clinical release",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-M7",
+          "sop_version_id": "SGRT-M7@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежемесячно и после service",
+          "acceptance_criterion_unapproved": "Не превышать commissioning/local clinical limit; trace без пропусков",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "SGRT-A8",
+          "sop_version_id": "SGRT-A8@excel-draft-v0.1",
+          "applicability_status": "not_applicable",
+          "reason": "Отсутствует функциональность: catalyst",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "Все фазы корректны; нет clinically significant binning artefact; amplitude within local commissioned limit",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D1",
+          "sop_version_id": "ABC-D1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Все обязательные компоненты исправны и правильно собраны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D2",
+          "sop_version_id": "ABC-D2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Корректный zero и правдоподобный двунаправленный trace",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D3",
+          "sop_version_id": "ABC-D3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно до первого пациента",
+          "acceptance_criterion_unapproved": "Valve закрывается и открывается в ожидаемой последовательности",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D4",
+          "sop_version_id": "ABC-D4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Перед каждым клиническим использованием",
+          "acceptance_criterion_unapproved": "Оба способа release функциональны",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-D5",
+          "sop_version_id": "ABC-D5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежедневно либо перед первой ABC-фракцией дня",
+          "acceptance_criterion_unapproved": "100% правильная interlock logic",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M1",
+          "sop_version_id": "ABC-M1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Ошибка ≤3%; SD/mean ≤1%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M2",
+          "sop_version_id": "ABC-M2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Средняя ошибка ≤3%; каждый цикл в пределах ±3% target",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M3",
+          "sop_version_id": "ABC-M3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Drift ≤2% test volume; valve остаётся закрытым до release/timeout",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M4",
+          "sop_version_id": "ABC-M4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Ошибка ≤1,0 s; automatic release всегда выполняется",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-M5",
+          "sop_version_id": "ABC-M5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежемесячно",
+          "acceptance_criterion_unapproved": "Каждый release вызывает beam hold; unintended restart отсутствует",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-Q1",
+          "sop_version_id": "ABC-Q1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Каждые 2–3 месяца и после gas sterilization/reassembly",
+          "acceptance_criterion_unapproved": "Все точки в пределах ±2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A1",
+          "sop_version_id": "ABC-A1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "ΔDose ≤2%; нет пропущенной или повторной части поля",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A2",
+          "sop_version_id": "ABC-A2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно",
+          "acceptance_criterion_unapproved": "Все routine limits PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A3",
+          "sop_version_id": "ABC-A3@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после service, если используются разные ABC устройства/sensors",
+          "acceptance_criterion_unapproved": "Разница ≤2%",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A4",
+          "sop_version_id": "ABC-A4@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после software/database changes",
+          "acceptance_criterion_unapproved": "Все параметры загружаются без изменения и относятся к правильному пациенту",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-A5",
+          "sop_version_id": "ABC-A5@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Ежегодно и после major changes",
+          "acceptance_criterion_unapproved": "Volume agreement ≤2%; localization within commissioned clinical limit; dose difference ≤2%; all interlocks PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-C1",
+          "sop_version_id": "ABC-C1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "При simulation; повторно на первой фракции и при клинических сомнениях",
+          "acceptance_criterion_unapproved": "Обычно ≥10 s; anatomical motion/reproducibility within 5 mm либо более строгого site-specific limit",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-C2",
+          "sop_version_id": "ABC-C2@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "Каждая ABC-фракция",
+          "acceptance_criterion_unapproved": "Within commissioned patient/site-specific window; anatomy within imaging tolerance",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        },
+        {
+          "test_code": "ABC-S1",
+          "sop_version_id": "ABC-S1@excel-draft-v0.1",
+          "applicability_status": "pending_feature_confirmation",
+          "reason": "Не подтверждена функциональность: abc",
+          "frequency_text_unverified": "После service, replacement, calibration, software update or relocation",
+          "acceptance_criterion_unapproved": "Documented clinical release after PASS",
+          "baseline_status": "not_established",
+          "execution_readiness": "not_ready"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+local_sources/
+*.xlsx
+*.pdf
+*.docx
+*.zip
+*.dcm
+*.trf
+*.his
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOPVersion",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "test_code",
+    "version",
+    "status",
+    "clinical_approval"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "authoring_required",
+        "analysis_section_missing",
+        "draft_needs_source_validation",
+        "review",
+        "approved"
+      ]
+    },
+    "clinical_approval": {
+      "type": "boolean"
+    },
+    "analysis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "procedure_steps": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "test_code": {
+      "type": "string"
+    }
+  }
+}

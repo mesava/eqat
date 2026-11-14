@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TestDefinition",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "code",
+    "section",
+    "name",
+    "frequency_text",
+    "criterion_approval",
+    "evidence",
+    "sop_version_id"
+  ],
+  "properties": {
+    "code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3,4}-[A-Z][0-9]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "criterion_approval": {
+      "const": "UNAPPROVED_DRAFT"
+    },
+    "required_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "frequency_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "sop_version_id": {
+      "type": "string"
+    }
+  }
+}

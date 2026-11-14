@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EquipmentProfile",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "vendor",
+    "model",
+    "features",
+    "machine_config_validated"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "present",
+          "absent",
+          "unknown"
+        ]
+      }
+    },
+    "machine_config_validated": {
+      "type": "boolean"
+    }
+  }
+}

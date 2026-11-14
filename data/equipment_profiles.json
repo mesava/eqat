@@ -1,0 +1,72 @@
+[
+  {
+    "id": "versa_hd_a",
+    "display_name": "Versa HD A — HexaPOD / Catalyst",
+    "machine_serial": null,
+    "location": null,
+    "vendor": "Elekta",
+    "model": "Versa HD",
+    "mlc": "Agility 160",
+    "photon_energies": [
+      "6FF",
+      "10FF",
+      "6FFF",
+      "10FFF"
+    ],
+    "electron_energies_MeV": [
+      6,
+      8,
+      10,
+      12,
+      15
+    ],
+    "features": {
+      "linac": "present",
+      "agility_mlc": "present",
+      "vmat": "present",
+      "hexapod": "present",
+      "catalyst": "present",
+      "xvi": "unknown",
+      "iviewgt": "unknown",
+      "imaging_any": "unknown",
+      "abc": "unknown"
+    },
+    "machine_config_validated": false,
+    "notes": "Идентификатор А логический; реальный SN пока не назначен. Наличие двух Versa HD, Agility, энергий, HexaPOD/Catalyst на одной машине подтверждено пользователем; ABC/XVI/iView не подтверждены по установкам."
+  },
+  {
+    "id": "versa_hd_b",
+    "display_name": "Versa HD B — без HexaPOD / Catalyst",
+    "machine_serial": null,
+    "location": null,
+    "vendor": "Elekta",
+    "model": "Versa HD",
+    "mlc": "Agility 160",
+    "photon_energies": [
+      "6FF",
+      "10FF",
+      "6FFF",
+      "10FFF"
+    ],
+    "electron_energies_MeV": [
+      6,
+      8,
+      10,
+      12,
+      15
+    ],
+    "features": {
+      "linac": "present",
+      "agility_mlc": "present",
+      "vmat": "present",
+      "hexapod": "absent",
+      "catalyst": "absent",
+      "xvi": "unknown",
+      "iviewgt": "unknown",
+      "imaging_any": "unknown",
+      "abc": "unknown"
+    },
+    "machine_config_validated": false,
+    "notes": "Идентификатор B логический; реальный SN пока не назначен. ABC/XVI/iView не подтверждены по установкам."
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "test_codes": [
+      "VMAT-M2"
+    ],
+    "source_key": "VMAT eCAT",
+    "section_hint": "3.3.4 Picket Fence test with variable dose rate / PF G0VDR",
+    "evidence_level": "matching_section_found_in_extracted_document",
+    "verified_aspect": "название теста и раздел",
+    "unverified": "численные пределы, все условия и применимость к версии Integrity"
+  },
+  {
+    "test_codes": [
+      "VMAT-M3"
+    ],
+    "source_key": "VMAT eCAT",
+    "section_hint": "3.3.2 Diaphragm abutment / D Abut",
+    "evidence_level": "matching_section_found_in_extracted_document",
+    "verified_aspect": "наличие процедуры производителя",
+    "unverified": "критерии периодического QA"
+  },
+  {
+    "test_codes": [
+      "IMG-M5",
+      "IMG-A2"
+    ],
+    "source_key": "XVI eCAT",
+    "section_hint": "TOR 18FG Leeds and 1 mm copper plate",
+    "evidence_level": "matching_procedure_found_in_extracted_document",
+    "verified_aspect": "упоминаются фантом, фильтр, геометрия",
+    "unverified": "полный алгоритм анализа, факт наличия TOR 18FG"
+  },
+  {
+    "test_codes": [
+      "IMG-M3",
+      "IMG-A3"
+    ],
+    "source_key": "XVI eCAT",
+    "section_hint": "Catphan CTP503 / CTP600",
+    "evidence_level": "matching_equipment_found_in_extracted_document",
+    "verified_aspect": "указан модельный ряд фантома",
+    "unverified": "полные численные критерии"
+  },
+  {
+    "test_codes": [
+      "IMG-M4"
+    ],
+    "source_key": "iViewGT eCAT",
+    "section_hint": "3.1 Doing the image quality test",
+    "evidence_level": "matching_section_found_in_extracted_document",
+    "verified_aspect": "процедура оценки изображений",
+    "unverified": "специфичные требования Las Vegas phantom и пороги"
+  },
+  {
+    "test_codes": [
+      "SGRT-D3"
+    ],
+    "source_key": "Catalyst IFU",
+    "section_hint": "daily QA / выполнение стандартной процедуры QA",
+    "evidence_level": "matching_section_found_in_extracted_document",
+    "verified_aspect": "штатная процедура QA имеется",
+    "unverified": "редакция IFU соответствует установленному ПО; все численные пороги"
+  },
+  {
+    "test_codes": [
+      "ABC-D3"
+    ],
+    "source_key": "ABC eCAT",
+    "section_hint": "balloon valve and volume threshold / timer",
+    "evidence_level": "matching_procedure_found_in_extracted_document",
+    "verified_aspect": "описаны последовательность клапана и таймер",
+    "unverified": "соответствие версии ABC, квалификация теста как ежедневного"
+  },
+  {
+    "test_codes": [
+      "HEX-A3"
+    ],
+    "source_key": "iGUIDE IFU",
+    "section_hint": "HexaPOD iGUIDE 2.2 IFU (1052558)",
+    "evidence_level": "document_identity_checked_only",
+    "verified_aspect": "модель и версия IFU",
+    "unverified": "матрицы координат, оси, пределы"
+  },
+  {
+    "test_codes": [
+      "MLC-W1"
+    ],
+    "source_key": "MPPG 8.b",
+    "section_hint": "MLC leaf position accuracy (section to confirm)",
+    "evidence_level": "topic_found_in_extracted_document",
+    "verified_aspect": "рекомендации по проверке точности MLC",
+    "unverified": "соответствие 0,5 мм и предлагаемой частоты"
+  },
+  {
+    "test_codes": [
+      "MEC-A4"
+    ],
+    "source_key": "TG-198",
+    "section_hint": "isocenter and mechanical QA (section to confirm)",
+    "evidence_level": "document_present_and_topic_confirmed",
+    "verified_aspect": "руководство содержит методики геометрического QA",
+    "unverified": "конкретный тест и критерий"
+  }
+]

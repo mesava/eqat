@@ -1,0 +1,39 @@
+{
+  "name": "EQAT Knowledge Base v0.2",
+  "date": "2026-11-10",
+  "status": "RESEARCH_DRAFT_NOT_FOR_CLINICAL_USE",
+  "catalog_tests": 161,
+  "sop_cards": 161,
+  "with_dedicated_analysis": 130,
+  "missing_dedicated_analysis": 8,
+  "missing_sop_row": 23,
+  "source_registry_entries": 21,
+  "source_spotchecks": 10,
+  "fullpackage_fields": 35,
+  "machines": 2,
+  "baseline_count": 0,
+  "machine_program_counts": {
+    "versa_hd_a": {
+      "eligible_draft": 122,
+      "pending_feature_confirmation": 39,
+      "not_applicable": 0
+    },
+    "versa_hd_b": {
+      "eligible_draft": 87,
+      "pending_feature_confirmation": 39,
+      "not_applicable": 35
+    }
+  },
+  "unit_tests_passed": 9,
+  "input_files": [
+    "EQAT_QA_Traceability_161_v01.xlsx",
+    "Versa_HD_QA_..._FULLPACKAGE.xlsx"
+  ],
+  "known_missing_machine_facts": [
+    "XVI/iViewGT/ABC distribution",
+    "Integrity versions",
+    "real machine serial numbers",
+    "metrology inventory/calibration"
+  ],
+  "safety": "No clinical authorization and no external connectivity"
+}

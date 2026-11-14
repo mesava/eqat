@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DraftQAProgram",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "status",
+    "machine_programs",
+    "patient_data_included"
+  ],
+  "properties": {
+    "status": {
+      "const": "DRAFT_NOT_FOR_CLINICAL_USE"
+    },
+    "patient_data_included": {
+      "const": false
+    },
+    "machine_programs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "machine_id",
+          "items"
+        ]
+      }
+    }
+  }
+}
