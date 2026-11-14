@@ -1,0 +1,65 @@
+[
+  {
+    "id": "MPPG8B",
+    "title": "AAPM MPPG 8.b: Linear accelerator performance tests",
+    "edition": "2023;24:e14160",
+    "url": "https://doi.org/10.1002/acm2.14160",
+    "filename": "AAPM Medical Physics Practice Guideline 8.b Linearaccelerator performance tests.pdf",
+    "pages": 32,
+    "sha256": "a298c7632f87ea66c8ce8b03216177433f7be628acc4605bc99411031938ff1d"
+  },
+  {
+    "id": "MPPG9B",
+    "title": "AAPM-RSS MPPG 9.b: SRS-SBRT",
+    "edition": "2025;26:e14624",
+    "url": "https://doi.org/10.1002/acm2.14624",
+    "filename": "AAPM‐RSS Medical Physics Practice Guideline 9 b  SRS‐SBRT.pdf",
+    "pages": 19,
+    "sha256": "4d49056aff7d5be3ead2f2e5c3b3a647d708b3088acfd86ef1a635fa8a76eb03"
+  },
+  {
+    "id": "TG198",
+    "title": "TG-198: Implementation guide for TG-142",
+    "edition": "2021;48:e830–e885",
+    "url": "https://doi.org/10.1002/mp.14992",
+    "filename": "TG 198 An implementation guide for TG 142 quality assurance of medical accelerators.pdf",
+    "pages": 56,
+    "sha256": "80f2fa21e4198eb872f8f62340da52c86ad72831596d9fd26e3632bcc0fe4cc3"
+  },
+  {
+    "id": "ELEKTA_LINAC_CAT",
+    "title": "Elekta Medical Linear Accelerator Customer Acceptance Tests",
+    "edition": "1503568_12",
+    "publication_date_as_printed": "2020 (copyright)",
+    "pages": 66,
+    "sha256": "8b1de760bfdb62d802bab6fe6167d2c11be9ece53537c71bb5664f2b47961d14",
+    "access": "USER_PROVIDED_LOCAL_ONLY",
+    "document_available": true,
+    "installed_version_match": "unknown",
+    "source_contains_completed_acceptance_records": true
+  },
+  {
+    "id": "ELEKTA_LINAC_IFU",
+    "title": "Elekta Medical Linear Accelerator IFU Volume 1, Russian",
+    "edition": "1556473 01",
+    "publication_date_as_printed": "2020 (copyright)",
+    "pages": 294,
+    "sha256": "905ecc63847cd7d81ac5b16cd290478fc8a1dc42e2fd88fa93cf23e2ee587883",
+    "access": "USER_PROVIDED_LOCAL_ONLY",
+    "document_available": true,
+    "installed_version_match": "unknown",
+    "source_contains_completed_acceptance_records": false
+  },
+  {
+    "id": "ELEKTA_TABLE_CAT",
+    "title": "Precise Treatment Table CAT",
+    "edition": "1516411 06",
+    "publication_date_as_printed": "2018-09",
+    "pages": 26,
+    "sha256": "3d09d7f1b49870c4271dc1297f6a0e9317a290230e026fb318f58486258f0de9",
+    "access": "USER_PROVIDED_LOCAL_ONLY",
+    "document_available": true,
+    "installed_version_match": "unknown",
+    "source_contains_completed_acceptance_records": false
+  }
+]

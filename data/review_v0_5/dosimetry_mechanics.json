@@ -1,0 +1,1020 @@
+[
+  {
+    "test_code": "DOS-D1",
+    "name": "Ежедневное постоянство выхода фотонных и электронных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно, до клинического использования соответствующих пучков",
+    "original_action_criterion": "±3% от device baseline",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          14,
+          15
+        ],
+        "section": "Table 4; §8.2.2 D1"
+      }
+    ],
+    "frequency_claim": "Ежедневно для энергий, используемых в этот день.",
+    "criterion_claim": "3% относительно baseline данного прибора.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Baseline должен быть связан с первичной калибровкой. Показание ежедневного прибора не является абсолютной калибровкой ускорителя.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-D2",
+    "name": "Ежедневное постоянство профиля фотонных и электронных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно вместе с DOS-D1",
+    "original_action_criterion": "±2% от device baseline",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4; D2"
+      }
+    ],
+    "frequency_claim": "Ежедневно для используемых энергий.",
+    "criterion_claim": "2% от device baseline.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Измерения off-axis нормируются на CAX; если используется одна off-axis точка, нужен цикл направлений. Для FFF нельзя подменять constancy требованием плоского профиля.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-M1",
+    "name": "Ежемесячное независимое постоянство выхода",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "±2% от device baseline",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4; D1"
+      }
+    ],
+    "frequency_claim": "Ежемесячно все клинические пучки.",
+    "criterion_claim": "2% от baseline измерительной системы.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Источник разрешает secondary system; независимость от daily device сама по себе не заменяет traceability к абсолютной калибровке.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-M3",
+    "name": "Ежемесячное постоянство энергии фотонов",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "±1% для PDD/TPR-equivalent метрики",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          16
+        ],
+        "section": "Table 4; D4"
+      }
+    ],
+    "frequency_claim": "Ежемесячный review ежедневных energy checks либо отдельное измерение.",
+    "criterion_claim": "1% относительного изменения PDD/TPR метрики.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Косвенный показатель должен быть коррелирован с PRD. 1% относительного изменения не равен одному процентному пункту PDD.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-M4",
+    "name": "Ежемесячное постоянство энергии электронов",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "ΔR50 ≤2 мм",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15,
+          16
+        ],
+        "section": "Table 4; D3"
+      }
+    ],
+    "frequency_claim": "Ежемесячный review ежедневной энергии либо отдельный тест.",
+    "criterion_claim": "Эквивалентное изменение R50: 2 мм.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Индекс энергии ежедневного прибора необходимо перевести в эквивалент R50 через подтверждённую зависимость; raw ratio не сравнивать напрямую с мм.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A1",
+    "name": "Годовая абсолютная калибровка фотонных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после изменений абсолютной дозиметрии",
+    "original_action_criterion": "±1% от номинальной референсной дозы",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4; D1"
+      }
+    ],
+    "frequency_claim": "Ежегодно; дополнительные события требуют локального обоснования.",
+    "criterion_claim": "1% от ожидаемой референсной дозы.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Источник требует дозиметрию в воде по TG-51 или сопоставимому протоколу и внешнюю проверку калибровки. Конкретный выбор TRS-398 и коэффициенты здесь не проверены.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A2",
+    "name": "Годовая абсолютная калибровка электронных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после изменений электронного пучка",
+    "original_action_criterion": "±1% от номинальной референсной дозы",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4; D1"
+      }
+    ],
+    "frequency_claim": "Ежегодно; дополнительные события требуют локального обоснования.",
+    "criterion_claim": "1% от ожидаемой референсной дозы.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Источник требует дозиметрию в воде по TG-51 или сопоставимому протоколу и внешнюю проверку калибровки. Конкретный выбор TRS-398 и коэффициенты здесь не проверены.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A3",
+    "name": "Годовая точность фотонных профилей и OAF относительно TPS",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от TPS OAF",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4 footnote b; D2"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "Обычно 2% относительно TPS OAF; предусмотрена оговорка 1% от достигнутого commissioning agreement при близости к пределу моделирования.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Источник описывает центральные 80% профиля, крупные и дополнительные малые поля; для электронов нужна соответствующая глубина. Геометрические границы — отдельная локальная метрика.",
+    "proposed_change": "Добавить условие commissioning agreement и точную нормировку OAF; не применять 2% без учёта контекста и неопределённости.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A4",
+    "name": "Годовая точность электронных профилей и OAF относительно TPS",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от TPS OAF; геометрические границы — по commissioning baseline",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          15
+        ],
+        "section": "Table 4 footnote b; D2"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "Обычно 2% относительно TPS OAF; предусмотрена оговорка 1% от достигнутого commissioning agreement при близости к пределу моделирования.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Источник описывает центральные 80% профиля, крупные и дополнительные малые поля; для электронов нужна соответствующая глубина. Геометрические границы — отдельная локальная метрика.",
+    "proposed_change": "Добавить условие commissioning agreement и точную нормировку OAF; не применять 2% без учёта контекста и неопределённости.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A5",
+    "name": "Годовой полный контроль энергии фотонов",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±1% для выбранной PDD/TPR метрики",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          16
+        ],
+        "section": "Table 4; D4"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "1% для референсной PDD/TPR метрики относительно TPS PRD.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Допускаются проверка двумя точками или depth-dose в воде; название «полный контроль» не доказывает, что полный скан всегда обязателен.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A6",
+    "name": "Годовой полный контроль энергии электронов",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "ΔR50 ≤2 мм",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          16
+        ],
+        "section": "Table 4; D3"
+      },
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          22
+        ],
+        "section": "§2.D.1.6.2"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "MPPG8.b: 2 мм изменения R50; TG198 §2.D.1.6.2 приводит 1 мм от baseline.",
+    "claim_grade": "UNRESOLVED",
+    "implementation_notes": "Разные рекомендации нельзя молча объединить. При обнаруженном изменении >2 мм через точечный метод MPPG8.b требует полную проверку кривой в воде.",
+    "proposed_change": "Явно зафиксировать выбранный нормативный источник, величину и baseline; рассмотреть отличие TG198 при локальном review.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A7",
+    "name": "Линейность MU фотонных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от номинального значения",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          16,
+          17
+        ],
+        "section": "Table 4; D6"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "2% от номинальной дозы/MU.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Проверяется клинический диапазон MU и MU/segment для сегментированных пучков; один высокий MU не проверяет малые сегменты.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A8",
+    "name": "Линейность MU электронных пучков",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от номинального значения",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          17
+        ],
+        "section": "Table 4; D7"
+      }
+    ],
+    "frequency_claim": "Ежегодно для клинических электронных энергий.",
+    "criterion_claim": "2% от номинальной дозы/MU.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Сохранять диапазон MU, энергию и reference dose/MU; коррекции измерителя определяются выбранным протоколом.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A10",
+    "name": "Выход фотонных и электронных пучков в зависимости от угла гантри",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±1% от head-up gantry output",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          17
+        ],
+        "section": "Table 4; D9"
+      }
+    ],
+    "frequency_claim": "Ежегодно.",
+    "criterion_claim": "Обычно 1% относительно IEC 0°; текст допускает 2% при 180° без gantry mount.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Для электронов head-down не требуется, если такие клинические углы не используются. 1% локально может быть более строгим решением, но не универсальным пересказом источника.",
+    "proposed_change": "Сохранить 1% неутверждённым; отдельно описать геометрию крепления и решение об использовании исключения 180°.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A11",
+    "name": "OAF фотонных и электронных пучков в зависимости от угла гантри",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±1% от OAF при IEC gantry 0°",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          17
+        ],
+        "section": "Table 4; D10"
+      }
+    ],
+    "frequency_claim": "Ежегодно, покрывая клинический диапазон углов.",
+    "criterion_claim": "Обычно 1% относительно OAF IEC 0°; для 180° допускается 2% при сложной геометрии без array.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Сопоставлять одинаковые off-axis точки и жёсткость крепления; для электронов действует оговорка клинического использования head-down.",
+    "proposed_change": "Добавить условия исключения и критерий для конкретной схемы измерений; не смешивать output и OAF.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "DOS-A12",
+    "name": "Факторы выхода электронных аппликаторов",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно: минимум один аппликатор на энергию; размеры ротировать",
+    "original_action_criterion": "±2% от TPS/commissioning",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          22
+        ],
+        "section": "§2.D.1.4"
+      }
+    ],
+    "frequency_claim": "Годовой раздел; предложенная ротация одного аппликатора — локальное сокращение покрытия.",
+    "criterion_claim": "TG198: 2% относительно commissioning output factors.",
+    "claim_grade": "LOCALLY_DERIVED",
+    "implementation_notes": "Источник рекомендует минимальный, референсный и максимальный клинические аппликаторы, повторяя для электронных энергий. TPS и commissioning не следует обозначать одним неопределённым знаменателем.",
+    "proposed_change": "Явно обосновать сокращённый цикл; разделить сравнение с commissioning и TPS. Связать с ACC-A5 без дублирования измерения.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-D1",
+    "name": "Устройство локализации: лазеры / исходная разметка изоцентра",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно, в день клинического использования",
+    "original_action_criterion": "2 мм; для SRS с окончательной лазерной локализацией — 1 мм",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M1"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, laser localization"
+      }
+    ],
+    "frequency_claim": "Ежедневно используемая система локализации.",
+    "criterion_claim": "2 мм для обычной RT; отдельный 1 мм для SRS, если окончательная локализация по лазерам.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "IGRT/SGRT имеют собственные методики; preliminary setup lasers и final localization — разные роли.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-D2",
+    "name": "Оптический индикатор расстояния на изоцентре",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в день использования ODI",
+    "original_action_criterion": "2 мм на изоцентре",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M2"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          230
+        ],
+        "section": "Table 8.1, ODI"
+      }
+    ],
+    "frequency_claim": "Ежедневно при клиническом или QA использовании ODI; если не используется — routine single-point check.",
+    "criterion_claim": "MPPG8.b: 2 мм; Elekta IFU daily table: 1 мм на 100 см.",
+    "claim_grade": "UNRESOLVED",
+    "implementation_notes": "Числа относятся к рекомендациям разных документов. Соответствие IFU установленной машине ещё не подтверждено.",
+    "proposed_change": "Согласовать локальный критерий с применимой IFU; исходные 2 мм нельзя объявлять подтверждением выполнения заводских 1 мм.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-D3",
+    "name": "Положение Y1/Y2 Agility для одного опорного поля",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в день использования фотонных пучков",
+    "original_action_criterion": "2 мм на каждую диафрагму",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M3"
+      }
+    ],
+    "frequency_claim": "Ежедневно минимум одно поле.",
+    "criterion_claim": "2 мм на каждую jaw для визуального daily gross-error check.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Сопоставить названия Y1/Y2 и MLC/jaw с действующей системой координат Agility; не переносить daily jaw criterion на точность отдельного лепестка.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M1",
+    "name": "Полная проверка устройства локализации",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "1 мм",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M1"
+      }
+    ],
+    "frequency_claim": "Ежемесячный review daily data или независимая проверка.",
+    "criterion_claim": "1 мм.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Физическое выполнение нового теста каждый месяц не единственный маршрут, если ежедневные данные действительно проверяют более строгий предел.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M2",
+    "name": "ODI по клиническому диапазону расстояний",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно, если ODI используется клинически или для QA",
+    "original_action_criterion": "2 мм по клиническому диапазону",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M2"
+      }
+    ],
+    "frequency_claim": "Ежемесячно несколько расстояний по клиническому диапазону.",
+    "criterion_claim": "Общий предел 2 мм; QMP может обосновать case-specific предел.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Не ограничивать проверку одной точкой и не автоматически разрешать применение при отклонении; решение клинической значимости принимает QMP.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M3",
+    "name": "Положение Y1/Y2 по клиническому диапазону движения",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "2 мм на каждую диафрагму или <2% отклонения соответствующей OAF/OF-метрики",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          18
+        ],
+        "section": "Table 5; M3 main text"
+      }
+    ],
+    "frequency_claim": "Ежемесячно минимум две настройки, включая минимальное клиническое поле.",
+    "criterion_claim": "Требуется более строгое ограничение: геометрические 2 мм или суммарная ошибка, приводящая к 2% изменению field-size output factor.",
+    "claim_grade": "CONTRADICTION",
+    "implementation_notes": "Исходное «или» не должно позволять выбрать более мягкий критерий. OAF не является синонимом field-size OF. Для малых полей источник задаёт дополнительные условия симметрии.",
+    "proposed_change": "Заменить неоднозначное «2 мм или OAF/OF» предложением о более строгом ограничении и валидированной зависимости OF от суммарной ошибки краёв; не изменять активный критерий до review.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M4",
+    "name": "Показания углов гантри и коллиматора",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "0,5°",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19
+        ],
+        "section": "Table 5; M6"
+      }
+    ],
+    "frequency_claim": "Ежемесячно.",
+    "criterion_claim": "0,5° на основных углах.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Если imaging использует отдельный encoder gantry, он проверяется отдельно. Независимая угловая опора и её неопределённость обязательны.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M6",
+    "name": "Центрирование crosshair при вращении BLD/коллиматора",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Crosshair всегда в пределах 1 мм от оси; эквивалентно траектория ≤2 мм диаметром",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19
+        ],
+        "section": "Table 5; M8"
+      }
+    ],
+    "frequency_claim": "Ежемесячно при указанном клиническом/QA использовании crosshair.",
+    "criterion_claim": "Положение crosshair в пределах 1 мм от оси; полный walkout 2 мм.",
+    "claim_grade": "UNRESOLVED",
+    "implementation_notes": "Диаметр locus без проверки положения его центра относительно оси не доказывает ошибку ≤1 мм от оси.",
+    "proposed_change": "Уточнить слово «эквивалентно»: сохранять и диаметр locus, и смещение центра относительно reference axis.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M7",
+    "name": "Абсолютные показания положения Precise Treatment Table",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "2 мм и 1°",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19
+        ],
+        "section": "Table 5; M9"
+      }
+    ],
+    "frequency_claim": "Ежемесячно.",
+    "criterion_claim": "2 мм и 1° для абсолютных показаний.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Отдельно хранить координатное соглашение и независимый абсолютный reference. Проверка relative movement не заменяет абсолютную.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-M8",
+    "name": "Постоянство относительных перемещений Precise Treatment Table",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "1 мм для трансляции; 0,5° для вращения",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19
+        ],
+        "section": "Table 5; M10"
+      }
+    ],
+    "frequency_claim": "Ежемесячно; возможен зачёт другого теста при доказанном покрытии, включая вращение.",
+    "criterion_claim": "1 мм и 0,5°; таблица даёт базовые интервалы 10 см и 3°, текст обсуждает клинический диапазон.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Не трактовать числа как относительный масштабный процент; фиксировать заданные интервалы и покрытие диапазона.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-A1",
+    "name": "Положение Y1/Y2 в зависимости от угла гантри",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "В пределах спецификаций Elekta; локальный hard limit 2 мм на каждый Y-край",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          19
+        ],
+        "section": "M4"
+      }
+    ],
+    "frequency_claim": "Ежегодно или после сервиса.",
+    "criterion_claim": "В пределах спецификации производителя; локальные 2 мм не заданы M4.",
+    "claim_grade": "LOCALLY_DERIVED",
+    "implementation_notes": "M4 специально указывает для Elekta необходимость проверки каждой jaw и каждого MLC bank под действием гравитации. Linac CAT §3.2 — field-size specification, а не универсальный допуск gravity sag.",
+    "proposed_change": "Обосновать hard limit 2 мм отдельно; дополнить покрытие банками MLC и получить применимую спецификацию.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-A2",
+    "name": "Рентгеновский размер поля и соответствие показаниям поля",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после калибровки field size",
+    "original_action_criterion": "2 мм на каждый клинический край; при vendor acceptance: ±1 мм ≤20×20 см² и ±1% для больших полей",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          18
+        ],
+        "section": "M3, annual radiation-field check"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_CAT",
+        "pdf_pages": [
+          19
+        ],
+        "section": "§3.2.1–3.2.2"
+      }
+    ],
+    "frequency_claim": "Ежегодное радиационное измерение обязательно, если ежемесячно использовалось только световое поле.",
+    "criterion_claim": "Периодический M3 выбирает более строгое ограничение по геометрии/OF; CAT: ±1 мм до 20×20 см², ±1% для больших полей.",
+    "claim_grade": "UNRESOLVED",
+    "implementation_notes": "Приёмочные CAT и периодический QA имеют разные контексты. Основание процента и алгоритм определения каждого края требуют явной фиксации.",
+    "proposed_change": "Разделить acceptance и periodic критерии; добавить условие более строгого OF ограничения.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-A3",
+    "name": "Совпадение светового и радиационного полей",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; обязательно после работ с лампой, зеркалом, crosshair или головкой",
+    "original_action_criterion": "2 мм на каждый край",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          19
+        ],
+        "section": "M5"
+      }
+    ],
+    "frequency_claim": "Минимум ежегодно при клиническом/QA использовании света; после работ с оптической системой.",
+    "criterion_claim": "2 мм на jaw по MPPG8.b.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Проверяются jaws и MLC; локальная более строгая CAT спецификация должна иметь отдельный контекст. Проверка необходима также если свет служит reference для других QA.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-A4",
+    "name": "Общая радиационная изоцентричность гантри, коллиматора и стола",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно для общей RT; SRS/SBRT — см. MEC-SRS1",
+    "original_action_criterion": "2 мм диаметр",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          13,
+          19,
+          20
+        ],
+        "section": "Table 5; M11"
+      }
+    ],
+    "frequency_claim": "Ежегодно для обычной RT; SRS/SBRT отдельно.",
+    "criterion_claim": "2 мм диаметр; WL оценивает отклонение оси пучка от reference, а spoke-shot — размер охватывающей окружности.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Не считать любой 2D максимум «диаметром изоцентра»; проверить все используемые оси и различия jaw/MLC geometry.",
+    "proposed_change": "Сохранить отдельные метрики WL/spoke-shot и применимое правило, не один универсальный scalar PASS.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-SRS1",
+    "name": "Стереотаксическая радиационная изоцентричность",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ограниченный набор — в день применения; полный клинический диапазон — ежемесячно",
+    "original_action_criterion": "1,0 мм SRS; 1,5 мм SBRT",
+    "references": [
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, radiation isocentricity"
+      }
+    ],
+    "frequency_claim": "В день процедуры ограниченные проекции; ежемесячно полный клинический диапазон.",
+    "criterion_claim": "1 мм SRS, 1,5 мм SBRT; daily projection и monthly calculated 3D displacement различаются.",
+    "claim_grade": "VERIFIED",
+    "implementation_notes": "Не подменять monthly 3D оценку максимальным двумерным расстоянием. Покрытие конусов и MLC, если используются оба, должно быть документировано.",
+    "proposed_change": "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-L1",
+    "name": "Прямолинейность вертикального движения Precise Table",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после сервиса стола",
+    "original_action_criterion": "<2 мм между центрами",
+    "references": [
+      {
+        "source_id": "ELEKTA_TABLE_CAT",
+        "pdf_pages": [
+          12
+        ],
+        "section": "§2.2.2"
+      }
+    ],
+    "frequency_claim": "CAT — приёмочный тест; ежегодность и post-service цикл являются локальной программой.",
+    "criterion_claim": "Строго <2 мм между центрами crosswire в указанной геометрии.",
+    "claim_grade": "LOCALLY_DERIVED",
+    "implementation_notes": "В CAT есть специальная оговорка по вертикальному ходу при HexaPOD. Числа хода из CAT нельзя автоматически применять как безопасные команды на установленной машине.",
+    "proposed_change": "Зафиксировать CAT-происхождение метода, локальное обоснование частоты и различия A/B.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  },
+  {
+    "test_code": "MEC-L2",
+    "name": "Полный диапазон показаний и движения Precise Table",
+    "review_status": "PARTIAL",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после сервиса",
+    "original_action_criterion": "2 мм и 1°",
+    "references": [
+      {
+        "source_id": "ELEKTA_TABLE_CAT",
+        "pdf_pages": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "section": "§2.3.1–2.3.4"
+      }
+    ],
+    "frequency_claim": "Приёмочная проверка показаний; годовое повторение — локальное решение.",
+    "criterion_claim": "Для height/lateral текст <0,2 см; longitudinal ±2 мм; rotation ±1°.",
+    "claim_grade": "LOCALLY_DERIVED",
+    "implementation_notes": "Операторы сравнения (< и ≤) не следует терять. CAT оценивает readout в конкретных точках, а не доказывает всю непрерывную область движения.",
+    "proposed_change": "Разделить оси/метрики/точки и строгие границы; не объявлять покрытие всего диапазона по одной паре положений.",
+    "remaining_requirements": [
+      "Подтвердить применимость к установленной машине и клиническому режиму.",
+      "Проверить локальную геометрию, оборудование, калибровку, baseline, алгоритм и неопределённость.",
+      "Утверждение QMP отсутствует; полная верификация SOP не выполнена."
+    ]
+  }
+]

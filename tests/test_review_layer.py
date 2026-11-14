@@ -101,5 +101,44 @@ class ReviewLayerTests(unittest.TestCase):
                 self.assertNotIn(private_marker, content)
 
 
+class DosimetryMechanicsReviewTests(unittest.TestCase):
+    def test_coverage_matches_unique_reviewed_codes(self):
+        catalog = {r['code'] for r in read('test_definitions.json')}
+        coverage = read('review_v0_5/coverage.json')
+        reviewed = {r['test_code'] for r in read('review_v0_3/evidence.json')
+                    if r['review_status'] == 'PARTIAL'}
+        for file in ['review_v0_4/vendor_findings.json', 'review_v0_5/dosimetry_mechanics.json']:
+            reviewed.update(r['test_code'] for r in read(file))
+        self.assertEqual(len(coverage), len(catalog))
+        self.assertEqual({r['test_code'] for r in coverage}, catalog)
+        self.assertEqual({r['test_code'] for r in coverage if r['review_status'] == 'PARTIAL'}, reviewed)
+        for row in coverage:
+            self.assertFalse(row['clinical_approval'])
+            self.assertEqual(row['overall_grade'], 'UNRESOLVED')
+
+    def test_findings_preserve_originals_and_resolve_references(self):
+        catalog = {r['code']: r for r in read('test_definitions.json')}
+        sources = {r['id']: r for r in read('review_v0_5/sources.json')}
+        findings = read('review_v0_5/dosimetry_mechanics.json')
+        self.assertEqual(len(findings), len({r['test_code'] for r in findings}))
+        for row in findings:
+            original = catalog[row['test_code']]
+            self.assertEqual(row['original_frequency'], original['frequency_text'])
+            self.assertEqual(row['original_action_criterion'], original['action_limit_text'])
+            self.assertFalse(row['clinical_approval'])
+            self.assertEqual(row['overall_grade'], 'UNRESOLVED')
+            self.assertEqual(row['execution_readiness'], 'not_ready')
+            self.assertTrue(row['remaining_requirements'])
+            self.assertTrue(row['references'])
+            for ref in row['references']:
+                source = sources[ref['source_id']]
+                self.assertTrue(ref['section'])
+                self.assertTrue(ref['pdf_pages'])
+                self.assertRegex(source['sha256'], r'^[0-9a-f]{64}$')
+                for page in ref['pdf_pages']:
+                    self.assertGreaterEqual(page, 1)
+                    self.assertLessEqual(page, source['pages'])
+
+
 if __name__ == '__main__':
     unittest.main()
