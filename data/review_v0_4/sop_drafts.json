@@ -1,0 +1,687 @@
+[
+  {
+    "id": "VMAT-S2@review-draft-v0.4",
+    "test_code": "VMAT-S2",
+    "parent_sop_version_id": "VMAT-S2@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          1,
+          13,
+          19,
+          20,
+          21,
+          29,
+          30
+        ],
+        "section": "Scope; §3.2.3–3.2.4; §3.4.1; certificate"
+      }
+    ],
+    "source_finding": "Редакция 1510266 03 найдена. Документ действительно является приёмочным CAT, включает H&N_VMATCAT и отдельные геометрические/дозиметрические пункты. Успешная доставка одного поля не означает прохождение полного CAT.",
+    "open_requirements": [
+      "Совместимость CAT с фактическими Integrity/TCS и Agility; полномочия исполнителя; перечень применимых пунктов и утверждение QMP."
+    ],
+    "original_frequency_unapproved": "При приёмке; после крупных обновлений Integrity/TCS или замены BLD; не как ежемесячный тест",
+    "original_criterion_unapproved": "Все применимые eCAT-пункты PASS",
+    "title": "Полный Elekta VMAT eCAT и успешная доставка H&N_VMATCAT",
+    "input_template": "Состав полного VMAT eCAT и H&N_VMATCAT; критерии, порядок выполнения и возврат в эксплуатацию.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Создать checklist применимых разделов CAT и ссылки на подписанный локальный протокол; отдельно хранить completeness и outcome.",
+      "Разделить результат §3.2.4 (паузы до завершения) и §3.4.1 (успешная доставка); не сводить их к одной неопределённой отметке PASS.",
+      "EQAT принимает только вручную экспортированный отчёт. Установку iCOM-CAT, сервисные изменения и доставку пучка приложение не выполняет."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "MEC-S1@review-draft-v0.4",
+    "test_code": "MEC-S1",
+    "parent_sop_version_id": "MEC-S1@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_CAT",
+        "pdf_pages": [
+          17,
+          18
+        ],
+        "section": "§3.1.1–3.1.2, Tables 3.1–3.2"
+      }
+    ],
+    "source_finding": "Подтверждены разные геометрии: диаметр 1 мм на 100 см SSD и 2 мм на полу при вращении BLD. Для gantry текст §3.1.2 говорит о круге диаметром 2 мм, а таблица 3.2 содержит Vector ≤2 mm; перед вычислением общего результата требуется уточнить интерпретацию этого сочетания.",
+    "open_requirements": [
+      "Уточнение у QMP/производителя Vector versus diameter; актуальность редакции и локальный reference; clinical approval."
+    ],
+    "original_frequency_unapproved": "При приёмке, после крупного сервиса головы/гантри/BLD и при расследовании",
+    "original_criterion_unapproved": "Elekta CAT: crosshair ≤1 мм диаметром на 100 см SSD; gantry mechanical locus ≤2 мм диаметром",
+    "title": "Механический isocenter и crosswire locus по Elekta CAT",
+    "input_template": "Заводская CAT-геометрия, механический reference, разрешённые инструменты и процедуры сервиса.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Хранить раздельно locus BLD на двух плоскостях и A-B/G-T компоненты каждого угла gantry.",
+      "Формула вектора sqrt(AB²+GT²) не заменяет вычисление диаметра locus; не объединять разные метрики.",
+      "Использовать ссылки на локальную CAT-методику; подписанные числа из экземпляра не переносить в baseline или измерения EQAT."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "SAF-D9@review-draft-v0.4",
+    "test_code": "SAF-D9",
+    "parent_sop_version_id": "SAF-D9@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          229,
+          233,
+          237
+        ],
+        "section": "§8.1.2; §8.1.2.3; §8.1.4"
+      }
+    ],
+    "source_finding": "Найдены ежедневная проверка внешних блокировочных устройств и отдельная проверка дверного запрета. Это части матрицы beam-enable, но не доказательство полного охвата всех конфигураций.",
+    "open_requirements": [
+      "Полный перечень подключённых систем A/B и действующая IFU; ежедневный/периодический график; разрешённая программа проверки."
+    ],
+    "original_frequency_unapproved": "Ежедневно в составе клинического запуска",
+    "original_criterion_unapproved": "Beam inhibited in unsafe state",
+    "title": "Beam enable при корректной конфигурации",
+    "input_template": "Матрица beam-enable/inhibit states установленной версии Integrity.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Добавить к каждому состоянию код запрета, ожидаемую индикацию, допустимый режим проверки и ссылку на точный пункт IFU.",
+      "Признак готовности не считать доказательством проверки всех защит; документировать покрытие по устройствам."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "SAF-M1@review-draft-v0.4",
+    "test_code": "SAF-M1",
+    "parent_sop_version_id": "SAF-M1@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          16,
+          229
+        ],
+        "section": "Emergency procedures; §8.1.2 Caution 8.1"
+      }
+    ],
+    "source_finding": "IFU содержит ограничение проверки Emergency OFF при нестандартной проводке: возможное отключение компьютера Integrity и повреждение дисков требует специального порядка. Найденный текст не разрешает универсальный тест всех кнопок на работающей системе.",
+    "open_requirements": [
+      "Схема электропитания площадки, список кнопок, сервисный порядок восстановления и разрешение QMP."
+    ],
+    "original_frequency_unapproved": "Ежемесячно по ротации; все точки не реже одного раза в год",
+    "original_criterion_unapproved": "100% functional",
+    "title": "Полный функциональный охват Emergency OFF",
+    "input_template": "Инвентарь EPO/beam-off, тест без повреждения оборудования, питание и восстановление.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Включить обязательное предварительное подтверждение схемы питания и разрешённого состояния системы сервисом.",
+      "Разделить Emergency OFF, beam interrupt, motor stop и другие устройства; у каждого свой ожидаемый эффект и восстановление.",
+      "До подтверждения условий не выдавать исполняемые шаги. Ротационный график v0.2 остаётся локальным предложением."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "SAF-M5@review-draft-v0.4",
+    "test_code": "SAF-M5",
+    "parent_sop_version_id": "SAF-M5@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_IVIEW_IFU",
+        "pdf_pages": [
+          229,
+          230
+        ],
+        "section": "§17.3.1 Tables 17.5–17.6"
+      },
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          9
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_CAT",
+        "pdf_pages": [
+          13
+        ],
+        "section": "Contents of test chapter"
+      }
+    ],
+    "source_finding": "В iViewGT IFU найдены ежедневные проверки защит дуги и прекращения/прерывания излучения. Найденные eCAT ориентированы на качество изображений и геометрию и не подтверждают полный месячный safety checklist.",
+    "open_requirements": [
+      "Полная карта ежедневного охвата IMG-D1; версия/наличие XVI и iViewGT на каждой машине; соответствующая XVI IFU."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Functional",
+    "title": "Imaging beam and motion safety interlocks",
+    "input_template": "Перечень imaging interlocks, ежедневный охват и расширенный месячный маршрут.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Привязать iViewGT daily safety к IMG-D1 и явному списку устройств; месячную расширенную проверку хранить отдельно.",
+      "XVI и iViewGT не считать взаимозаменяемыми системами; для XVI запросить применимую safety IFU.",
+      "Не переносить инструкции управления защитой из IFU в автоматизацию EQAT."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "IMG-A8@review-draft-v0.4",
+    "test_code": "IMG-A8",
+    "parent_sop_version_id": "IMG-A8@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          9
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_CAT",
+        "pdf_pages": [
+          13
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          7,
+          12,
+          13
+        ],
+        "section": "§1.1; §2.2 Response interface"
+      }
+    ],
+    "source_finding": "ABC/Response CAT подтверждает управление лечебным пучком при дыхательном gating, но это не та же проверка, что imaging gating interlock. В просмотренных eCAT отдельная процедура IMG-A8 не установлена.",
+    "open_requirements": [
+      "IFU imaging/gating interface установленной версии; сценарии и наблюдаемое поведение; QMP review."
+    ],
+    "original_frequency_unapproved": "Ежегодно и после изменения gating interface",
+    "original_criterion_unapproved": "Functional",
+    "title": "Imaging gating interlock",
+    "input_template": "Матрица gating states, безопасный test mode, ожидаемое поведение и восстановление.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Не использовать ABC beam-gating как замену imaging-gating.",
+      "Сначала определить точную функцию, тип imaging acquisition и интерфейс; затем привязать к применимому документу.",
+      "Сохранить отсутствие исполняемых шагов до определения интерфейса."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "SAF-M6@review-draft-v0.4",
+    "test_code": "SAF-M6",
+    "parent_sop_version_id": "SAF-M6@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_TABLE_CAT",
+        "pdf_pages": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "section": "§2.4 reference to motorized movement limits"
+      },
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          45
+        ],
+        "section": "§4.1.3 Figure 4.3"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          231,
+          233
+        ],
+        "section": "Table 8.1; §8.1.2.4"
+      }
+    ],
+    "source_finding": "CAT стола содержит диапазоны в разных соглашениях координат. Диаграмма iGUIDE задаёт приближённую взаимосвязанную область перемещений; это не независимые разрешённые пределы каждой оси и не метод испытания soft limits.",
+    "open_requirements": [
+      "Утверждённая сервисом безопасная матрица поз и конфигурация лимитов конкретной машины."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Functional; движение прекращается безопасно",
+    "title": "Couch motion limits и механические soft limits",
+    "input_template": "Границы безопасного перемещения, нагрузки, test mode и проверка остановки без контакта.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Разделить Precise table и HexaPOD; записать систему координат, нагрузку и совместимость комбинаций translation/rotation.",
+      "Проверки остановки при отпускании enable/motor-stop отделить от проверки пределов хода.",
+      "Не строить тестовые команды по крайним числам диаграммы; не менять soft limits."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "ABC-A2@review-draft-v0.4",
+    "test_code": "ABC-A2",
+    "parent_sop_version_id": "ABC-A2@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          53,
+          135,
+          136,
+          137,
+          138,
+          139
+        ],
+        "section": "§3.3.4 Table 3.7; §7.1.3–7.1.4"
+      },
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          7,
+          11,
+          12,
+          13,
+          14
+        ],
+        "section": "Scope; §2.1–2.3"
+      }
+    ],
+    "source_finding": "В IFU есть проверка калибровки с сертифицированным 3-литровым шприцем: 5% от 3 л, то есть 2,85–3,15 л; описаны ежедневный контроль и недельная проверка утечки. Это проверка калибровки, а не разрешение изменять её. Годовой полный range/flow sweep не подтверждён этими разделами.",
+    "open_requirements": [
+      "Версия ABC, применимость старой IFU, годовая программа производителя либо локальное обоснование, поверка оборудования и approval."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Все routine limits PASS",
+    "title": "Полный range/flow calibration и environmental check",
+    "input_template": "IFU calibration/check sequence, диапазоны потока/объёма и environmental compensation.",
+    "steps": [],
+    "analysis": "Функциональная матрица expected/observed только после получения IFU; отсутствие процедуры → NOT_EVALUATED.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Отделить ежедневный контроль объёма, недельную функциональную проверку и предлагаемое годовое расширение.",
+      "В шаблоне данных хранить направление, режим потока, повтор, reference volume, температуру/влажность и сертификат шприца.",
+      "Для анализа delta_V=100*(V_measured/V_reference−1); оценивать каждый повтор. Недельную утечку не выводить только из движения поршня.",
+      "Границы среды брать из применимой редакции IFU; не придумывать поправки по температуре/давлению."
+    ],
+    "operator_steps_status": "NOT_AUTHORED_PENDING_LOCAL_VALIDATION"
+  },
+  {
+    "id": "MLC-M2@review-draft-v0.4",
+    "test_code": "MLC-M2",
+    "parent_sop_version_id": "MLC-M2@review-draft-v0.3",
+    "change_type": "analysis_supplement",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          19,
+          20,
+          21
+        ],
+        "section": "§3.2.3.1–3.2.4"
+      }
+    ],
+    "source_finding": "Подтверждены Average Actual Error и Actual Tolerance. Для отрицательных ошибок сравнение использует зеркальный предел. Паузы при завершении и оговорённый артефакт графика нужно отделять от реальных нарушений; правило нулевых PRF до завершения явно дано для setup-test §3.2.4.",
+    "open_requirements": [
+      "Привязка каналов и формат экспорта, актуальная версия TCS и валидация анализа."
+    ],
+    "original_frequency_unapproved": "Ежемесячно",
+    "original_criterion_unapproved": "Все Average Actual Error внутри Actual Tolerance; PRF pauses = 0 до окончания поля; скорость ±0,5 см/с от заданной",
+    "title": "Скорость и динамические ошибки",
+    "input_template": "Время; позиции; единицы; заданная скорость; frame rate; признак паузы; vendor field definitions.",
+    "steps": [
+      "Проверить монотонность времени и полное покрытие",
+      "выделить участки постоянной скорости и переходные процессы",
+      "рассчитать скорости и ошибки",
+      "отдельно перечислить паузы",
+      "поля eCAT трактовать только после проверки документа."
+    ],
+    "analysis": "v_i=(x_i+1−x_i)/(t_i+1−t_i); dt>0. Сопоставлять модуль скорости с заданным на том же участке. Пропуски кадров и разгон не включать в plateau без обоснования.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Дополнить анализ условиями -T(t)<e_i(t)<T(t), охватом обеих банков и всех лепестков, синхронизацией каналов и события завершения.",
+      "Не заменять per-leaf time series усреднением по всем лепесткам.",
+      "Не применять правило PRF=0 ко всему файлу без разграничения тестов и завершения; любые исключения документировать по соответствующей секции.",
+      "Скорость из TG-198 оставить отдельной метрикой. Экспорт service graphing анализируется офлайн; настройки сервиса не изменяются."
+    ]
+  },
+  {
+    "id": "HEX-A1@review-draft-v0.4",
+    "test_code": "HEX-A1",
+    "parent_sop_version_id": "HEX-A1@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          1,
+          45,
+          187
+        ],
+        "section": "Title; §4.1.3; §10.3–10.4"
+      }
+    ],
+    "source_finding": "Редакция IFU относится к iGUIDE 2.2.3. Годовое техническое испытание и проверка прогиба описаны, но не подтверждают автоматически полный 6DoF accuracy test или исходные 0,3°/0,2°.",
+    "open_requirements": [
+      "Установленная версия iGUIDE; клинический диапазон, reference, нагрузка и обоснование локальных допусков."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "Translations ≤1,0 мм; rotations ≤0,3° routine, ≤0,2° SRS",
+    "title": "Диапазон 6DoF под нагрузкой",
+    "input_template": "IFU limits; load and distribution; poses; independent 6DoF reference; software versions.",
+    "steps": [
+      "До выполнения определить разрешённую область IFU и нагрузку",
+      "построить матрицу безопасных положений",
+      "измерить commanded/measured/residual для каждой позы",
+      "не достигать механических ограничителей ради теста."
+    ],
+    "analysis": "Покомпонентные translation/rotation errors и residual после коррекции; угловую convention фиксировать. Исходные 0,3°/0,2° остаются неутверждёнными.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Отделить техническую/электрическую безопасность, прогиб деки и точность позиционирования.",
+      "Не переносить нагрузку из теста прогиба на произвольные динамические 6DoF позы.",
+      "Сохранить локальные угловые пределы неутверждёнными."
+    ]
+  },
+  {
+    "id": "SAF-A5@review-draft-v0.4",
+    "test_code": "SAF-A5",
+    "parent_sop_version_id": "SAF-A5@review-draft-v0.3",
+    "change_type": "new_procedure_draft",
+    "status": "DRAFT_VENDOR_REVIEW_PENDING",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          230
+        ],
+        "section": "Table 8.1, visual checks"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_IFU",
+        "pdf_pages": [
+          229
+        ],
+        "section": "Table 17.5"
+      }
+    ],
+    "source_finding": "Наличие и читаемость предупреждающей маркировки включены в ежедневные рекомендации производителя. Годовой аудит SAF-A5 может быть дополнительным, но не заменяет этот daily coverage.",
+    "open_requirements": [
+      "Карта ежедневных проверок A/B и подтверждение применимости IFU."
+    ],
+    "original_frequency_unapproved": "Ежегодно",
+    "original_criterion_unapproved": "100% complete",
+    "title": "Маркировка и доступ",
+    "input_template": "Утверждённый список labels; места; версии инструкций; доступность emergency controls.",
+    "steps": [
+      "Сверить все позиции локального перечня с IFU",
+      "записать читаемость, наличие и доступ",
+      "дефекты передать ответственному",
+      "не изменять заводские таблички самостоятельно."
+    ],
+    "analysis": "Coverage=checked/required; отдельно missing, illegible, obstructed. 100% покрытия не означает отсутствие дефектов.",
+    "preconditions": [
+      "Утверждённые QMP версия SOP, критерий, геометрия и применимость к машине до исполнения.",
+      "Квалифицированный оператор; исправное поверенное оборудование; только QA-фантом и разрешённый локальный режим.",
+      "Baseline, если требуется, и валидированный алгоритм; неполные входы дают NOT_EVALUATED."
+    ],
+    "assessment": "Черновой расчёт/наблюдение не разрешает клиническое применение. Критерии и правило неопределённости утверждает QMP; до утверждения только NOT_EVALUATED.",
+    "troubleshooting": "Проверить единицы, геометрию, идентификаторы плана, калибровку и полноту данных; сохранить первоначальный результат. Повтор не стирает отказ; необъяснимое отклонение передать QMP/сервису без настройки оборудования.",
+    "records_to_keep": [
+      "machine/config revision",
+      "test/SOP/criterion versions",
+      "QA plan and phantom IDs",
+      "operator/reviewer/date",
+      "raw dataset checksum",
+      "algorithm/version/settings",
+      "all observations and repeats",
+      "calibration/baseline IDs",
+      "uncertainty and decision rationale"
+    ],
+    "installed_version_match": "unknown",
+    "proposed_sop_changes": [
+      "Добавить связь с ежедневным визуальным checklist и сохранить годовой полный аудит как отдельный уровень.",
+      "Не помечать график согласованным, пока не определено покрытие ежедневными тестами."
+    ]
+  }
+]

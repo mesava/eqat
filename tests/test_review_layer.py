@@ -65,6 +65,41 @@ class ReviewLayerTests(unittest.TestCase):
             self.assertNotIn('drive.google.com', content)
             self.assertNotIn('docs.google.com', content)
 
+    def test_vendor_followup_preserves_blocked_execution_and_parentage(self):
+        followups = read('review_v0_4/sop_drafts.json')
+        findings = read('review_v0_4/vendor_findings.json')
+        parents = {s['test_code']: s for s in self.drafts}
+        blocked = {s['test_code'] for s in self.drafts if s['status'] == 'BLOCKED_VENDOR_SOURCE'}
+        self.assertTrue(blocked <= {s['test_code'] for s in followups})
+        self.assertEqual(len(followups), len({s['test_code'] for s in followups}))
+        self.assertEqual({s['test_code'] for s in followups}, {s['test_code'] for s in findings})
+        for draft in followups:
+            self.assertEqual(draft['parent_sop_version_id'], parents[draft['test_code']]['id'])
+            self.assertFalse(draft['clinical_approval'])
+            self.assertEqual(draft['execution_readiness'], 'not_ready')
+            self.assertEqual(draft['installed_version_match'], 'unknown')
+            self.assertTrue(draft['open_requirements'])
+            self.assertNotIn(draft['id'], {t['sop_version_id'] for t in self.tests})
+            if draft['test_code'] in blocked:
+                self.assertEqual(draft['steps'], [])
+
+    def test_vendor_references_and_public_content(self):
+        sources = {s['id']: s for s in read('review_v0_4/sources.json')}
+        for row in read('review_v0_4/vendor_findings.json'):
+            self.assertFalse(row['clinical_approval'])
+            self.assertEqual(row['overall_grade'], 'UNRESOLVED')
+            for ref in row['references']:
+                source = sources[ref['source_id']]
+                self.assertTrue(ref['section'])
+                self.assertRegex(source['sha256'], r'^[0-9a-f]{64}$')
+                for page in ref['pdf_pages']:
+                    self.assertGreaterEqual(page, 1)
+                    self.assertLessEqual(page, source['pages'])
+        for path in (ROOT / 'data/review_v0_4').glob('*.json'):
+            content = path.read_text(encoding='utf-8')
+            for private_marker in ['drive.google.com', 'docs.google.com', 'G:\\\\']:
+                self.assertNotIn(private_marker, content)
+
 
 if __name__ == '__main__':
     unittest.main()

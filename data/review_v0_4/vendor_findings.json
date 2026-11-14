@@ -1,0 +1,377 @@
+[
+  {
+    "test_code": "VMAT-S2",
+    "document_review_status": "SOURCE_FOUND_CONFIGURATION_PENDING",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          1,
+          13,
+          19,
+          20,
+          21,
+          29,
+          30
+        ],
+        "section": "Scope; §3.2.3–3.2.4; §3.4.1; certificate"
+      }
+    ],
+    "finding": "Редакция 1510266 03 найдена. Документ действительно является приёмочным CAT, включает H&N_VMATCAT и отдельные геометрические/дозиметрические пункты. Успешная доставка одного поля не означает прохождение полного CAT.",
+    "proposed_sop_changes": [
+      "Создать checklist применимых разделов CAT и ссылки на подписанный локальный протокол; отдельно хранить completeness и outcome.",
+      "Разделить результат §3.2.4 (паузы до завершения) и §3.4.1 (успешная доставка); не сводить их к одной неопределённой отметке PASS.",
+      "EQAT принимает только вручную экспортированный отчёт. Установку iCOM-CAT, сервисные изменения и доставку пучка приложение не выполняет."
+    ],
+    "remaining_requirements": [
+      "Совместимость CAT с фактическими Integrity/TCS и Agility; полномочия исполнителя; перечень применимых пунктов и утверждение QMP."
+    ]
+  },
+  {
+    "test_code": "MEC-S1",
+    "document_review_status": "SOURCE_FOUND_METRIC_CLARIFICATION_REQUIRED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_CAT",
+        "pdf_pages": [
+          17,
+          18
+        ],
+        "section": "§3.1.1–3.1.2, Tables 3.1–3.2"
+      }
+    ],
+    "finding": "Подтверждены разные геометрии: диаметр 1 мм на 100 см SSD и 2 мм на полу при вращении BLD. Для gantry текст §3.1.2 говорит о круге диаметром 2 мм, а таблица 3.2 содержит Vector ≤2 mm; перед вычислением общего результата требуется уточнить интерпретацию этого сочетания.",
+    "proposed_sop_changes": [
+      "Хранить раздельно locus BLD на двух плоскостях и A-B/G-T компоненты каждого угла gantry.",
+      "Формула вектора sqrt(AB²+GT²) не заменяет вычисление диаметра locus; не объединять разные метрики.",
+      "Использовать ссылки на локальную CAT-методику; подписанные числа из экземпляра не переносить в baseline или измерения EQAT."
+    ],
+    "remaining_requirements": [
+      "Уточнение у QMP/производителя Vector versus diameter; актуальность редакции и локальный reference; clinical approval."
+    ]
+  },
+  {
+    "test_code": "SAF-D9",
+    "document_review_status": "SOURCE_FOUND_SCOPE_PENDING",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          229,
+          233,
+          237
+        ],
+        "section": "§8.1.2; §8.1.2.3; §8.1.4"
+      }
+    ],
+    "finding": "Найдены ежедневная проверка внешних блокировочных устройств и отдельная проверка дверного запрета. Это части матрицы beam-enable, но не доказательство полного охвата всех конфигураций.",
+    "proposed_sop_changes": [
+      "Добавить к каждому состоянию код запрета, ожидаемую индикацию, допустимый режим проверки и ссылку на точный пункт IFU.",
+      "Признак готовности не считать доказательством проверки всех защит; документировать покрытие по устройствам."
+    ],
+    "remaining_requirements": [
+      "Полный перечень подключённых систем A/B и действующая IFU; ежедневный/периодический график; разрешённая программа проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-M1",
+    "document_review_status": "SOURCE_FOUND_SITE_WIRING_PENDING",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          16,
+          229
+        ],
+        "section": "Emergency procedures; §8.1.2 Caution 8.1"
+      }
+    ],
+    "finding": "IFU содержит ограничение проверки Emergency OFF при нестандартной проводке: возможное отключение компьютера Integrity и повреждение дисков требует специального порядка. Найденный текст не разрешает универсальный тест всех кнопок на работающей системе.",
+    "proposed_sop_changes": [
+      "Включить обязательное предварительное подтверждение схемы питания и разрешённого состояния системы сервисом.",
+      "Разделить Emergency OFF, beam interrupt, motor stop и другие устройства; у каждого свой ожидаемый эффект и восстановление.",
+      "До подтверждения условий не выдавать исполняемые шаги. Ротационный график v0.2 остаётся локальным предложением."
+    ],
+    "remaining_requirements": [
+      "Схема электропитания площадки, список кнопок, сервисный порядок восстановления и разрешение QMP."
+    ]
+  },
+  {
+    "test_code": "SAF-M5",
+    "document_review_status": "SOURCE_FOUND_DAILY_COVERAGE_REVIEW",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_IVIEW_IFU",
+        "pdf_pages": [
+          229,
+          230
+        ],
+        "section": "§17.3.1 Tables 17.5–17.6"
+      },
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          9
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_CAT",
+        "pdf_pages": [
+          13
+        ],
+        "section": "Contents of test chapter"
+      }
+    ],
+    "finding": "В iViewGT IFU найдены ежедневные проверки защит дуги и прекращения/прерывания излучения. Найденные eCAT ориентированы на качество изображений и геометрию и не подтверждают полный месячный safety checklist.",
+    "proposed_sop_changes": [
+      "Привязать iViewGT daily safety к IMG-D1 и явному списку устройств; месячную расширенную проверку хранить отдельно.",
+      "XVI и iViewGT не считать взаимозаменяемыми системами; для XVI запросить применимую safety IFU.",
+      "Не переносить инструкции управления защитой из IFU в автоматизацию EQAT."
+    ],
+    "remaining_requirements": [
+      "Полная карта ежедневного охвата IMG-D1; версия/наличие XVI и iViewGT на каждой машине; соответствующая XVI IFU."
+    ]
+  },
+  {
+    "test_code": "IMG-A8",
+    "document_review_status": "SPECIFIC_PROCEDURE_UNRESOLVED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          9
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_CAT",
+        "pdf_pages": [
+          13
+        ],
+        "section": "Contents of test chapter"
+      },
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          7,
+          12,
+          13
+        ],
+        "section": "§1.1; §2.2 Response interface"
+      }
+    ],
+    "finding": "ABC/Response CAT подтверждает управление лечебным пучком при дыхательном gating, но это не та же проверка, что imaging gating interlock. В просмотренных eCAT отдельная процедура IMG-A8 не установлена.",
+    "proposed_sop_changes": [
+      "Не использовать ABC beam-gating как замену imaging-gating.",
+      "Сначала определить точную функцию, тип imaging acquisition и интерфейс; затем привязать к применимому документу.",
+      "Сохранить отсутствие исполняемых шагов до определения интерфейса."
+    ],
+    "remaining_requirements": [
+      "IFU imaging/gating interface установленной версии; сценарии и наблюдаемое поведение; QMP review."
+    ]
+  },
+  {
+    "test_code": "SAF-M6",
+    "document_review_status": "SOURCE_FOUND_LIMITS_NOT_VALIDATED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_TABLE_CAT",
+        "pdf_pages": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "section": "§2.4 reference to motorized movement limits"
+      },
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          45
+        ],
+        "section": "§4.1.3 Figure 4.3"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          231,
+          233
+        ],
+        "section": "Table 8.1; §8.1.2.4"
+      }
+    ],
+    "finding": "CAT стола содержит диапазоны в разных соглашениях координат. Диаграмма iGUIDE задаёт приближённую взаимосвязанную область перемещений; это не независимые разрешённые пределы каждой оси и не метод испытания soft limits.",
+    "proposed_sop_changes": [
+      "Разделить Precise table и HexaPOD; записать систему координат, нагрузку и совместимость комбинаций translation/rotation.",
+      "Проверки остановки при отпускании enable/motor-stop отделить от проверки пределов хода.",
+      "Не строить тестовые команды по крайним числам диаграммы; не менять soft limits."
+    ],
+    "remaining_requirements": [
+      "Утверждённая сервисом безопасная матрица поз и конфигурация лимитов конкретной машины."
+    ]
+  },
+  {
+    "test_code": "ABC-A2",
+    "document_review_status": "SOURCE_FOUND_ANNUAL_SCOPE_UNRESOLVED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          53,
+          135,
+          136,
+          137,
+          138,
+          139
+        ],
+        "section": "§3.3.4 Table 3.7; §7.1.3–7.1.4"
+      },
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          7,
+          11,
+          12,
+          13,
+          14
+        ],
+        "section": "Scope; §2.1–2.3"
+      }
+    ],
+    "finding": "В IFU есть проверка калибровки с сертифицированным 3-литровым шприцем: 5% от 3 л, то есть 2,85–3,15 л; описаны ежедневный контроль и недельная проверка утечки. Это проверка калибровки, а не разрешение изменять её. Годовой полный range/flow sweep не подтверждён этими разделами.",
+    "proposed_sop_changes": [
+      "Отделить ежедневный контроль объёма, недельную функциональную проверку и предлагаемое годовое расширение.",
+      "В шаблоне данных хранить направление, режим потока, повтор, reference volume, температуру/влажность и сертификат шприца.",
+      "Для анализа delta_V=100*(V_measured/V_reference−1); оценивать каждый повтор. Недельную утечку не выводить только из движения поршня.",
+      "Границы среды брать из применимой редакции IFU; не придумывать поправки по температуре/давлению."
+    ],
+    "remaining_requirements": [
+      "Версия ABC, применимость старой IFU, годовая программа производителя либо локальное обоснование, поверка оборудования и approval."
+    ]
+  },
+  {
+    "test_code": "MLC-M2",
+    "document_review_status": "SOURCE_FOUND_ANALYSIS_REFINED",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          19,
+          20,
+          21
+        ],
+        "section": "§3.2.3.1–3.2.4"
+      }
+    ],
+    "finding": "Подтверждены Average Actual Error и Actual Tolerance. Для отрицательных ошибок сравнение использует зеркальный предел. Паузы при завершении и оговорённый артефакт графика нужно отделять от реальных нарушений; правило нулевых PRF до завершения явно дано для setup-test §3.2.4.",
+    "proposed_sop_changes": [
+      "Дополнить анализ условиями -T(t)<e_i(t)<T(t), охватом обеих банков и всех лепестков, синхронизацией каналов и события завершения.",
+      "Не заменять per-leaf time series усреднением по всем лепесткам.",
+      "Не применять правило PRF=0 ко всему файлу без разграничения тестов и завершения; любые исключения документировать по соответствующей секции.",
+      "Скорость из TG-198 оставить отдельной метрикой. Экспорт service graphing анализируется офлайн; настройки сервиса не изменяются."
+    ],
+    "remaining_requirements": [
+      "Привязка каналов и формат экспорта, актуальная версия TCS и валидация анализа."
+    ]
+  },
+  {
+    "test_code": "HEX-A1",
+    "document_review_status": "SOURCE_FOUND_LOCAL_CRITERIA_PENDING",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          1,
+          45,
+          187
+        ],
+        "section": "Title; §4.1.3; §10.3–10.4"
+      }
+    ],
+    "finding": "Редакция IFU относится к iGUIDE 2.2.3. Годовое техническое испытание и проверка прогиба описаны, но не подтверждают автоматически полный 6DoF accuracy test или исходные 0,3°/0,2°.",
+    "proposed_sop_changes": [
+      "Отделить техническую/электрическую безопасность, прогиб деки и точность позиционирования.",
+      "Не переносить нагрузку из теста прогиба на произвольные динамические 6DoF позы.",
+      "Сохранить локальные угловые пределы неутверждёнными."
+    ],
+    "remaining_requirements": [
+      "Установленная версия iGUIDE; клинический диапазон, reference, нагрузка и обоснование локальных допусков."
+    ]
+  },
+  {
+    "test_code": "SAF-A5",
+    "document_review_status": "SOURCE_FOUND_SCHEDULE_GAP",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "installed_version_match": "unknown",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          230
+        ],
+        "section": "Table 8.1, visual checks"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_IFU",
+        "pdf_pages": [
+          229
+        ],
+        "section": "Table 17.5"
+      }
+    ],
+    "finding": "Наличие и читаемость предупреждающей маркировки включены в ежедневные рекомендации производителя. Годовой аудит SAF-A5 может быть дополнительным, но не заменяет этот daily coverage.",
+    "proposed_sop_changes": [
+      "Добавить связь с ежедневным визуальным checklist и сохранить годовой полный аудит как отдельный уровень.",
+      "Не помечать график согласованным, пока не определено покрытие ежедневными тестами."
+    ],
+    "remaining_requirements": [
+      "Карта ежедневных проверок A/B и подтверждение применимости IFU."
+    ]
+  }
+]
