@@ -1,0 +1,2428 @@
+[
+  {
+    "test_code": "MLC-D1",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-W1",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-M1",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-M2",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-M3",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-A1",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-A2",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-A3",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MLC-X1",
+    "section": "MLC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "analysis_section_missing",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "VMAT-M1",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать назначение DDC, охват динамических параметров и основание 2%; не объявлять любой device baseline эквивалентом open-field comparison."
+    ]
+  },
+  {
+    "test_code": "VMAT-M2",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Привязать PASS к версии анализа, полям и принятым границам; ежемесячность обосновать D5."
+    ]
+  },
+  {
+    "test_code": "VMAT-M3",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Зафиксировать применимость динамических диафрагм, версию анализа и критерии; CAT не заменяет локальный baseline."
+    ]
+  },
+  {
+    "test_code": "VMAT-M4",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "VMAT-A1",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить критерий; явно перечислить диапазон и основания повторной проверки после сервиса."
+    ]
+  },
+  {
+    "test_code": "VMAT-A2",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Исправить номер таблицы на Table 1, разнести критерии по источникам и режимам; не приписывать MPPG-пределы TG198."
+    ]
+  },
+  {
+    "test_code": "VMAT-S1",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Оставить сервисную процедуру неготовой до проверки версии и полномочий; не переносить команды настройки в пользовательскую SOP."
+    ]
+  },
+  {
+    "test_code": "VMAT-S2",
+    "section": "VMAT",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "DOS-D1",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-D2",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-M1",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-M2",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "DOS-M3",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-M4",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A1",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A2",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A3",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить условие commissioning agreement и точную нормировку OAF; не применять 2% без учёта контекста и неопределённости."
+    ]
+  },
+  {
+    "test_code": "DOS-A4",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить условие commissioning agreement и точную нормировку OAF; не применять 2% без учёта контекста и неопределённости."
+    ]
+  },
+  {
+    "test_code": "DOS-A5",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A6",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Явно зафиксировать выбранный нормативный источник, величину и baseline; рассмотреть отличие TG198 при локальном review."
+    ]
+  },
+  {
+    "test_code": "DOS-A7",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A8",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "DOS-A9",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "DOS-A10",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить 1% неутверждённым; отдельно описать геометрию крепления и решение об использовании исключения 180°."
+    ]
+  },
+  {
+    "test_code": "DOS-A11",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить условия исключения и критерий для конкретной схемы измерений; не смешивать output и OAF."
+    ]
+  },
+  {
+    "test_code": "DOS-A12",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Явно обосновать сокращённый цикл; разделить сравнение с commissioning и TPS. Связать с ACC-A5 без дублирования измерения."
+    ]
+  },
+  {
+    "test_code": "DOS-Q1",
+    "section": "DOS",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MEC-D1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-D2",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Согласовать локальный критерий с применимой IFU; исходные 2 мм нельзя объявлять подтверждением выполнения заводских 1 мм."
+    ]
+  },
+  {
+    "test_code": "MEC-D3",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-M1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-M2",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-M3",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Заменить неоднозначное «2 мм или OAF/OF» предложением о более строгом ограничении и валидированной зависимости OF от суммарной ошибки краёв; не изменять активный критерий до review."
+    ]
+  },
+  {
+    "test_code": "MEC-M4",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-M5",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "MEC-M6",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Уточнить слово «эквивалентно»: сохранять и диаметр locus, и смещение центра относительно reference axis."
+    ]
+  },
+  {
+    "test_code": "MEC-M7",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-M8",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-A1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Обосновать hard limit 2 мм отдельно; дополнить покрытие банками MLC и получить применимую спецификацию."
+    ]
+  },
+  {
+    "test_code": "MEC-A2",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить acceptance и periodic критерии; добавить условие более строгого OF ограничения."
+    ]
+  },
+  {
+    "test_code": "MEC-A3",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-A4",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить отдельные метрики WL/spoke-shot и применимое правило, не один универсальный scalar PASS."
+    ]
+  },
+  {
+    "test_code": "MEC-SRS1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить исходный текст как черновой; дополнить SOP перечисленными условиями."
+    ]
+  },
+  {
+    "test_code": "MEC-L1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Зафиксировать CAT-происхождение метода, локальное обоснование частоты и различия A/B."
+    ]
+  },
+  {
+    "test_code": "MEC-L2",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_5/dosimetry_mechanics.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить оси/метрики/точки и строгие границы; не объявлять покрытие всего диапазона по одной паре положений."
+    ]
+  },
+  {
+    "test_code": "MEC-S1",
+    "section": "MEC",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "ACC-D1",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать используемые энергии/угол и связь baseline с ежегодной проверкой."
+    ]
+  },
+  {
+    "test_code": "ACC-M1",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Различить review и новое измерение; ротация углов снижает чувствительность и требует обоснования."
+    ]
+  },
+  {
+    "test_code": "ACC-M2",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "ACC-A1",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Зафиксировать нормировку OAF и точки; не распространять предел на пенумбру."
+    ]
+  },
+  {
+    "test_code": "ACC-A2",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать выбранные углы и дозиметрическую геометрию."
+    ]
+  },
+  {
+    "test_code": "ACC-U1",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "ACC-A3",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Явно сохранить полный охват аппликатор × энергия; не заменять ротацией дозовых факторов."
+    ]
+  },
+  {
+    "test_code": "ACC-A4",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Дополнить ежедневным контролем используемых принадлежностей по применимой IFU; ежегодный аудит его не заменяет."
+    ]
+  },
+  {
+    "test_code": "ACC-A5",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Согласовать с DOS-A12, охватом размеров и энергий; TPS и commissioning не считать взаимозаменяемыми без traceability."
+    ]
+  },
+  {
+    "test_code": "ACC-A6",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить типы аксессуаров; найти прямое основание каждого предела или утвердить как локальный. Не считать число подтверждённым по тематической ссылке."
+    ]
+  },
+  {
+    "test_code": "ACC-S1",
+    "section": "ACC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить условную применимость; проверить остальные доступные энергии, геометрию и применимую редакцию. Значения измерений из подписанного CAT не импортировать."
+    ]
+  },
+  {
+    "test_code": "IMG-D1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Перечислить применимые цепи и индикацию, не объединять все интерфейсы в неопределённый PASS."
+    ]
+  },
+  {
+    "test_code": "IMG-D2",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Описать независимую MV reference, исходное смещение и residual; не считать совпадение с лазерами полной проверкой radiation isocenter."
+    ]
+  },
+  {
+    "test_code": "IMG-D3",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-M1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить routine, SRS и post-service результаты, их метрики и источники."
+    ]
+  },
+  {
+    "test_code": "IMG-M2",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить EPID scaling, imaging-treatment coincidence и 3D WL residual; указать источник 2 мм general."
+    ]
+  },
+  {
+    "test_code": "IMG-M3",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Уточнить SBRT и определения метрик; не переносить HU constancy на абсолютную HU-калибровку всех протоколов."
+    ]
+  },
+  {
+    "test_code": "IMG-M4",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Зафиксировать выбранный нормативный график и параметры acquisition/analysis для iViewGT."
+    ]
+  },
+  {
+    "test_code": "IMG-M5",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Уточнить SBRT; альтернативную частоту обосновать отдельно, с учётом MPPG2.b."
+    ]
+  },
+  {
+    "test_code": "IMG-H1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Не смешивать scaling и isocenter coincidence; сохранить более частые клинически необходимые проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-A1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Фиксировать технику и определение baseline; полный годовой набор не отменяет более частые проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-A2",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Фиксировать технику и определение baseline; полный годовой набор не отменяет более частые проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-A3",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить CAT presets и clinical presets; не объявлять весь набор универсальными критериями XVI."
+    ]
+  },
+  {
+    "test_code": "IMG-A4",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса."
+    ]
+  },
+  {
+    "test_code": "IMG-A5",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса."
+    ]
+  },
+  {
+    "test_code": "IMG-A6",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса."
+    ]
+  },
+  {
+    "test_code": "IMG-A7",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса."
+    ]
+  },
+  {
+    "test_code": "IMG-A8",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-E1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "IMG-S1",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Определять объём по затронутой функции и применимому vendor document, сохранять исходный baseline до принятия изменений."
+    ]
+  },
+  {
+    "test_code": "IMG-S2",
+    "section": "IMG",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Определять объём по затронутой функции и применимому vendor document, сохранять исходный baseline до принятия изменений."
+    ]
+  },
+  {
+    "test_code": "HEX-D1",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить названия четырёх проверок и реакцию на отказ; не считать их автоматически независимым 6DoF QA."
+    ]
+  },
+  {
+    "test_code": "HEX-D2",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Зафиксировать наблюдаемый результат и применимость интерфейса; не добавлять обходы interlock."
+    ]
+  },
+  {
+    "test_code": "HEX-D3",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Не подменять им независимую radiation-isocenter проверку; подтвердить точность самих лазеров."
+    ]
+  },
+  {
+    "test_code": "HEX-D4",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить промежуточный диапазон и ограничения monitoring; не использовать 4,5 мм как допустимую точность позиционирования."
+    ]
+  },
+  {
+    "test_code": "HEX-M1",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Связать с ежедневным/еженедельным независимым 6DoF тестом; проверить реальный охват vendor checks."
+    ]
+  },
+  {
+    "test_code": "HEX-M2",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Различить specification системы, independent residual и локальный action limit; проверить частоту по M14."
+    ]
+  },
+  {
+    "test_code": "HEX-M3",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Различить specification системы, independent residual и локальный action limit; проверить частоту по M14."
+    ]
+  },
+  {
+    "test_code": "HEX-M4",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Обосновать метрику spread, число повторов, PARK/zero и частоту; не приписывать vendor specification."
+    ]
+  },
+  {
+    "test_code": "HEX-Q1",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать допустимую нагрузку с аксессуарами по IFU и независимую геометрию; связать post-service с видом вмешательства."
+    ]
+  },
+  {
+    "test_code": "HEX-Q2",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "HEX-A1",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "HEX-A2",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Определить измеряемую конечную ошибку и отдельный stereotactic источник, дозовую часть и применимость."
+    ]
+  },
+  {
+    "test_code": "HEX-A3",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить независимые ±смещения всех осей, систему координат и проверку передачи данных после изменений."
+    ]
+  },
+  {
+    "test_code": "HEX-A4",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Отдельно согласовать безопасный объём испытаний и допустимые комбинации оборудования; отсутствие collision в выборке не доказывает весь диапазон."
+    ]
+  },
+  {
+    "test_code": "HEX-S1",
+    "section": "HEX",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Получить применимую сервисную процедуру и акт работ, затем независимый контроль затронутых функций; калибровочные команды не добавлять."
+    ]
+  },
+  {
+    "test_code": "SAF-D1",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Отдельно фиксировать запрет запуска при открытой двери и результат восстановления по локальной SOP."
+    ]
+  },
+  {
+    "test_code": "SAF-D2",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Проверять реальное наблюдение/связь, а не только питание мониторов."
+    ]
+  },
+  {
+    "test_code": "SAF-D3",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Перечислить точки индикации и явно связать ежедневный/годовой охват."
+    ]
+  },
+  {
+    "test_code": "SAF-D4",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Подтвердить электрическую конфигурацию и безопасную SOP; не запускать проверки отключения питания по общей карточке."
+    ]
+  },
+  {
+    "test_code": "SAF-D5",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Подтвердить электрическую конфигурацию и безопасную SOP; не запускать проверки отключения питания по общей карточке."
+    ]
+  },
+  {
+    "test_code": "SAF-D6",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Обосновать ежедневную проверку локально и определить ожидаемые beam status/MU/restart."
+    ]
+  },
+  {
+    "test_code": "SAF-D7",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать конкретное устройство и наблюдаемый результат; не смешивать dead-man и interlock override."
+    ]
+  },
+  {
+    "test_code": "SAF-D8",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Согласовать ротацию с обязательными ежедневными vendor checks; общий представитель не заменяет все явно заданные IFU проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-D9",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-M1",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-M2",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Составить реестр датчиков с учётом оборудования и интервалом максимального необследованного периода."
+    ]
+  },
+  {
+    "test_code": "SAF-M3",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать coding, insert detection, slot/latch и охват энергий; не ограничивать всю проверку одним аксессуаром."
+    ]
+  },
+  {
+    "test_code": "SAF-M4",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Согласовать сценарии прерывания, сохранение delivered MU и запрет непреднамеренного повторного облучения по установленной версии."
+    ]
+  },
+  {
+    "test_code": "SAF-M5",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-M6",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-A1",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Создать перечень цепей, функций и периодов из применимой IFU/сервисной программы; PASS без перечня недостаточен."
+    ]
+  },
+  {
+    "test_code": "SAF-A2",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Оставить сценарии неготовыми; получить утверждённую процедуру с recovery и критериями dose/motion. Не имитировать отказ на работающем оборудовании по общей карточке."
+    ]
+  },
+  {
+    "test_code": "SAF-A3",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Оставить сценарии неготовыми; получить утверждённую процедуру с recovery и критериями dose/motion. Не имитировать отказ на работающем оборудовании по общей карточке."
+    ]
+  },
+  {
+    "test_code": "SAF-A4",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Описать допустимый диапазон и исключения; охват должен учитывать стол, imaging arms и фиксаторы."
+    ]
+  },
+  {
+    "test_code": "SAF-A5",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SAF-S1",
+    "section": "SAF",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Связать акт сервиса с перечнем повторных QA, результатами и документированным клиническим разрешением."
+    ]
+  },
+  {
+    "test_code": "SGRT-D1",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать клинически нужные камеры и проверить работоспособность интерфейса, а не только изображение поверхности."
+    ]
+  },
+  {
+    "test_code": "SGRT-D2",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Переименовать в daily QA/alignment check; зафиксировать реально установленные tolerances, warm-up и отличие от калибровки."
+    ]
+  },
+  {
+    "test_code": "SGRT-D3",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Отдельно обосновать усиленные daily SRS/SBRT пределы и углы; объединение D3/D4 должно сохранять offset test."
+    ]
+  },
+  {
+    "test_code": "SGRT-D4",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Отдельно обосновать усиленные daily SRS/SBRT пределы и углы; объединение D3/D4 должно сохранять offset test."
+    ]
+  },
+  {
+    "test_code": "SGRT-M1",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Использовать независимую radiographic reference; surface-to-surface agreement не заменяет hidden target."
+    ]
+  },
+  {
+    "test_code": "SGRT-M2",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать истинное движение, независимый reference и рабочий диапазон, не смешивать spatial error и latency."
+    ]
+  },
+  {
+    "test_code": "SGRT-M3",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Описать интерфейс и проверяемую реакцию beam; дополнительный триггер после простоя обосновать локально."
+    ]
+  },
+  {
+    "test_code": "SGRT-M4",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Разделить spatial localization, configured gating window, hysteresis и latency; определить отдельные метрики и пределы."
+    ]
+  },
+  {
+    "test_code": "SGRT-M5",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Проверить направления, patient orientation, все оси и независимый residual; не использовать только выданные системой shifts."
+    ]
+  },
+  {
+    "test_code": "SGRT-M6",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SGRT-A1",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Фиксировать warm-up, длительность и способ разделения drift от setup uncertainty."
+    ]
+  },
+  {
+    "test_code": "SGRT-A2",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Уточнить строгий/нестрогий знак и основание углового предела; охват рабочего объёма и поверхности зафиксировать."
+    ]
+  },
+  {
+    "test_code": "SGRT-A3",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Задать локальный суммарный error budget и проверить, что оптическая ошибка не скрывается компенсацией couch walkout."
+    ]
+  },
+  {
+    "test_code": "SGRT-A4",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Перечислить ориентации, coordinate transforms, reference surface и идентификацию; повторять затронутые проверки после изменений."
+    ]
+  },
+  {
+    "test_code": "SGRT-A5",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Дополнить измерением latency с отдельным клиническим допуском, не считать дозовое совпадение доказательством temporal response."
+    ]
+  },
+  {
+    "test_code": "SGRT-A6",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить раздельные метрики и знаки сравнения; не сводить несколько условий к одному PASS без протокола."
+    ]
+  },
+  {
+    "test_code": "SGRT-A7",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_3/evidence.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "SGRT-S1",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Указать затронутые функции, проверку isocenter/reference и независимый E2E по риску."
+    ]
+  },
+  {
+    "test_code": "SGRT-M7",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Уточнить установленную CT/Sentinel версию; добавить отдельное daily CT QA coverage и обосновать monthly amplitude/period criteria."
+    ]
+  },
+  {
+    "test_code": "SGRT-A8",
+    "section": "SGRT",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Нужны модель CT, respiratory interface, commissioning protocol и количественные критерии. Не подставлять tolerances лечения в CT binning QA."
+    ]
+  },
+  {
+    "test_code": "ABC-D1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Привязать к применимой IFU и одноразовым компонентам; не заменять осмотр только self-test."
+    ]
+  },
+  {
+    "test_code": "ABC-D2",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить отдельную ежедневную volume-check карточку либо пересмотреть ABC-M1; zero/trace недостаточно."
+    ]
+  },
+  {
+    "test_code": "ABC-D3",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Отделить функциональную реакцию от quantitative leak test; режимы release проверить отдельно."
+    ]
+  },
+  {
+    "test_code": "ABC-D4",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Раздельно документировать patient release, distress и operator abort; не считать их одним событием."
+    ]
+  },
+  {
+    "test_code": "ABC-D5",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Подтвердить реальный интерфейс и режим A/B; не предполагать автоматический beam inhibit без установленной функции."
+    ]
+  },
+  {
+    "test_code": "ABC-M1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Сохранить более строгий локальный предел только с обоснованием; добавить daily IFU coverage, различить specification и QA statistic."
+    ]
+  },
+  {
+    "test_code": "ABC-M2",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Обосновать independently measured target volume, повторения и пределы; не выдавать их за vendor tolerance."
+    ]
+  },
+  {
+    "test_code": "ABC-M3",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Добавить weekly coverage и сохранить абсолютную величину/условия IFU; локальный процентный критерий требует отдельной валидации."
+    ]
+  },
+  {
+    "test_code": "ABC-M4",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Установить независимый timing reference и обосновать погрешность; проверить timeout и release как отдельные результаты."
+    ]
+  },
+  {
+    "test_code": "ABC-M5",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Проверить beam status и delivered MU независимым способом; интерфейс должен соответствовать установленному оборудованию."
+    ]
+  },
+  {
+    "test_code": "ABC-Q1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Не превращать calibration verification в регулировку. Нужна применимая сервисная инструкция и допустимый способ обработки компонентов."
+    ]
+  },
+  {
+    "test_code": "ABC-A1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Нужен отдельный dosimetric interruption/restart protocol с независимым измерением и обоснованным пределом."
+    ]
+  },
+  {
+    "test_code": "ABC-A2",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_3/evidence.json",
+      "data/review_v0_4/vendor_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "authoring_required",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Закрыть открытые требования и claim checks в указанных записях проверки."
+    ]
+  },
+  {
+    "test_code": "ABC-A3",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Согласовать метод сравнения sensors/CT-treatment units, объёмы/потоки и критерии; подтвердить наличие двух систем."
+    ]
+  },
+  {
+    "test_code": "ABC-A4",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Не заменять per-fraction identity/settings check ежегодным аудитом; проверить восстановление/перенос тестовых данных без реальных пациентов."
+    ]
+  },
+  {
+    "test_code": "ABC-A5",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Подготовить локальный E2E с независимыми volume, anatomy, dose и interface критериями; не считать один PASS доказательством всего пути."
+    ]
+  },
+  {
+    "test_code": "ABC-C1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Передать критерии переносимости/анатомической воспроизводимости клиническому специалисту; оформить site-specific protocol."
+    ]
+  },
+  {
+    "test_code": "ABC-C2",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Не использовать одинаковый объём как доказательство воспроизводимости внутренней анатомии; связать с imaging protocol."
+    ]
+  },
+  {
+    "test_code": "ABC-S1",
+    "section": "ABC",
+    "review_records": [
+      "data/review_v0_6/remaining_findings.json"
+    ],
+    "review_lookup_key": "test_code",
+    "original_sop_status": "draft_needs_source_validation",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "full_sop_validation": "PENDING",
+    "clinical_approval": false,
+    "next_actions": [
+      "Связать сервисный акт, проверку объёма/утечек, интерфейса и затронутый E2E; отдельное клиническое разрешение."
+    ]
+  }
+]

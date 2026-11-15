@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-15",
+  "scope": "FIRST_DOCUMENTARY_PASS_NOT_CLINICAL_VALIDATION",
+  "catalog_count": 161,
+  "unique_reviewed_codes": 161,
+  "not_reviewed_count": 0,
+  "fully_validated_sops": 0,
+  "clinical_approvals": 0,
+  "new_findings": 97,
+  "new_claim_grades": {
+    "LOCALLY_DERIVED": 19,
+    "UNRESOLVED": 42,
+    "VERIFIED": 34,
+    "CONTRADICTION": 2
+  },
+  "sections": {
+    "MLC": 9,
+    "VMAT": 8,
+    "DOS": 19,
+    "MEC": 19,
+    "ACC": 11,
+    "IMG": 20,
+    "HEX": 15,
+    "SAF": 21,
+    "SGRT": 20,
+    "ABC": 19
+  },
+  "reference_records_checked": 211,
+  "source_checks": [
+    {
+      "source_id": "MPPG8B",
+      "sha256": "a298c7632f87ea66c8ce8b03216177433f7be628acc4605bc99411031938ff1d",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "MPPG9B",
+      "sha256": "4d49056aff7d5be3ead2f2e5c3b3a647d708b3088acfd86ef1a635fa8a76eb03",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "MPPG2B",
+      "sha256": "2b274eb959729c5ccf340d65cffe49ff49a3d5364e3b8820744583ad8fa68a98",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "TG198",
+      "sha256": "80f2fa21e4198eb872f8f62340da52c86ad72831596d9fd26e3632bcc0fe4cc3",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "TG302",
+      "sha256": "3a95119cfbf1c8e4460b421d744a81110230133c7a81a95c3de828b0d6ce7d77",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_VMAT_CAT",
+      "sha256": "8d38ac1f7299ab270318856181b71c88c480d64abf5c2c9d15ef8f4b770a0dc6",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_LINAC_CAT",
+      "sha256": "8b1de760bfdb62d802bab6fe6167d2c11be9ece53537c71bb5664f2b47961d14",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_LINAC_IFU",
+      "sha256": "905ecc63847cd7d81ac5b16cd290478fc8a1dc42e2fd88fa93cf23e2ee587883",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_ABC_IFU",
+      "sha256": "76f15d83c302dfb5cdb35740d587971a1d966af259302a1fb2ddca68b54d1de3",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_ABC_CAT",
+      "sha256": "58e2cd4f5102bd436652fa0079db70b7a8a591c2eb8b28e96bfa3cbf05ea73c6",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_HEX_IFU",
+      "sha256": "00183ec9ed84e7f19ae951ec29eb47698a4847bb824bd2586083f344e7c9ea79",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_TABLE_CAT",
+      "sha256": "3d09d7f1b49870c4271dc1297f6a0e9317a290230e026fb318f58486258f0de9",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_XVI_CAT",
+      "sha256": "b94185277f3d221fb5793ee48bdb1cdc93acdfad9bb9165ca9ef87d366bbe621",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_IVIEW_CAT",
+      "sha256": "b813c58c86d840ba3abc1828a58918b326a68ac89c8767b80ae7ea56256ff7de",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_IVIEW_IFU",
+      "sha256": "b4bb2c0a184f111966ceb268b91853c2b5a0e37da9c8d2ab70391448cc62d7c1",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "CRAD_CATALYST_GUIDE",
+      "sha256": "5d218d2f85488b135f6daa9540024e2916939f6388e5086ac27f3a4a78e83078",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "ELEKTA_XVI_ADDENDUM",
+      "sha256": "8038553ec90541a3b1ff3ca0ffede49370a856620e4f364d1dbf7be9982d8b42",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "CRAD_SENTINEL_CT",
+      "sha256": "f0b41108bc6f808d1db858fc9e45efcd0ca3f8a3a734e2e1b3a44884cd42c56e",
+      "hash_match": true,
+      "page_count_match": true
+    },
+    {
+      "source_id": "TG76",
+      "sha256": "333e0f3dfab81abb622cadb6d0352da19540ef7b5f97077edb721e7379c0d534",
+      "hash_match": true,
+      "page_count_match": true
+    }
+  ],
+  "unchanged_active_files": [
+    "data/test_definitions.json",
+    "data/sop_versions.json",
+    "data/equipment_profiles.json",
+    "data/program_preview.json",
+    "src/qa_program_builder.py"
+  ],
+  "original_sop_statuses": {
+    "authoring_required": 23,
+    "analysis_section_missing": 8,
+    "draft_needs_source_validation": 130
+  },
+  "next_stage": "SOP_CORRECTION_AND_VALIDATION",
+  "clinical_execution_gate": "CLOSED"
+}

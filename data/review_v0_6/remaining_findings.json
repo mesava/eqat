@@ -1,0 +1,2964 @@
+[
+  {
+    "test_code": "VMAT-M1",
+    "name": "Dynamic Delivery Control: синхронизация дозовой мощности и скорости гантри",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно; все динамически используемые энергии можно чередовать по месяцам",
+    "original_action_criterion": "Каждая область: ±2% от открытого референсного поля или валидированного device baseline",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Ежемесячность и ротация энергий подтверждены. В тексте D5 указано 3% для combined DDC; 2% требуется при использовании D5 вместо D8. Исходные 2% могут быть более строгим локальным пределом.",
+    "proposed_change": "Указать назначение DDC, охват динамических параметров и основание 2%; не объявлять любой device baseline эквивалентом open-field comparison.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          16
+        ],
+        "section": "D5 Dynamic delivery control"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "VMAT-M2",
+    "name": "Picket Fence при переменной дозовой мощности (Elekta PF G0VDR)",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Все релевантные position и dose checks — PASS по валидированным критериям Elekta; локальные трендовые границы не должны быть превышены",
+    "claim_grade": "UNRESOLVED",
+    "finding": "PF G0VDR и необходимость откалиброванного iViewGT подтверждены. CAT не устанавливает ежемесячную частоту и универсальный численный PASS.",
+    "proposed_change": "Привязать PASS к версии анализа, полям и принятым границам; ежемесячность обосновать D5.",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          24,
+          25
+        ],
+        "section": "3.3.4 Variable dose rate picket fence"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          16
+        ],
+        "section": "D5"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "VMAT-M3",
+    "name": "Динамические field-defining diaphragms: Elekta D Abut",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно, если динамические диафрагмы используются клинически",
+    "original_action_criterion": "Все релевантные position и dose checks — PASS; численные метрики остаются внутри локальных контрольных границ baseline",
+    "claim_grade": "UNRESOLVED",
+    "finding": "D Abut подтверждён как заводской тест. Ежемесячность и локальные контрольные границы не заданы этим CAT.",
+    "proposed_change": "Зафиксировать применимость динамических диафрагм, версию анализа и критерии; CAT не заменяет локальный baseline.",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          23,
+          24
+        ],
+        "section": "3.3.2 Diaphragm abutment"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          16
+        ],
+        "section": "D5"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "VMAT-A1",
+    "name": "Выход фотонного пучка в зависимости от дозовой мощности",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; также после работ с дозовой системой",
+    "original_action_criterion": "±2% от выхода при дозовой мощности, используемой для TG-51/TRS-398 или локальной референсной калибровки",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодно весь клинический диапазон дозовых мощностей; 2% относительно калибровочной дозовой мощности. Дополнительный post-service триггер зависит от работ.",
+    "proposed_change": "Сохранить критерий; явно перечислить диапазон и основания повторной проверки после сервиса.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          17
+        ],
+        "section": "D8 Photon output versus dose rate"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "VMAT-A2",
+    "name": "Arc mode: правильность MU и угла поворота",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Обычная арка: ±2% MU и ±2°; SRS: ±1 MU и ±1°",
+    "claim_grade": "UNRESOLVED",
+    "finding": "MPPG8.b D12 подтверждает 2% MU/2° для nondynamic arc без D5; MPPG9.b Table 1 подтверждает SRS 1 MU/1°. TG198 использует другие оговорки. Числа каталога имеют основания, но ссылка на MPPG9.b Table 3 неверна для C-arm linac и применимость D12 должна быть явной.",
+    "proposed_change": "Исправить номер таблицы на Table 1, разнести критерии по источникам и режимам; не приписывать MPPG-пределы TG198.",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          24
+        ],
+        "section": "2.D.1.12 Arc mode"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          17
+        ],
+        "section": "D12 Arc mode"
+      },
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1 SRS arc rotation mode"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "VMAT-S1",
+    "name": "Elekta Service Graphing: динамическая гантри и диафрагмы",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "После ремонта/настройки; при отказе VMAT-M1 или VMAT-M3; целесообразно сохранить ежегодный baseline",
+    "original_action_criterion": "Ошибка меньше Actual Tolerance; PRF pauses = 0 до штатного завершения поля",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Сравнение ошибок с Actual Tolerance и отсутствие PRF pauses подтверждены в CAT. Периодичность после ремонта/ежегодный baseline — локальная программа. В заголовке спецификации gantry есть текст Diaphragm: оценивать по соответствующим графикам и применимой редакции.",
+    "proposed_change": "Оставить сервисную процедуру неготовой до проверки версии и полномочий; не переносить команды настройки в пользовательскую SOP.",
+    "references": [
+      {
+        "source_id": "ELEKTA_VMAT_CAT",
+        "pdf_pages": [
+          17,
+          18,
+          19
+        ],
+        "section": "3.2.1–3.2.2 Dynamic performance"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-D1",
+    "name": "Ежедневная проверка внутреннего моторизованного клина",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в день клинического применения клина",
+    "original_action_criterion": "Внутренний physical wedge — functional; при количественном измерении ±2% от device baseline",
+    "claim_grade": "VERIFIED",
+    "finding": "Внутренний клин проверяется ежедневно функционально; при доступном измерении наиболее крутого клина — 2% device baseline.",
+    "proposed_change": "Указать используемые энергии/угол и связь baseline с ежегодной проверкой.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          21
+        ],
+        "section": "W1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-M1",
+    "name": "Ежемесячное постоянство дозы моторизованного клина",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "±2% от device baseline",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежемесячно review ежедневных результатов либо измерение наиболее крутого клина; 2% device baseline.",
+    "proposed_change": "Различить review и новое измерение; ротация углов снижает чувствительность и требует обоснования.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "W1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A1",
+    "name": "Профиль наиболее крутого моторизованного клина",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от TPS OAF в анализируемых точках",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодно наиболее крутой клинический клин для всех энергий, OAF в центральных 80% поля в пределах 2% TPS.",
+    "proposed_change": "Зафиксировать нормировку OAF и точки; не распространять предел на пенумбру.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "W3"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A2",
+    "name": "Доза моторизованного клина для выбранных углов",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "±2% от TPS dose",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодно выбранные клинические углы для всех энергий; dose или wedge factor сравнивается с TPS в пределах 2%.",
+    "proposed_change": "Указать выбранные углы и дозиметрическую геометрию.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "W4"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A3",
+    "name": "Настройки коллимации и блокировки электронных аппликаторов",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Collimator settings — те же, что в TPS/commissioning; все interlocks functional",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодно каждый клинический электронный аппликатор для всех доступных энергий: код, jaw settings, целостность, touchguards и insert detection.",
+    "proposed_change": "Явно сохранить полный охват аппликатор × энергия; не заменять ротацией дозовых факторов.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M12"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A4",
+    "name": "Крепления и интерфейсы аксессуаров во всех используемых слотах",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Functional; settings/identification должны соответствовать TPS/R&V/acceptance",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодная проверка креплений всех используемых аксессуаров подтверждена. Проверка должна учитывать удержание при повороте гантри.",
+    "proposed_change": "Дополнить ежедневным контролем используемых принадлежностей по применимой IFU; ежегодный аудит его не заменяет.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M13"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          229,
+          230
+        ],
+        "section": "8.1.2; Table 8.1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A5",
+    "name": "Факторы выхода электронных аппликаторов",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно по ротационному циклу; после ремонта — затронутые комбинации",
+    "original_action_criterion": "±2% от TPS/commissioning",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "TG198 рассматривает ежегодные факторы электронных аппликаторов относительно commissioning с 2%; сокращённый ротационный цикл требует обоснования.",
+    "proposed_change": "Согласовать с DOS-A12, охватом размеров и энергий; TPS и commissioning не считать взаимозаменяемыми без traceability.",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          22
+        ],
+        "section": "2.D.1.4 Output factors"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-A6",
+    "name": "Трансмиссия дозомодифицирующих аксессуаров",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно при клиническом использовании аксессуара с TPS transmission factor",
+    "original_action_criterion": "Предлагаемый hard limit: ±1% от baseline и ±2% по рассчитанной дозе TPS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Универсальная пара 1% baseline и 2% TPS для всех дозомодифицирующих аксессуаров этими разделами не установлена. Клин, лоток и специальные процедуры имеют разные измеряемые величины.",
+    "proposed_change": "Разделить типы аксессуаров; найти прямое основание каждого предела или утвердить как локальный. Не считать число подтверждённым по тематической ссылке.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          17,
+          20,
+          21
+        ],
+        "section": "D13; M13; W3–W4 (scope comparison)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ACC-S1",
+    "name": "Средняя утечка электронов вне поля аппликатора",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "При приёмке и после увеличения Autotracking settings относительно default Elekta; не routine annual при неизменных settings",
+    "original_action_criterion": "6/8/10 MeV ≤1,00%; 12 MeV ≤1,06%; 15 MeV ≤1,16%",
+    "claim_grade": "VERIFIED",
+    "finding": "Табличные пределы 6/8/10 MeV 1,00%, 12 MeV 1,06%, 15 MeV 1,16% подтверждены. Триггер — Autotracking выше заводских значений, а не универсальная ежегодная проверка.",
+    "proposed_change": "Сохранить условную применимость; проверить остальные доступные энергии, геометрию и применимую редакцию. Значения измерений из подписанного CAT не импортировать.",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_CAT",
+        "pdf_pages": [
+          49,
+          50
+        ],
+        "section": "Appendix B, 5.1; Table 5.1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-D1",
+    "name": "Функциональность систем визуализации и safety-interlocks",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно до первого клинического применения",
+    "original_action_criterion": "Все применимые функции и interlocks — functional",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневные функциональные safety/interlock проверки подтверждены; проверяемые функции зависят от оборудования.",
+    "proposed_change": "Перечислить применимые цепи и индикацию, не объединять все интерфейсы в неопределённый PASS.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          5,
+          6
+        ],
+        "section": "4.4.8; Table 1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-D2",
+    "name": "Композитная точность регистрации, сдвига стола и imaging-treatment isocenter",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Daily preferred; для стандартного фракционирования допускается еженедельно; обязательно в день SRS/SBRT",
+    "original_action_criterion": "Общая RT и SBRT: ≤2 мм; SRS: ≤1 мм",
+    "claim_grade": "VERIFIED",
+    "finding": "Daily preferred, weekly допускается для стандартного фракционирования; SRS/SBRT — в день процедуры. Composite SRS 1 мм; общая геометрия/позиционирование 2 мм.",
+    "proposed_change": "Описать независимую MV reference, исходное смещение и residual; не считать совпадение с лазерами полной проверкой radiation isocenter.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.17–19; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-M1",
+    "name": "Совпадение XVI и MV treatment isocenter",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно; также после изменений геометрии",
+    "original_action_criterion": "Routine general action ≤2 мм; SRS ≤1 мм; post-service eCAT должен выполнить ≤1 мм и kV–MV ≤0,5 мм",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Monthly 2 мм с MV reference подтверждено. CAT отдельно проверяет регистрацию ≤1 мм и разность kV–MV ≤0,5 мм; это отдельная приёмочная геометрия.",
+    "proposed_change": "Разделить routine, SRS и post-service результаты, их метрики и источники.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "section": "Table 1; 4.4.17–18"
+      },
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          30,
+          34
+        ],
+        "section": "2.2; 3D Registration accuracy"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-M2",
+    "name": "Геометрическая точность iViewGT/EPID относительно radiation isocenter",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно; SRS/SBRT — покрывается полным monthly WL",
+    "original_action_criterion": "Общая RT: ≤2 мм; SRS: ≤1 мм; SBRT: ≤1,5 мм",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Monthly полный клинический диапазон WL имеет 1 мм SRS/1,5 мм SBRT. Это итоговая radiation isocentricity, а не автоматически геометрическая точность EPID.",
+    "proposed_change": "Разделить EPID scaling, imaging-treatment coincidence и 3D WL residual; указать источник 2 мм general.",
+    "references": [
+      {
+        "source_id": "MPPG9B",
+        "pdf_pages": [
+          12
+        ],
+        "section": "Table 1, radiation isocentricity"
+      },
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "section": "Table 1; 4.4.17"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-M3",
+    "name": "Ежемесячное постоянство качества XVI 3D",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно для одного locked representative protocol; дополнительные протоколы — по циклу/риску",
+    "original_action_criterion": "Geometry ≤2 мм general/≤1 мм SRS; spatial/contrast/uniformity/noise not worse than baseline; HU ±40 HU from baseline",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Monthly CBCT, фиксированная техника, качество не хуже acceptance baseline и HU ±40 подтверждены. TG198 геометрия ≤1 мм относится к SRS/SBRT, тогда как каталог явно выделяет только SRS.",
+    "proposed_change": "Уточнить SBRT и определения метрик; не переносить HU constancy на абсолютную HU-калибровку всех протоколов.",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          39,
+          41
+        ],
+        "section": "2.G.5.1–2"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-M4",
+    "name": "Ежемесячное постоянство качества 2D MV iViewGT",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно или по локально обоснованной периодичности",
+    "original_action_criterion": "At least baseline",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "At least baseline подтверждено; MPPG2.b задаёт годовой минимум image quality, а ежемесячность — дополнительный выбранный график.",
+    "proposed_change": "Зафиксировать выбранный нормативный график и параметры acquisition/analysis для iViewGT.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          8
+        ],
+        "section": "Table 1; baseline definition"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-M5",
+    "name": "Ежемесячное постоянство качества XVI 2D PlanarView",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно или по локально обоснованной периодичности",
+    "original_action_criterion": "At least baseline; scaling ≤2 мм general/≤1 мм SRS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Monthly planar kV качество не хуже baseline; scaling ≤2 мм non-SRS/SBRT и ≤1 мм SRS/SBRT. Каталог явно выделяет только SRS.",
+    "proposed_change": "Уточнить SBRT; альтернативную частоту обосновать отдельно, с учётом MPPG2.b.",
+    "references": [
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          38,
+          39
+        ],
+        "section": "2.G.4.2–5"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-H1",
+    "name": "Масштаб изображения во всех клинических imaging systems",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Не реже одного раза в 6 месяцев; после геометрических изменений",
+    "original_action_criterion": "≤2 мм; для SRS-related imaging рекомендуется ≤1 мм",
+    "claim_grade": "VERIFIED",
+    "finding": "Scaling всех систем раз в полгода ≤2 мм подтверждён. Более строгий SRS 1 мм требует отдельного основания; для 3D проверяются три измерения.",
+    "proposed_change": "Не смешивать scaling и isocenter coincidence; сохранить более частые клинически необходимые проверки.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "section": "Table 1; 4.4.15"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A1",
+    "name": "Полная годовая проверка качества iViewGT 2D MV",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "At least baseline",
+    "claim_grade": "VERIFIED",
+    "finding": "Годовой минимум 2D spatial resolution/contrast не хуже baseline подтверждён. Scaling имеет отдельный полугодовой минимум.",
+    "proposed_change": "Фиксировать технику и определение baseline; полный годовой набор не отменяет более частые проверки.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          8
+        ],
+        "section": "Table 1; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A2",
+    "name": "Полная годовая проверка качества XVI 2D kV",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "At least baseline; MPPG scaling ≤2 мм",
+    "claim_grade": "VERIFIED",
+    "finding": "Годовой минимум 2D spatial resolution/contrast не хуже baseline подтверждён. Scaling имеет отдельный полугодовой минимум.",
+    "proposed_change": "Фиксировать технику и определение baseline; полный годовой набор не отменяет более частые проверки.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          8
+        ],
+        "section": "Table 1; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A3",
+    "name": "Полная годовая проверка качества XVI 3D",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; после major service/reconstruction changes",
+    "original_action_criterion": "Uniformity ≤1,5%; noise ≤2,5%; low contrast ≤3,0%; spatial ≥10 lp/cm; HU ±40 from baseline; transverse 117±1 мм; sagittal 110±1 мм",
+    "claim_grade": "UNRESOLVED",
+    "finding": "CAT подтверждает uniformity 1,5%, contrast 3%, spatial ≥10 lp/cm, размеры 117±1/110±1 мм. Addendum подтверждает noise≤2,5%, но относится к AERB-specific requirement и заданному CAT preset. Формула noise=SD(center)/Mean(center)×100% проверена визуально. HU±40 — отдельный TG198 constancy criterion. Универсальный перенос набора на все clinical protocols не подтверждён.",
+    "proposed_change": "Разделить CAT presets и clinical presets; не объявлять весь набор универсальными критериями XVI.",
+    "references": [
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          13,
+          17,
+          23,
+          25,
+          27,
+          28
+        ],
+        "section": "3D image quality and geometric tests"
+      },
+      {
+        "source_id": "TG198",
+        "pdf_pages": [
+          41
+        ],
+        "section": "2.G.5.2"
+      },
+      {
+        "source_id": "ELEKTA_XVI_ADDENDUM",
+        "pdf_pages": [
+          7,
+          11,
+          13,
+          14
+        ],
+        "section": "1.1 scope; 2.1 uniformity and noise"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A4",
+    "name": "Доза iViewGT 2D MV",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; после изменения imaging MU/beam/preset",
+    "original_action_criterion": "Baseline ±1 cGy",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодное отклонение от baseline 2D MV: ±1 cGy подтверждено. Это абсолютная разность, не процент; требуется применимый режим и определённая дозовая величина.",
+    "proposed_change": "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.20–21; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A5",
+    "name": "Доза XVI 2D kV static imaging",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Baseline ±3 mGy",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодное отклонение от baseline 2D kV static: ±3 mGy подтверждено. Это абсолютная разность, не процент; требуется применимый режим и определённая дозовая величина.",
+    "proposed_change": "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.20–21; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A6",
+    "name": "Доза XVI 2D kV fluoroscopy",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно, если fluoroscopy используется",
+    "original_action_criterion": "Baseline ±1 cGy/min",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодное отклонение от baseline 2D kV fluoroscopy: ±1 cGy/min подтверждено. Это абсолютная разность, не процент; требуется применимый режим и определённая дозовая величина.",
+    "proposed_change": "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.20–21; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-A7",
+    "name": "Доза XVI 3D imaging modes",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Baseline ±1 cGy для каждого 3D mode",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодное отклонение от baseline 3D: ±1 cGy подтверждено. Это абсолютная разность, не процент; требуется применимый режим и определённая дозовая величина.",
+    "proposed_change": "Задать phantom, геометрию, калибровку, единицы и representative technique каждого режима; повторять после влияющего на дозу сервиса.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          6,
+          7,
+          8
+        ],
+        "section": "Table 1; 4.4.20–21; Recommendations"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-S1",
+    "name": "Полный XVI eCAT и восстановление baseline",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "При приёмке и после соответствующего major service/upgrade",
+    "original_action_criterion": "Все применимые eCAT tests PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "После upgrade/repair — manufacturer recommended testing и проверка/восстановление baseline. Обязательность полного CAT после любого перечисленного сервиса не установлена универсально.",
+    "proposed_change": "Определять объём по затронутой функции и применимому vendor document, сохранять исходный baseline до принятия изменений.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          5,
+          6,
+          8
+        ],
+        "section": "4.4.1; Table 1; Recommendations"
+      },
+      {
+        "source_id": "ELEKTA_XVI_CAT",
+        "pdf_pages": [
+          30,
+          34
+        ],
+        "section": "Registration tests"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "IMG-S2",
+    "name": "Полный iViewGT eCAT и восстановление baseline",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "При приёмке и после detector/electronics/gain/software major service",
+    "original_action_criterion": "Все применимые eCAT tests PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "После upgrade/repair — manufacturer recommended testing и проверка/восстановление baseline. Обязательность полного CAT после любого перечисленного сервиса не установлена универсально.",
+    "proposed_change": "Определять объём по затронутой функции и применимому vendor document, сохранять исходный baseline до принятия изменений.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          5,
+          6,
+          8
+        ],
+        "section": "4.4.1; Table 1; Recommendations"
+      },
+      {
+        "source_id": "ELEKTA_IVIEW_CAT",
+        "pdf_pages": [
+          1
+        ],
+        "section": "Document identity; applicable CAT to be selected"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-D1",
+    "name": "Ежедневные safety checks iGUIDE",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно при первом запуске iGUIDE",
+    "original_action_criterion": "Все четыре проверки PASS",
+    "claim_grade": "VERIFIED",
+    "finding": "При первом запуске ежедневно требуются четыре успешных проверки Enable, Interlock, Alignment, Correlation.",
+    "proposed_change": "Сохранить названия четырёх проверок и реакцию на отказ; не считать их автоматически независимым 6DoF QA.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          92,
+          93
+        ],
+        "section": "5.5 Daily safety checks"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-D2",
+    "name": "EXTERNAL INHIBIT / beam interlock",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в составе HEX-D1",
+    "original_action_criterion": "Functional",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневная проверка EXTERNAL INHIBIT входит в vendor checks.",
+    "proposed_change": "Зафиксировать наблюдаемый результат и применимость интерфейса; не добавлять обходы interlock.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          94
+        ],
+        "section": "5.5.2 Interlock Check"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-D3",
+    "name": "Daily alignment Reference Frame–lasers",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в составе HEX-D1",
+    "original_action_criterion": "Полное совпадение; встроенная проверка PASS",
+    "claim_grade": "VERIFIED",
+    "finding": "Проверяется совпадение frame с room lasers. Это контроль неизменности калибровки относительно лазеров.",
+    "proposed_change": "Не подменять им независимую radiation-isocenter проверку; подтвердить точность самих лазеров.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          95,
+          96
+        ],
+        "section": "5.5.3 Alignment Check"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-D4",
+    "name": "Daily consistency / tracking plausibility",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в составе HEX-D1 и непрерывно во время positioning",
+    "original_action_criterion": ">4,5 мм: daily consistency invalidated, fraction interrupted",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Порог >4,5 мм подтверждён: Daily Correlation Check invalidated и fraction aborted. При 1,5–4,5 мм требуется verification scan и inhibit. Контроль во время positioning не равен monitoring при beam-on: IFU описывает неактивный Position Guard во время irradiation.",
+    "proposed_change": "Добавить промежуточный диапазон и ограничения monitoring; не использовать 4,5 мм как допустимую точность позиционирования.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          39,
+          97,
+          129
+        ],
+        "section": "Constant Correlation Check; 5.5.4"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-M1",
+    "name": "Точность чистых трансляций X/Y/Z",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "≤1,0 мм по каждой оси; для SRS интегральный residual ≤1 мм",
+    "claim_grade": "UNRESOLVED",
+    "finding": "1 мм/0,5° — independent couch-shift QA. При high-risk применении требуется daily, иначе следует weekly; monthly описан при отсутствии daily/weekly. Одна monthly строка недостаточна для определения программы.",
+    "proposed_change": "Связать с ежедневным/еженедельным независимым 6DoF тестом; проверить реальный охват vendor checks.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M14 Robotic couch shift accuracy"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-M2",
+    "name": "Точность чистых вращений Pitch/Roll/Yaw",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Локальный action ≤0,3°; SRS ≤0,2°",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "0,3°/0,2° — локальные пределы, не vendor specification: IFU для связки с XVI указывает <1 мм и <0,05° в описанных условиях. MPPG8.b M14 задаёт другую QA-метрику 1 мм/0,5°.",
+    "proposed_change": "Различить specification системы, independent residual и локальный action limit; проверить частоту по M14.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          47
+        ],
+        "section": "4.1.4 Positioning accuracy"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M14"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-M3",
+    "name": "Комбинированная 6DoF correction",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "≤1,0 мм и ≤0,3°; SRS ≤1,0 мм и ≤0,2°",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "0,3°/0,2° — локальные пределы, не vendor specification: IFU для связки с XVI указывает <1 мм и <0,05° в описанных условиях. MPPG8.b M14 задаёт другую QA-метрику 1 мм/0,5°.",
+    "proposed_change": "Различить specification системы, independent residual и локальный action limit; проверить частоту по M14.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          47
+        ],
+        "section": "4.1.4 Positioning accuracy"
+      },
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M14"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-M4",
+    "name": "Повторяемость и возврат к PARK/нулю",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно или ежеквартально по risk assessment",
+    "original_action_criterion": "Max spread ≤1,0 мм / ≤0,3°; final zero ≤1,0 мм",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Из этих разделов не следуют monthly/quarterly PARK repeatability и max spread 1 мм/0,3°. Это отдельный локальный тест.",
+    "proposed_change": "Обосновать метрику spread, число повторов, PARK/zero и частоту; не приписывать vendor specification.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          47,
+          92,
+          93
+        ],
+        "section": "Positioning accuracy; daily checks (scope comparison)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-Q1",
+    "name": "Точность под нагрузкой",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежеквартально или ежегодно; обязательно после service",
+    "original_action_criterion": "Residual ≤1,0 мм / ≤0,3°; не превышать safe working load",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Ежегодная проверка под нагрузкой подтверждена: 1 мм/0,5°, достаточная нагрузка, не обязательно максимальная. Quarterly и 0,3° — локальное ужесточение.",
+    "proposed_change": "Указать допустимую нагрузку с аксессуарами по IFU и независимую геометрию; связать post-service с видом вмешательства.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M14 under load"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-A2",
+    "name": "Full IGRT–HexaPOD end-to-end",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; для SRS/SBRT в составе E2E",
+    "original_action_criterion": "General ≤2 мм; SRS ≤1 мм",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Годовой IGRT E2E назван эффективным, но не обязательным в MPPG2.b. General 2 мм/SRS 1 мм не подтверждают весь HEX E2E сами по себе.",
+    "proposed_change": "Определить измеряемую конечную ошибку и отдельный stereotactic источник, дозовую часть и применимость.",
+    "references": [
+      {
+        "source_id": "MPPG2B",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Recommendations, end-to-end"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-A3",
+    "name": "Coordinate-system and sign convention audit",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после configuration/software changes",
+    "original_action_criterion": "100% correct mapping",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Корреляция commanded/observed motion важна и проверяется vendor checks. Ежегодный аудит знаков 100% — локально сформулированный критерий.",
+    "proposed_change": "Добавить независимые ±смещения всех осей, систему координат и проверку передачи данных после изменений.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          47,
+          97
+        ],
+        "section": "PE correction; Correlation Check"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-A4",
+    "name": "Collision envelope и safe range review",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после changes in couch top, immobilization or protocols",
+    "original_action_criterion": "No collision; touchguards/interlocks functional",
+    "claim_grade": "UNRESOLVED",
+    "finding": "IFU требует учитывать столкновения и видимость reference frame. Годовой полный collision envelope не определён этим разделом.",
+    "proposed_change": "Отдельно согласовать безопасный объём испытаний и допустимые комбинации оборудования; отсутствие collision в выборке не доказывает весь диапазон.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          97
+        ],
+        "section": "5.5.4 collision/visibility precautions"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "HEX-S1",
+    "name": "Полная калибровка и восстановление baseline",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "При приёмке и после major service",
+    "original_action_criterion": "Все применимые проверки PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "При отказе checks требуется administrator/service. Универсальная полная калибровка после любого major service и состав PASS этим не установлены.",
+    "proposed_change": "Получить применимую сервисную процедуру и акт работ, затем независимый контроль затронутых функций; калибровочные команды не добавлять.",
+    "references": [
+      {
+        "source_id": "ELEKTA_HEX_IFU",
+        "pdf_pages": [
+          93,
+          97
+        ],
+        "section": "Daily check failure; contact service"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D1",
+    "name": "Дверная блокировка treatment room",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно до первого пациента",
+    "original_action_criterion": "Functional: beam OFF; новое облучение невозможно при открытой двери",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневная функциональная проверка прекращения beam при открытии двери подтверждена.",
+    "proposed_change": "Отдельно фиксировать запрет запуска при открытой двери и результат восстановления по локальной SOP.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14,
+          20
+        ],
+        "section": "S1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D2",
+    "name": "Аудиовизуальное наблюдение пациента",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно",
+    "original_action_criterion": "Functional; пациент виден и слышен",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневно требуется минимум один работающий аудиоканал и один видеоканал.",
+    "proposed_change": "Проверять реальное наблюдение/связь, а не только питание мониторов.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "S3"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D3",
+    "name": "Радиационные предупреждающие индикаторы",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно",
+    "original_action_criterion": "Functional and unambiguous",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневно индикаторы у консоли и двери; ежегодно все внутри/вне помещения.",
+    "proposed_change": "Перечислить точки индикации и явно связать ежедневный/годовой охват.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "S4"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D4",
+    "name": "Emergency OFF — процедурная",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневная визуальная доступность; функционально по ротации ежемесячно",
+    "original_action_criterion": "Functional",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Ежегодная функциональная проверка аварийных средств подтверждена. Ежемесячная ротация и ежедневная доступность — локальная детализация. IFU содержит предостережение для нестандартной проводки.",
+    "proposed_change": "Подтвердить электрическую конфигурацию и безопасную SOP; не запускать проверки отключения питания по общей карточке.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "S7 Emergency procedures"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          229
+        ],
+        "section": "8.1.2 caution 8.1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D5",
+    "name": "Emergency OFF — консоль",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневная доступность; функционально ежемесячно",
+    "original_action_criterion": "Functional",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Ежегодная функциональная проверка аварийных средств подтверждена. Ежемесячная ротация и ежедневная доступность — локальная детализация. IFU содержит предостережение для нестандартной проводки.",
+    "proposed_change": "Подтвердить электрическую конфигурацию и безопасную SOP; не запускать проверки отключения питания по общей карточке.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "S7 Emergency procedures"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          229
+        ],
+        "section": "8.1.2 caution 8.1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D6",
+    "name": "Beam OFF / прерывание облучения оператором",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно",
+    "original_action_criterion": "Functional",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Beam off включён в ежегодные emergency checks; ежедневная отдельная частота не подтверждается S7.",
+    "proposed_change": "Обосновать ежедневную проверку локально и определить ожидаемые beam status/MU/restart.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          21
+        ],
+        "section": "S7"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D7",
+    "name": "Dead-man / enable устройства ручного управления",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно функционально при первом ручном перемещении",
+    "original_action_criterion": "Functional",
+    "claim_grade": "VERIFIED",
+    "finding": "В ежедневной таблице отпускание ENABLE должно прекращать движение.",
+    "proposed_change": "Указать конкретное устройство и наблюдаемый результат; не смешивать dead-man и interlock override.",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          231
+        ],
+        "section": "Table 8.1 motion enable"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-D8",
+    "name": "Touchguards и collision interlocks",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно — репрезентативная функциональная проверка",
+    "original_action_criterion": "Functional",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Ротация одного collision device в день подтверждена; IFU дополнительно описывает ежедневные проверки beam-limiting-device touchguard.",
+    "proposed_change": "Согласовать ротацию с обязательными ежедневными vendor checks; общий представитель не заменяет все явно заданные IFU проверки.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "S5"
+      },
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          231,
+          232
+        ],
+        "section": "8.1.2; 8.1.2.1"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-M2",
+    "name": "Полный охват collision sensors/touchguards",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно по ротации; полный комплект ежегодно",
+    "original_action_criterion": "100% functional",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Источник задаёт daily rotation и ежегодный контроль electron cone touchguards. Monthly полный охват — локальный план.",
+    "proposed_change": "Составить реестр датчиков с учётом оборудования и интервалом максимального необследованного периода.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "S5; M12"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-M3",
+    "name": "Accessory/interchange interlocks",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно и после service",
+    "original_action_criterion": "100% correct",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Ежегодные accessory interfaces/interlocks подтверждены; monthly и post-service — локальная детализация.",
+    "proposed_change": "Указать coding, insert detection, slot/latch и охват энергий; не ограничивать всю проверку одним аксессуаром.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "M12–M13"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-M4",
+    "name": "Beam interruption и корректное продолжение",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Recovery соответствует документированному workflow",
+    "claim_grade": "UNRESOLVED",
+    "finding": "IFU требует установить причину нештатного прекращения и следовать локальному восстановлению. Универсальные monthly recovery и критерии MU conservation не установлены этой ссылкой.",
+    "proposed_change": "Согласовать сценарии прерывания, сохранение delivered MU и запрет непреднамеренного повторного облучения по установленной версии.",
+    "references": [
+      {
+        "source_id": "ELEKTA_LINAC_IFU",
+        "pdf_pages": [
+          160,
+          162
+        ],
+        "section": "Unexpected interruption/recovery"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-A1",
+    "name": "Полный ежегодный аудит interlocks",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Все обязательные interlocks PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Дополнительные safety tests определяет QMP с учётом производителя и требований; полный набор обязательных interlocks из общего названия не следует.",
+    "proposed_change": "Создать перечень цепей, функций и периодов из применимой IFU/сервисной программы; PASS без перечня недостаточен.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "S6–S7"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-A2",
+    "name": "Power failure / controlled recovery",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после electrical/UPS service",
+    "original_action_criterion": "No unintended beam/motion; controlled restart",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Общая необходимость emergency/safety checks подтверждена. Способ искусственного power/network failure, частота и ожидаемые переходы состояния требуют конкретной версии системы и сервисного протокола.",
+    "proposed_change": "Оставить сценарии неготовыми; получить утверждённую процедуру с recovery и критериями dose/motion. Не имитировать отказ на работающем оборудовании по общей карточке.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "S6–S7 (scope only)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-A3",
+    "name": "Loss of communication / network fail-safe",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после network/interface changes",
+    "original_action_criterion": "No uncontrolled beam or motion",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Общая необходимость emergency/safety checks подтверждена. Способ искусственного power/network failure, частота и ожидаемые переходы состояния требуют конкретной версии системы и сервисного протокола.",
+    "proposed_change": "Оставить сценарии неготовыми; получить утверждённую процедуру с recovery и критериями dose/motion. Не имитировать отказ на работающем оборудовании по общей карточке.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "S6–S7 (scope only)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-A4",
+    "name": "Полный collision envelope safety review",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после geometry/workflow changes",
+    "original_action_criterion": "No collision; restrictions documented",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Функциональный collision test не доказывает полный геометрический collision envelope. Годовой обзор и после изменения геометрии — локальная мера.",
+    "proposed_change": "Описать допустимый диапазон и исключения; охват должен учитывать стол, imaging arms и фиксаторы.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          20
+        ],
+        "section": "S5–S6"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SAF-S1",
+    "name": "Safety release после вмешательства",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "После service/upgrade/configuration change",
+    "original_action_criterion": "Documented clinical release only after PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Требуется проверка критических параметров после изменений. Состав post-service PASS и лицо, выпускающее установку, зависят от вмешательства.",
+    "proposed_change": "Связать акт сервиса с перечнем повторных QA, результатами и документированным клиническим разрешением.",
+    "references": [
+      {
+        "source_id": "MPPG8B",
+        "pdf_pages": [
+          14
+        ],
+        "section": "Review following updates/upgrades"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-D1",
+    "name": "Статус системы, safety и свободный FOV камер",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно до первого пациента",
+    "original_action_criterion": "PASS; все клинически необходимые камеры доступны",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневные interlocks и свободное поле зрения всех камер с PASS подтверждены.",
+    "proposed_change": "Указать клинически нужные камеры и проверить работоспособность интерфейса, а не только изображение поверхности.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 Daily safety"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-D2",
+    "name": "Vendor daily calibration / относительная стабильность камер",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно согласно установленной процедуре C-RAD",
+    "original_action_criterion": "Vendor PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Daily QA проверяет согласование с room lasers; Routine QA является calibration. Default 1 мм/1° настраиваемы. Исходное название daily calibration смешивает разные процедуры.",
+    "proposed_change": "Переименовать в daily QA/alignment check; зафиксировать реально установленные tolerances, warm-up и отличие от калибровки.",
+    "references": [
+      {
+        "source_id": "CRAD_CATALYST_GUIDE",
+        "pdf_pages": [
+          32,
+          33,
+          34
+        ],
+        "section": "5.1 Daily QA"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-D3",
+    "name": "Ежедневная статическая локализация в изоцентре",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно",
+    "original_action_criterion": "≤2,0 мм; для SRS/SBRT ≤1,0 мм и ≤0,5°",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Daily phantom/known offset 2 мм подтверждён. 1 мм SRS/SBRT дан для commissioning и monthly; 0,5° и сокращённый график не следуют из этих таблиц.",
+    "proposed_change": "Отдельно обосновать усиленные daily SRS/SBRT пределы и углы; объединение D3/D4 должно сохранять offset test.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Tables 4–5 static localization"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-D4",
+    "name": "Отклик на известное смещение phantom",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно в составе SGRT-D3 либо по локальному сокращённому графику",
+    "original_action_criterion": "≤2,0 мм; SRS/SBRT ≤1,0 мм",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Daily phantom/known offset 2 мм подтверждён. 1 мм SRS/SBRT дан для commissioning и monthly; 0,5° и сокращённый график не следуют из этих таблиц.",
+    "proposed_change": "Отдельно обосновать усиленные daily SRS/SBRT пределы и углы; объединение D3/D4 должно сохранять offset test.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Tables 4–5 static localization"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M1",
+    "name": "Hidden-target static localization",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "General ≤2,0 мм; SRS/SBRT ≤1,0 мм",
+    "claim_grade": "VERIFIED",
+    "finding": "Monthly hidden-target radiographic analysis: 2 мм general, 1 мм SRS/SBRT.",
+    "proposed_change": "Использовать независимую radiographic reference; surface-to-surface agreement не заменяет hidden target.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 monthly static localization"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M2",
+    "name": "Динамическая локализация известного движения",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "≤2,0 мм или более строгая manufacturer specification",
+    "claim_grade": "VERIFIED",
+    "finding": "Monthly known motion: 2 мм либо строже по manufacturer specification.",
+    "proposed_change": "Задать истинное движение, независимый reference и рабочий диапазон, не смешивать spatial error и latency.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 dynamic localization"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M3",
+    "name": "Beam-hold / gating interlock",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно; перед клиническим использованием после длительного простоя",
+    "original_action_criterion": "Functional: beam прекращается при out-of-tolerance",
+    "claim_grade": "VERIFIED",
+    "finding": "Monthly gating termination и couch motion communication functional подтверждены.",
+    "proposed_change": "Описать интерфейс и проверяемую реакцию beam; дополнительный триггер после простоя обосновать локально.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 monthly safety"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M4",
+    "name": "Точность порогов gating и hysteresis",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "≤2,0 мм или более строгий клинический gating margin",
+    "claim_grade": "UNRESOLVED",
+    "finding": "2 мм — spatial localization criterion; он не задаёт автоматически погрешность gating thresholds или hysteresis.",
+    "proposed_change": "Разделить spatial localization, configured gating window, hysteresis и latency; определить отдельные метрики и пределы.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Dynamic localization / gating"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M5",
+    "name": "Координаты, знаки и response на couch shift",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно и после configuration changes",
+    "original_action_criterion": "100% правильные знаки; residual ≤2,0 мм, SRS ≤1,0 мм",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Проверки coordinate/data transfer/couch functionality поддерживаются; monthly конкретные 100% sign и residual — локальная декомпозиция.",
+    "proposed_change": "Проверить направления, patient orientation, все оси и независимый residual; не использовать только выданные системой shifts.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Peripheral interfaces; monthly safety"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A1",
+    "name": "Стабильность камер: drift и воспроизводимость",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Drift <2,0 мм за 1 ч; reproducibility <1,0 мм",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодно drift <2 мм за минимум час и reproducibility <1 мм после стабилизации.",
+    "proposed_change": "Фиксировать warm-up, длительность и способ разделения drift от setup uncertainty.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 stability"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A2",
+    "name": "Расширенная статическая точность и рабочий объём",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "≤2,0 мм; SRS/SBRT ≤1,0 мм и ≤0,5°",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Расширенная annual localization в Table 5 использует <2 мм/<1 мм, каталог — ≤. Угловые 0,5° не заданы этой таблицей.",
+    "proposed_change": "Уточнить строгий/нестрогий знак и основание углового предела; охват рабочего объёма и поверхности зафиксировать.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Tables 4–5 static localization"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A3",
+    "name": "Зависимость от поворота стола и camera occlusion",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно; для SRS/SBRT обязательно",
+    "original_action_criterion": "Локальный предел, включающий couch walkout; для SRS суммарно ≤1,0 мм",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Характеризация occlusion/couch/gantry angles рекомендована; универсального annual численного предела с couch walkout нет.",
+    "proposed_change": "Задать локальный суммарный error budget и проверить, что оптическая ошибка не скрывается компенсацией couch walkout.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7
+        ],
+        "section": "Table 4 camera occlusion"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A4",
+    "name": "DICOM/reference surface и data transfer",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после interface/software changes",
+    "original_action_criterion": "100% correct",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежегодная проверка transfer всех используемых систем и functional criterion подтверждена.",
+    "proposed_change": "Перечислить ориентации, coordinate transforms, reference surface и идентификацию; повторять затронутые проверки после изменений.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Tables 4–5 data transfer"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A5",
+    "name": "Расширенная gating/temporal response и дозиметрия",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "Dose difference <2%; 100% required beam holds",
+    "claim_grade": "VERIFIED",
+    "finding": "Annual motion-phantom gating dosimetry <2% подтверждено; проверка всех требуемых beam holds — функциональная часть.",
+    "proposed_change": "Дополнить измерением latency с отдельным клиническим допуском, не считать дозовое совпадение доказательством temporal response.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          8
+        ],
+        "section": "Table 5 dynamic gating"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A6",
+    "name": "Полный SGRT end-to-end",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после major changes",
+    "original_action_criterion": "General <2,0 мм; SRS/SBRT <1,0 мм; dose ≤1%, gating dose <2%",
+    "claim_grade": "VERIFIED",
+    "finding": "Annual localization <2 мм/<1 мм SRS/SBRT подтверждено; commissioning E2E dose change ≤1%, beam-hold ≤2%, annual gating <2%.",
+    "proposed_change": "Сохранить раздельные метрики и знаки сравнения; не сводить несколько условий к одному PASS без протокола.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "section": "Tables 4–5 end-to-end"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-S1",
+    "name": "Clinical release после SGRT service",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "После service, calibration, upgrade или перемещения",
+    "original_action_criterion": "Documented clinical release",
+    "claim_grade": "UNRESOLVED",
+    "finding": "После возможного перемещения scanner нужен daily check; clinical release после сервиса требует анализа влияния. Рутинная calibration и service release различны.",
+    "proposed_change": "Указать затронутые функции, проверку isocenter/reference и независимый E2E по риску.",
+    "references": [
+      {
+        "source_id": "CRAD_CATALYST_GUIDE",
+        "pdf_pages": [
+          20,
+          32
+        ],
+        "section": "Warnings; Quality Assurance"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-M7",
+    "name": "Дыхательный сигнал на КТ: амплитуда, период и стабильность",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно и после service",
+    "original_action_criterion": "Не превышать commissioning/local clinical limit; trace без пропусков",
+    "claim_grade": "UNRESOLVED",
+    "finding": "TG302 подтверждает необходимость CT interface/triggering checks. Найденная Sentinel IFU дополнительно требует daily CT QA и проверки drift при движении стола; monthly сигнал не заменяет daily QA. Порог couch-profile deviation >1 мм относится к этой процедуре, а не к амплитуде дыхания.",
+    "proposed_change": "Уточнить установленную CT/Sentinel версию; добавить отдельное daily CT QA coverage и обосновать monthly amplitude/period criteria.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7
+        ],
+        "section": "Table 4 CT triggering (scope only)"
+      },
+      {
+        "source_id": "CRAD_SENTINEL_CT",
+        "pdf_pages": [
+          16,
+          22,
+          23
+        ],
+        "section": "5 Daily QA; 6 4DCT"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "SGRT-A8",
+    "name": "4DCT respiratory-signal end-to-end",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после major changes",
+    "original_action_criterion": "Все фазы корректны; нет clinically significant binning artefact; amplitude within local commissioned limit",
+    "claim_grade": "UNRESOLVED",
+    "finding": "TG302 поддерживает CT interface commissioning; Sentinel CT guide описывает retrospective/prospective 4DCT и daily prerequisites. Annual binning E2E, amplitude и clinically significant artefact требуют локальных количественных критериев и CT commissioning.",
+    "proposed_change": "Нужны модель CT, respiratory interface, commissioning protocol и количественные критерии. Не подставлять tolerances лечения в CT binning QA.",
+    "references": [
+      {
+        "source_id": "TG302",
+        "pdf_pages": [
+          7
+        ],
+        "section": "Table 4 CT triggering (scope only)"
+      },
+      {
+        "source_id": "CRAD_SENTINEL_CT",
+        "pdf_pages": [
+          16,
+          22,
+          23
+        ],
+        "section": "5 Daily QA; 6 4DCT"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-D1",
+    "name": "Визуальная готовность дыхательного контура и ABC",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Перед каждым клиническим использованием",
+    "original_action_criterion": "Все обязательные компоненты исправны и правильно собраны",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневная подготовка и осмотр турбины на повреждения/загрязнение подтверждены. Before-use контроль не должен пропускать гигиену и правильную сборку.",
+    "proposed_change": "Привязать к применимой IFU и одноразовым компонентам; не заменять осмотр только self-test.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          103,
+          135
+        ],
+        "section": "Workflow; 7.1.2"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-D2",
+    "name": "Запуск ПО, zero/trace plausibility и communication status",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно до первого пациента",
+    "original_action_criterion": "Корректный zero и правдоподобный двунаправленный trace",
+    "claim_grade": "UNRESOLVED",
+    "finding": "CAT подтверждает system check и направление respiratory curve. Ежедневный zero/trace check не является ежедневной количественной проверкой объёма IFU.",
+    "proposed_change": "Добавить отдельную ежедневную volume-check карточку либо пересмотреть ABC-M1; zero/trace недостаточно.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          11
+        ],
+        "section": "2.1 system check/respiratory curve"
+      },
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          135,
+          138
+        ],
+        "section": "7.1.3 Daily calibration check"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-D3",
+    "name": "Balloon valve: закрытие, удержание и штатное открытие",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно до первого пациента",
+    "original_action_criterion": "Valve закрывается и открывается в ожидаемой последовательности",
+    "claim_grade": "VERIFIED",
+    "finding": "Ежедневное правильное надувание/сдувание balloon подтверждено.",
+    "proposed_change": "Отделить функциональную реакцию от quantitative leak test; режимы release проверить отдельно.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          103
+        ],
+        "section": "Table 4.13 daily system checks"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-D4",
+    "name": "Patient release switch и operator abort",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Перед каждым клиническим использованием",
+    "original_action_criterion": "Оба способа release функциональны",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Patient switch проверяется перед каждой процедурой. Operator abort и его полный ожидаемый эффект требуют отдельного описания применимой версии.",
+    "proposed_change": "Раздельно документировать patient release, distress и operator abort; не считать их одним событием.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          104
+        ],
+        "section": "Table 4.13 before each procedure"
+      },
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          11,
+          12
+        ],
+        "section": "2.1 patient control switch"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-D5",
+    "name": "ABC–linac beam inhibit / CMNR interlock",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежедневно либо перед первой ABC-фракцией дня",
+    "original_action_criterion": "100% правильная interlock logic",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Response CAT подтверждает beam on/off вместе с breath hold/release. Универсальная CMNR-логика и ежедневная частота этим CAT не установлены. IFU описывает также manual gating.",
+    "proposed_change": "Подтвердить реальный интерфейс и режим A/B; не предполагать автоматический beam inhibit без установленной функции.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          12,
+          13
+        ],
+        "section": "2.2 Response interface"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-M1",
+    "name": "Быстрая проверка постоянства измерения объёма",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Ошибка ≤3%; SD/mean ≤1%",
+    "claim_grade": "CONTRADICTION",
+    "finding": "IFU рекомендует daily quantitative volume check: для 3 л все значения 2,85–3,15 л. В каталоге monthly ≤3%, SD/mean≤1%; такой график не заменяет daily IFU. Specification 5%/1,5% также отличается от локальных 3%/1%.",
+    "proposed_change": "Сохранить более строгий локальный предел только с обоснованием; добавить daily IFU coverage, различить specification и QA statistic.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          58,
+          135,
+          138
+        ],
+        "section": "7.1.3; accuracy specification"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-M2",
+    "name": "Точность threshold объёма и repeatability закрытия valve",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Средняя ошибка ≤3%; каждый цикл в пределах ±3% target",
+    "claim_grade": "UNRESOLVED",
+    "finding": "CAT подтверждает функциональное закрытие на threshold, но monthly, mean≤3% и каждый цикл±3% не устанавливает.",
+    "proposed_change": "Обосновать independently measured target volume, повторения и пределы; не выдавать их за vendor tolerance.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          11,
+          12
+        ],
+        "section": "2.1 threshold/balloon function"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-M3",
+    "name": "Valve seal / breath-hold stability",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Drift ≤2% test volume; valve остаётся закрытым до release/timeout",
+    "claim_grade": "CONTRADICTION",
+    "finding": "IFU рекомендует weekly leak check с разностью начального/конечного объёма ≤0,03 л в описанной геометрии. Monthly drift≤2% test volume не эквивалентен этому требованию.",
+    "proposed_change": "Добавить weekly coverage и сохранить абсолютную величину/условия IFU; локальный процентный критерий требует отдельной валидации.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          138,
+          139,
+          140
+        ],
+        "section": "7.1.4 weekly leak check"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-M4",
+    "name": "Точность breath-hold timer и automatic release",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Ошибка ≤1,0 s; automatic release всегда выполняется",
+    "claim_grade": "UNRESOLVED",
+    "finding": "CAT описывает countdown и release при нуле. Шаг индикации 1 s не является метрологическим допуском ±1 s; monthly отдельно не задано.",
+    "proposed_change": "Установить независимый timing reference и обосновать погрешность; проверить timeout и release как отдельные результаты.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          11,
+          12,
+          13
+        ],
+        "section": "2.1–2.2 timer and release"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-M5",
+    "name": "Patient release → beam hold и безопасное возобновление",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежемесячно",
+    "original_action_criterion": "Каждый release вызывает beam hold; unintended restart отсутствует",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Для Response release выключает beam. Monthly и отсутствие unintended restart требуют полного локального workflow теста, а не только наблюдения LED.",
+    "proposed_change": "Проверить beam status и delivered MU независимым способом; интерфейс должен соответствовать установленному оборудованию.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          12,
+          13
+        ],
+        "section": "2.2 Response release"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-Q1",
+    "name": "Полная калибровка и линейность spirometer",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Каждые 2–3 месяца и после gas sterilization/reassembly",
+    "original_action_criterion": "Все точки в пределах ±2%",
+    "claim_grade": "UNRESOLVED",
+    "finding": "TG76 VI.C.2.h описывает 3-L syringe, 0,5–3 L/s, 0–3 L, typical linearity2% и проверку после gas sterilization примерно раз в 2–3 месяца в разделе DIBH. Это не универсальная инструкция recalibration современного ABC. Раздел ABC VI.C.3.f отдельно требует vendor calibration и проверки flow-rate dependence.",
+    "proposed_change": "Не превращать calibration verification в регулировку. Нужна применимая сервисная инструкция и допустимый способ обработки компонентов.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          135,
+          138,
+          140
+        ],
+        "section": "7.1.3–7.2 maintenance"
+      },
+      {
+        "source_id": "TG76",
+        "pdf_pages": [
+          45,
+          48
+        ],
+        "section": "VI.C.2.h DIBH; VI.C.3.f ABC"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-A1",
+    "name": "Дозиметрия interruption/restart",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно",
+    "original_action_criterion": "ΔDose ≤2%; нет пропущенной или повторной части поля",
+    "claim_grade": "UNRESOLVED",
+    "finding": "CAT подтверждает функциональный gating, но не annual дозовое сравнение ≤2% и MU conservation.",
+    "proposed_change": "Нужен отдельный dosimetric interruption/restart protocol с независимым измерением и обоснованным пределом.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_CAT",
+        "pdf_pages": [
+          12,
+          13
+        ],
+        "section": "2.2 functional gating (scope only)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-A3",
+    "name": "Cross-calibration CT–treatment ABC units",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после service, если используются разные ABC устройства/sensors",
+    "original_action_criterion": "Разница ≤2%",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Daily volume specification не устанавливает annual cross-calibration двух ABC ≤2%.",
+    "proposed_change": "Согласовать метод сравнения sensors/CT-treatment units, объёмы/потоки и критерии; подтвердить наличие двух систем.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          58,
+          135,
+          138
+        ],
+        "section": "Volume accuracy/daily verification (scope comparison)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-A4",
+    "name": "Data/patient settings integrity",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после software/database changes",
+    "original_action_criterion": "Все параметры загружаются без изменения и относятся к правильному пациенту",
+    "claim_grade": "LOCALLY_DERIVED",
+    "finding": "Проверка записи и параметров перед каждой процедурой подтверждена. Annual data-integrity audit — дополнительная локальная проверка.",
+    "proposed_change": "Не заменять per-fraction identity/settings check ежегодным аудитом; проверить восстановление/перенос тестовых данных без реальных пациентов.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          104
+        ],
+        "section": "Table 4.13 patient settings"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-A5",
+    "name": "ABC end-to-end: CT → treatment → irradiation",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Ежегодно и после major changes",
+    "original_action_criterion": "Volume agreement ≤2%; localization within commissioned clinical limit; dose difference ≤2%; all interlocks PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Workflow CT/лечение требует правильной укладки и параметров, но составной annual E2E с volume2%/dose2% этим текстом не установлен.",
+    "proposed_change": "Подготовить локальный E2E с независимыми volume, anatomy, dose и interface критериями; не считать один PASS доказательством всего пути.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          103,
+          104
+        ],
+        "section": "Clinical workflow (scope only)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-C1",
+    "name": "Patient suitability и воспроизводимость breath-hold",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "При simulation; повторно на первой фракции и при клинических сомнениях",
+    "original_action_criterion": "Обычно ≥10 s; anatomical motion/reproducibility within 5 mm либо более строгого site-specific limit",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Обучение и проверка параметров пациента поддержаны IFU. TG76 описывает 10 s для self-held breath-hold (VI.C.4.b), а ABC — в другом разделе с индивидуальной переносимостью. Универсальный критерий ABC ≥10 s/5 мм не установлен.",
+    "proposed_change": "Передать критерии переносимости/анатомической воспроизводимости клиническому специалисту; оформить site-specific protocol.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          103,
+          104
+        ],
+        "section": "Training and setup workflow"
+      },
+      {
+        "source_id": "TG76",
+        "pdf_pages": [
+          46,
+          47,
+          50
+        ],
+        "section": "VI.C.3; VI.C.4.b (different method)"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-C2",
+    "name": "Per-fraction consistency объёма и anatomy",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "Каждая ABC-фракция",
+    "original_action_criterion": "Within commissioned patient/site-specific window; anatomy within imaging tolerance",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Проверка пациента и параметров каждой процедуры подтверждена; volume window и anatomy tolerance должны быть количественно определены локально.",
+    "proposed_change": "Не использовать одинаковый объём как доказательство воспроизводимости внутренней анатомии; связать с imaging protocol.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          104
+        ],
+        "section": "Table 4.13 before each procedure"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  },
+  {
+    "test_code": "ABC-S1",
+    "name": "Clinical release после service/calibration",
+    "review_status": "PARTIAL",
+    "documentary_pass": "COMPLETED_WITH_OPEN_REQUIREMENTS",
+    "overall_grade": "UNRESOLVED",
+    "clinical_approval": false,
+    "execution_readiness": "not_ready",
+    "original_frequency": "После service, replacement, calibration, software update or relocation",
+    "original_action_criterion": "Documented clinical release after PASS",
+    "claim_grade": "UNRESOLVED",
+    "finding": "Перед использованием должна быть выполнена программа обслуживания; клинические пользователи не выполняют planned maintenance. Универсального перечня release PASS нет.",
+    "proposed_change": "Связать сервисный акт, проверку объёма/утечек, интерфейса и затронутый E2E; отдельное клиническое разрешение.",
+    "references": [
+      {
+        "source_id": "ELEKTA_ABC_IFU",
+        "pdf_pages": [
+          140
+        ],
+        "section": "7.2 planned maintenance"
+      }
+    ],
+    "remaining_requirements": [
+      "Подтвердить установленную версию, оснащение и клиническое применение.",
+      "Согласовать методику, измерительные средства, baseline, неопределённость и действия при отказе.",
+      "Проверить полную SOP и получить утверждение ответственного медицинского физика."
+    ]
+  }
+]
