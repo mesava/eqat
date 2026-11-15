@@ -56,6 +56,8 @@ python src/qa_program_builder.py outputs/program_preview.json
 Сводный реестр и действия по каждому коду: `data/review_v0_6/review_index.json`.
 Следующий этап — исправление и полная верификация SOP, включая применимость редакций, baseline и локальных критериев.
 
+[Поправки к СОП v0.7](docs/SOP_AMENDMENTS_v0_7.md) охватывают 23 карточки. Реестр проверки по всем 161 тестам связывает версии карточек со страницами источников и локальными вопросами. Для просмотра отдельной записи используйте `python src/sop_review_register.py --test MEC-M3`.
+
 См. `docs/WORK_HANDOFF.md`, `docs/SOP_POLICY.md`, `docs/TRACEABILITY_FINDINGS.md`.
 Результаты из `program_preview.json` нельзя использовать как расписание клинического QA до подтверждения комплектации, выбора методик, baseline и утверждения специалистом.
 
