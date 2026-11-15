@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>EQAT — Программа ГК</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span> EQAT</div>
+      <span class="topbar-label">Контроль качества оборудования</span>
+    </div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><h1 id="page-title">Программа ГК</h1><p>Укажите оснащение и режимы установки, чтобы подобрать тесты.</p></div>
+      <span class="draft">Проект программы</span>
+    </section>
+    <div class="workspace">
+      <aside class="panel setup" aria-labelledby="setup-title">
+        <div class="setup-head"><h2 id="setup-title">Профиль оборудования</h2></div>
+        <div class="setup-body">
+          <label class="field">Установка<select id="profiles" disabled></select></label>
+          <button class="text-button" type="button" id="new-profile" disabled>+ Новый профиль</button>
+          <form id="profile-form">
+            <label class="field">Название<input id="profile-name" maxlength="100" required></label>
+            <label class="field" id="scope-field" hidden>Тип оборудования<select id="scope"><option value="linac">Ускоритель</option><option value="ct">КТ</option></select></label>
+            <button class="primary" type="submit" id="calculate" disabled>Сформировать программу</button>
+            <p class="form-note" id="profile-note" aria-live="polite"></p>
+            <div id="equipment"></div>
+            <button class="text-button reset" type="button" id="reset-profile" hidden>Вернуть исходный профиль</button>
+          </form>
+        </div>
+      </aside>
+      <section class="results" aria-labelledby="result-title">
+        <div class="result-title">
+          <div><h2 id="result-title">Состав программы</h2><p id="current-profile">Загрузка профилей…</p></div>
+          <button class="secondary" id="download" type="button" disabled>Скачать отчёт</button>
+        </div>
+        <div id="error" role="alert" hidden></div>
+        <div class="metrics" role="group" aria-label="Фильтр по применимости">
+          <button class="metric included" type="button" data-state="eligible_draft" aria-pressed="true"><strong id="included-count">—</strong><span>В программе</span></button>
+          <button class="metric pending" type="button" data-state="pending_feature_confirmation" aria-pressed="false"><strong id="pending-count">—</strong><span>На уточнении</span></button>
+          <button class="metric excluded" type="button" data-state="not_applicable" aria-pressed="false"><strong id="excluded-count">—</strong><span>Вне профиля</span></button>
+        </div>
+        <div class="panel catalog">
+          <div class="filters">
+            <label class="field search">Поиск<input id="search" type="search" placeholder="Код или название теста"></label>
+            <label class="field">Раздел<select id="section"><option value="">Все разделы</option></select></label>
+          </div>
+          <div class="list-heading"><span>Тест и периодичность</span><span id="visible-count" aria-live="polite"></span></div>
+          <div id="tests" aria-busy="true"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
